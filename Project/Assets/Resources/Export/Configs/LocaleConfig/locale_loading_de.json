@@ -1,0 +1,134 @@
+[
+    {
+        "key": "UI_tips_text1",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text2",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text3",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text4",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text5",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text6",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text7",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text8",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text9",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text10",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text11",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text12",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_loading_progress_text",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_loading_tip",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_privacy_title_native",
+        "value": "Datenschutzrichtlinie akzeptieren"
+    },
+    {
+        "key": "UI_privacy_message_native",
+        "value": "Um weiter zu spielen, müssen Sie bestätigen, dass Sie unserer Datenschutzrichtlinie zustimmen."
+    },
+    {
+        "key": "UI_privacy_btn_link_title_native",
+        "value": "Datenschutz-Bestimmungen"
+    },
+    {
+        "key": "UI_privacy_btn_agree_title_native",
+        "value": "Ich stimme zu"
+    },
+    {
+        "key": "UI_download_resources_error",
+        "value": "Überprüfen Sie die Ressource nicht herunter, bitte überprüfen Sie Ihr Internet."
+    },
+    {
+        "key": "UI_no_internet_tips",
+        "value": "Verbindung zum Server fehlgeschlagen. Bitte überprüfe deine Internetverbindung."
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "Abbrechen"
+    },
+    {
+        "key": "UI_button_ok",
+        "value": "OK"
+    },
+    {
+        "key": "UI_button_retry_text",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "Abbrechen"
+    },
+    {
+        "key": "UI_quit_game_tips_text",
+        "value": "Möchten Sie aufhören?"
+    },
+    {
+        "key": "UI_errmsg_duplicate_login_native",
+        "value": "Sie haben das Spiel auf einem anderen Gerät geöffnet. Um auf dem anderen Gerät zu spielen, schließen Sie dieses Spiel bitte. Um hier weiter zu spielen, tippen Sie einfach auf OK und dieses Spiel wird neu starten."
+    },
+    {
+        "key": "UI_choose_progress_title_text",
+        "value": "FORTSCHRITTSAUSWAHL"
+    },
+    {
+        "key": "UI_choose_progress_desc_main_text",
+        "value": "Welchen Fortschritt willst du behalten?"
+    },
+    {
+        "key": "UI_choose_progress_on_server",
+        "value": "Auf Server:"
+    },
+    {
+        "key": "UI_choose_progress_on_device",
+        "value": "Auf Gerät:"
+    },
+    {
+        "key": "UI_choose_progress_button_server",
+        "value": "Server"
+    },
+    {
+        "key": "UI_choose_progress_button_device",
+        "value": "Gerät"
+    },
+    {
+        "key": "UI_loading_init",
+        "value": "Initialisieren…%s%"
+    }
+]

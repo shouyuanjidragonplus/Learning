@@ -1,0 +1,134 @@
+[
+    {
+        "key": "UI_tips_text1",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text2",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text3",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text4",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text5",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text6",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text7",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text8",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text9",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text10",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text11",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text12",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_loading_progress_text",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_loading_tip",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_privacy_title_native",
+        "value": "Aceptar Política de privacidad"
+    },
+    {
+        "key": "UI_privacy_message_native",
+        "value": "Para continuar jugando, debe confirmar que acepta nuestra Política de privacidad."
+    },
+    {
+        "key": "UI_privacy_btn_link_title_native",
+        "value": "Política de privacidad"
+    },
+    {
+        "key": "UI_privacy_btn_agree_title_native",
+        "value": "Estoy de acuerdo"
+    },
+    {
+        "key": "UI_download_resources_error",
+        "value": "No se pudo descargar el recurso, consulte su Internet."
+    },
+    {
+        "key": "UI_no_internet_tips",
+        "value": "Error al conectar con el servidor. Por favor revise su conexion a internet."
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "cancelar"
+    },
+    {
+        "key": "UI_button_ok",
+        "value": "OK"
+    },
+    {
+        "key": "UI_button_retry_text",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "cancelar"
+    },
+    {
+        "key": "UI_quit_game_tips_text",
+        "value": "¿Te gustaría dejar de fumar?"
+    },
+    {
+        "key": "UI_errmsg_duplicate_login_native",
+        "value": "Has abierto el juego en otro dispositivo. Para jugar en el otro dispositivo, cierre este juego. Para seguir jugando aquí, solo toque 'OK' y este juego se reiniciará."
+    },
+    {
+        "key": "UI_choose_progress_title_text",
+        "value": "存檔選擇"
+    },
+    {
+        "key": "UI_choose_progress_desc_main_text",
+        "value": "你要保留哪一個存檔？"
+    },
+    {
+        "key": "UI_choose_progress_on_server",
+        "value": "服務器上的"
+    },
+    {
+        "key": "UI_choose_progress_on_device",
+        "value": "你的設備上的"
+    },
+    {
+        "key": "UI_choose_progress_button_server",
+        "value": "服務器"
+    },
+    {
+        "key": "UI_choose_progress_button_device",
+        "value": "你的設備"
+    },
+    {
+        "key": "UI_loading_init",
+        "value": "初始化中…%s%"
+    }
+]

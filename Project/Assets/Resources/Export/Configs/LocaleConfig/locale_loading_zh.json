@@ -1,0 +1,134 @@
+[
+    {
+        "key": "UI_tips_text1",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text2",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text3",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text4",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text5",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text6",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text7",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text8",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text9",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text10",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text11",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text12",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_loading_progress_text",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_loading_tip",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_privacy_title_native",
+        "value": "隐私协议"
+    },
+    {
+        "key": "UI_privacy_message_native",
+        "value": "继续游戏前，您需要同意我们的隐私协议"
+    },
+    {
+        "key": "UI_privacy_btn_link_title_native",
+        "value": "详情链接"
+    },
+    {
+        "key": "UI_privacy_btn_agree_title_native",
+        "value": "同意"
+    },
+    {
+        "key": "UI_download_resources_error",
+        "value": "没有互联网连接。\n请检查网络连接并重试。"
+    },
+    {
+        "key": "UI_no_internet_tips",
+        "value": "没有互联网连接。请连接到互联网再试"
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "取消"
+    },
+    {
+        "key": "UI_button_ok",
+        "value": "好的"
+    },
+    {
+        "key": "UI_button_retry_text",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "取消"
+    },
+    {
+        "key": "UI_quit_game_tips_text",
+        "value": "你想要退出游戏吗？"
+    },
+    {
+        "key": "UI_errmsg_duplicate_login_native",
+        "value": "另一台设备上也打开了该游戏。如果你想在其他设备上玩，请关闭这个游戏。如果你现在想继续玩，请点击确定，我们会重新打开该游戏。"
+    },
+    {
+        "key": "UI_choose_progress_title_text",
+        "value": "存档选择"
+    },
+    {
+        "key": "UI_choose_progress_desc_main_text",
+        "value": "你要保留哪一个存档？"
+    },
+    {
+        "key": "UI_choose_progress_on_server",
+        "value": "服务器上的"
+    },
+    {
+        "key": "UI_choose_progress_on_device",
+        "value": "你的设备上的"
+    },
+    {
+        "key": "UI_choose_progress_button_server",
+        "value": "服务器"
+    },
+    {
+        "key": "UI_choose_progress_button_device",
+        "value": "你的设备"
+    },
+    {
+        "key": "UI_loading_init",
+        "value": "初始化中…%s%"
+    }
+]

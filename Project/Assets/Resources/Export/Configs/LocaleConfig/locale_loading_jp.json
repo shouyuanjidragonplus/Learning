@@ -1,0 +1,134 @@
+[
+    {
+        "key": "UI_tips_text1",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text2",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text3",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text4",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text5",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text6",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text7",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text8",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text9",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text10",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text11",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text12",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_loading_progress_text",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_loading_tip",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_privacy_title_native",
+        "value": "プライバシーポリシーを受け入れます"
+    },
+    {
+        "key": "UI_privacy_message_native",
+        "value": "プレイを続けるには、プライバシーポリシーに同意することを確認する必要があります。"
+    },
+    {
+        "key": "UI_privacy_btn_link_title_native",
+        "value": "プライバシーポリシー"
+    },
+    {
+        "key": "UI_privacy_btn_agree_title_native",
+        "value": "同意します"
+    },
+    {
+        "key": "UI_download_resources_error",
+        "value": "リソースのダウンロードに失敗しました。インターネットを確認してください。"
+    },
+    {
+        "key": "UI_no_internet_tips",
+        "value": "サーバーとの接続に失敗しました。インターネット接続を確認してください。"
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "キャンセル"
+    },
+    {
+        "key": "UI_button_ok",
+        "value": "OK"
+    },
+    {
+        "key": "UI_button_retry_text",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": "キャンセル"
+    },
+    {
+        "key": "UI_quit_game_tips_text",
+        "value": "やめませんか？"
+    },
+    {
+        "key": "UI_errmsg_duplicate_login_native",
+        "value": "別のデバイスでゲームを開きました。他のデバイスで再生するには、このゲームを閉じてください。ここでプレイし続けるには、「OK」をタップするだけで、このゲームが再起動します。"
+    },
+    {
+        "key": "UI_choose_progress_title_text",
+        "value": "進行データ選択"
+    },
+    {
+        "key": "UI_choose_progress_desc_main_text",
+        "value": "どちらの進行状況を保存しますか？"
+    },
+    {
+        "key": "UI_choose_progress_on_server",
+        "value": "サーバー上:"
+    },
+    {
+        "key": "UI_choose_progress_on_device",
+        "value": "お使いのデバイス:"
+    },
+    {
+        "key": "UI_choose_progress_button_server",
+        "value": "サーバー"
+    },
+    {
+        "key": "UI_choose_progress_button_device",
+        "value": "お使いのデバイス"
+    },
+    {
+        "key": "UI_loading_init",
+        "value": "初期化中…%s%"
+    }
+]

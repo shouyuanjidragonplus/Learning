@@ -1,0 +1,146 @@
+[
+    {
+        "key": "UI_tips_text1",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text2",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text3",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text4",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text5",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text6",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text7",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text8",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text9",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text10",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text11",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_tips_text12",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_loading_progress_text",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_loading_tip",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_privacy_title_native",
+        "value": null
+    },
+    {
+        "key": "UI_privacy_message_native",
+        "value": null
+    },
+    {
+        "key": "UI_privacy_btn_link_title_native",
+        "value": null
+    },
+    {
+        "key": "UI_privacy_btn_agree_title_native",
+        "value": null
+    },
+    {
+        "key": "UI_download_resources_error",
+        "value": null
+    },
+    {
+        "key": "UI_no_internet_tips",
+        "value": null
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": null
+    },
+    {
+        "key": "UI_button_ok",
+        "value": null
+    },
+    {
+        "key": "UI_button_retry_text",
+        "value": "#N/A"
+    },
+    {
+        "key": "UI_button_cancel",
+        "value": null
+    },
+    {
+        "key": "UI_quit_game_tips_text",
+        "value": null
+    },
+    {
+        "key": "UI_errmsg_duplicate_login_native",
+        "value": null
+    },
+    {
+        "key": "UI_choose_progress_title_text",
+        "value": "ВЫБОР ПРОГРЕССА"
+    },
+    {
+        "key": "UI_choose_progress_desc_main_text",
+        "value": "Какой прогресс вы хотите сохранить?"
+    },
+    {
+        "key": "UI_choose_progress_on_server",
+        "value": "На сервере:"
+    },
+    {
+        "key": "UI_choose_progress_on_device",
+        "value": "На вашем устройстве:"
+    },
+    {
+        "key": "UI_choose_progress_button_server",
+        "value": "Сервер"
+    },
+    {
+        "key": "UI_choose_progress_button_device",
+        "value": "Ваше устройство"
+    },
+    {
+        "key": "UI_loading_init",
+        "value": "Инициализация ...%s%"
+    },
+    {
+        "key": "UI_loading_upgrade",
+        "value": "Обновление ...%s%"
+    },
+    {
+        "key": "UI_loading_load",
+        "value": "Загрузка ...%s%"
+    },
+    {
+        "key": "UI_loading_count",
+        "value": "Расчет"
+    }
+]
