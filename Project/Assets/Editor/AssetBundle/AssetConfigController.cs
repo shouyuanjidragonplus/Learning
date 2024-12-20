@@ -11,14 +11,19 @@ namespace Framework.Asset
     {
         // ab包路径
         public string Path;
+
         // 是否在初始包里
         public bool InInitialPacket = false;
+
         // 是否来自外部
         public bool FromOutside = false;
+
         // 外部库名称
         public string NameOutside;
+
         // 外部group名称
         public string GroupOutside;
+
         // 外部ab包路径
         public string PathOutside;
     }
@@ -41,11 +46,12 @@ namespace Framework.Asset
                 {
                     _paths.Add(item.Path);
                 }
-                else if(!inside && item.FromOutside)
+                else if (!inside && item.FromOutside)
                 {
                     _paths.Add(item.Path);
                 }
             }
+
             return _paths;
         }
 
@@ -57,6 +63,7 @@ namespace Framework.Asset
                 if (item.Path.ToLower() == partPath)
                     return item.InInitialPacket;
             }
+
             return false;
         }
 
@@ -71,25 +78,27 @@ namespace Framework.Asset
                     {
                         _paths.Add(item.Path.ToLower());
                     }
-                    else if(!inside && item.FromOutside)
+                    else if (!inside && item.FromOutside)
                     {
                         _paths.Add(item.Path.ToLower());
                     }
                 }
             }
+
             return _paths;
         }
-        
+
         public List<BundleState> GetOutsideBundles()
         {
             List<BundleState> _paths = new List<BundleState>();
             foreach (BundleState item in Paths)
             {
-                if(item.FromOutside)
+                if (item.FromOutside)
                 {
                     _paths.Add(item);
                 }
             }
+
             return _paths;
         }
 
@@ -100,25 +109,26 @@ namespace Framework.Asset
             {
                 if (item.InInitialPacket)
                 {
-                    if(item.FromOutside)
+                    if (item.FromOutside)
                     {
                         _paths.Add(item);
                     }
                 }
             }
+
             return _paths;
         }
 
         public BundleState GetBundleByPathOutside(string path)
         {
-            return Paths.Find((state => (state.PathOutside.ToLower()+".ab").Equals(path)));
+            return Paths.Find((state => (state.PathOutside.ToLower() + ".ab").Equals(path)));
         }
     }
 
     [Serializable]
     public class PretreatmentStreamDelegate : ScriptableObject
     {
-        public virtual void ExecutePretreatment () 
+        public virtual void ExecutePretreatment()
         {
             Debug.LogError("PretreatmentStreamDelegate.ExecutePretreatment");
         }
@@ -126,7 +136,7 @@ namespace Framework.Asset
 
     public class AssetConfigController : ScriptableObject
     {
-        public static string AssetConfigPath = "Settings/AssetConfigController";
+        public static readonly string AssetConfigPath = "Settings/AssetConfigController";
         private static AssetConfigController _instance = null;
 
         public static AssetConfigController Instance
@@ -137,14 +147,6 @@ namespace Framework.Asset
                 {
                     _instance = Resources.Load<AssetConfigController>(AssetConfigPath);
                 }
-#if UNITY_EDITOR
-                // // 如果存在AssetConfigPrototype(可配置正则表达式)，将用AssetConfigPrototype里的数据修改AssetConfigController
-                // if (AssetConfigPrototype.Instance && !Application.isPlaying)
-                // {
-                //     AssetConfigPrototype.Instance.Modify(_instance);
-                //     UnityEditor.EditorUtility.SetDirty(_instance);
-                // }
-
 #if UNITY_STANDALONE
                 string[] args = Environment.GetCommandLineArgs();
                 // batchmode模式（Jenkins等配置的命令模式）打Standalone平台包，将所有资源打到包内
@@ -159,53 +161,40 @@ namespace Framework.Asset
                     }
                 }
 #endif
-#endif
+
                 return _instance;
             }
         }
-        
 
-        [Space(10)]
-        [Header(" --------------------- 资源版本号 ----------------------")]
+
+        [Space(10)] [Header(" --------------------- 资源版本号 ----------------------")]
         public string RootVersion = "v1_0_0";
+
         public string IOSRootVersion = "v1_0_0";
 
-        [Space(10)]
-        [Header(" ------------------ bundleVersionCode ----------------")]
+        [Space(10)] [Header(" ------------------ bundleVersionCode ----------------")]
         public string VersionCode = "1";
+
         public string IOSVersionCode = "1";
 
-        [Space(10)]
-        [Header("[true:使用AB包  false:使用编辑器里资源   真机下应为true   ]")]
-        [Header("------------------ UseAssetBundle--------------------")]
+        [Space(10)] [Header("[true:使用AB包  false:使用编辑器里资源   真机下应为true   ]")] [Header("------------------ UseAssetBundle--------------------")]
         public bool UseAssetBundle = false;
 
-        [Space(10)]
-        [Header("[true:拷贝AB包到下载目录 false:从服务器下载  真机下应为false]")]
-        [Header(" -------------- CopyBundleToDownloadPath--------------")]
+        [Space(10)] [Header("[true:拷贝AB包到下载目录 false:从服务器下载  真机下应为false]")] [Header(" -------------- CopyBundleToDownloadPath--------------")]
         public bool CopyBundleToDownloadPath = false;
 
-        [Space(10)]
-        [Header("[公共库资源在编辑器环境下     true:使用AB包  false:使用编辑器里资源]")]
-        [Header("------------------ ResPubLibraryUseAssetBundle--------------------")]
+        [Space(10)] [Header("[公共库资源在编辑器环境下     true:使用AB包  false:使用编辑器里资源]")] [Header("------------------ ResPubLibraryUseAssetBundle--------------------")]
         public bool ResPubLibraryUseAssetBundle = true;
-        
-        [Space(10)]
-        [Header("[填入相对Assets/Export的相对路径，大小写敏感，只支持文件夹]")]
-        [Header(" ---------------------- AB包分组 -----------------------")]
+
+        [Space(10)] [Header("[填入相对Assets/Export的相对路径，大小写敏感，只支持文件夹]")] [Header(" ---------------------- AB包分组 -----------------------")]
         public BundleGroup[] Groups;
 
-        
-        [Space(5)]
-        [Header("----------------------活动资源路径-----------------------")]
+
+        [Space(5)] [Header("----------------------活动资源路径-----------------------")]
         public string[] ActivityResPaths;
 
-        [Space(5)]
-        [Header("-------------------项目打包预处理的代理-------------------")]
-        public PretreatmentStreamDelegate ProjectPretreatmentDelegate = null;
 
-        [Space(5)]
-        [Header("-------------------增强版加密-------------------")]
+        [Space(5)] [Header("-------------------增强版加密-------------------")]
         public string EnhancedEncryptionSecret = "";
 
         public bool LocalMode()
@@ -224,7 +213,7 @@ namespace Framework.Asset
                 return UseAssetBundle;
             }
         }
-        
+
         public bool IsPathsNoRepetition()
         {
             HashSet<string> temp = new HashSet<string>();
@@ -237,6 +226,7 @@ namespace Framework.Asset
                     temp.Add(p.Path);
                 }
             }
+
             return temp.Count == cnt;
         }
     }

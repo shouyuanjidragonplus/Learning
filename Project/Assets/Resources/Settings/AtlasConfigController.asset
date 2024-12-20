@@ -16,3 +16,6 @@ MonoBehaviour:
   - AtlasName: CoomonAtlas
     HdPath: SpriteAtlas/CoomonAtlas/Hd/CoomonAtlas
     SdPath: SpriteAtlas/CoomonAtlas/Sd/CoomonAtlas
+  - AtlasName: CoomonAtlas 1
+    HdPath: SpriteAtlas/CoomonAtlas 1\Hd\CoomonAtlas
+    SdPath: SpriteAtlas/CoomonAtlas 1\Sd\CoomonAtlas

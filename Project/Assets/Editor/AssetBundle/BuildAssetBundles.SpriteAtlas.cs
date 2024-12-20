@@ -10,7 +10,7 @@ namespace Framework.Asset
     {
         public static readonly string AtlasConfigName = "AtlasConfigController";
 
-        [MenuItem("AssetBundle/生成图集配置")]
+        [MenuItem("资源配置/生成图集配置AtlasConfig")]
         public static void CreateAtlasConfig()
         {
             AtlasConfigController asset = ScriptableObject.CreateInstance<AtlasConfigController>();
