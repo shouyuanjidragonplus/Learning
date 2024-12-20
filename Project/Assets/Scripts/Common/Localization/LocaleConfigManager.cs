@@ -4,7 +4,7 @@ using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 using DragonU3DSDK;
-using DragonU3DSDK.Asset;
+using Framework.Asset;
 using Newtonsoft.Json;
 using UnityEngine;
 
@@ -12,13 +12,10 @@ namespace Framework
 {
     public class LocaleConfigManager : Manager<LocaleConfigManager>
     {
-        Dictionary<string, Dictionary<string, string>> localeConfigs =
-            new Dictionary<string, Dictionary<string, string>>();
+        Dictionary<string, Dictionary<string, string>> localeConfigs = new Dictionary<string, Dictionary<string, string>>();
 
-        ////////////////
         // 备份版多语言，从app里读取的
-        Dictionary<string, Dictionary<string, string>> bakLocaleConfigs =
-            new Dictionary<string, Dictionary<string, string>>();
+        Dictionary<string, Dictionary<string, string>> bakLocaleConfigs = new Dictionary<string, Dictionary<string, string>>();
 
         private bool loadedFromApp = false;
         string sep = " = ";
@@ -44,38 +41,20 @@ namespace Framework
                 var ta = Resources.Load<TextAsset>(configPath);
                 string content = ta.text;
 
-                content = ChangeableConfig.Instance.AddChangeableConfig("locale_" + locale, content);
-
-                List<LocaleItemConfig> localeConfig = JsonConvert.DeserializeObject<List<LocaleItemConfig>>(content);
+                List<KVConfig> localeConfig = JsonConvert.DeserializeObject<List<KVConfig>>(content);
                 if (localeConfig != null && localeConfig.Count > 0)
                 {
                     Dictionary<string, string> configs = new Dictionary<string, string>();
-                    foreach (LocaleItemConfig c in localeConfig)
+                    foreach (KVConfig c in localeConfig)
                     {
                         configs[c.Key] = c.Value;
                     }
 
-                    ////add home
-                    //if(locale.Equals(Locale.ENGLISH))
-                    //{
-                    //    TextAsset textAssetHome = Resources.Load<TextAsset>("Export/Configs/global_localization");
-                    //    if (textAssetHome.text != null)
-                    //    {
-                    //        List<TableGlobal_Localization> configHome = DragonU3DSDK.Config.TableManager.DeSerialize<TableGlobal_Localization>(textAssetHome.text);
-                    //        foreach (TableGlobal_Localization kv in configHome)
-                    //        {
-                    //            configs[kv.key] = kv.en;
-                    //        }
-                    //    }
-                    //}
                     bakLocaleConfigs[locale] = configs;
                 }
 
                 Resources.UnloadAsset(ta);
             }
-
-            // 初始包里的多语言读取完后，设置下tips的内容
-            GameTextUtils.PickupLocale();
 
             loadedFromApp = true;
         }
@@ -90,22 +69,19 @@ namespace Framework
                 if (localeConfigs.ContainsKey(locale))
                     continue;
 
-                //DebugUtil.Log("Prepare to init config for locale " + locale);
-                var configPath = PathManager.Configs + "/LocaleConfig/locale_" + locale;
+                var configPath = "Configs/LocaleConfig/locale_" + locale;
                 var ta = ResourcesManager.Instance.LoadResource<TextAsset>(configPath, addToCache: false);
                 string content = ta.text;
-                //DebugUtil.Log(ta);
-                List<LocaleItemConfig> localeConfig = JsonConvert.DeserializeObject<List<LocaleItemConfig>>(content);
-
-                //DebugUtil.Log("localeConfigs count : " + localeConfig.Count);
+                List<KVConfig> localeConfig = JsonConvert.DeserializeObject<List<KVConfig>>(content);
+                Debug.Log("多语言配置 count : " + localeConfig.Count);
                 if (localeConfig != null && localeConfig.Count > 0)
                 {
                     Dictionary<string, string> configs = new Dictionary<string, string>();
-                    foreach (LocaleItemConfig c in localeConfig)
+                    foreach (KVConfig c in localeConfig)
                     {
                         if (string.IsNullOrEmpty(c.Key))
                         {
-                            DebugUtil.LogError("key is " + c.Key + "  value is " + c.Value + "\t local " + locale);
+                            Debug.LogError("key is " + c.Key + "  value is " + c.Value + "\t local " + locale);
                             continue;
                         }
 
@@ -125,9 +101,6 @@ namespace Framework
 
                 ResourcesManager.Instance.ReleaseRes(configPath, true);
             }
-
-            // 远端的多语言读取完后，更新下loading条上的tips
-            GameTextUtils.PickupLocale();
         }
 
         // 对嵌套的key进行处理

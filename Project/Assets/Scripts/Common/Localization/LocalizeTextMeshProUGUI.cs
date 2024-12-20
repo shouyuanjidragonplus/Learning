@@ -2,7 +2,6 @@
 using DragonU3DSDK;
 using UnityEngine;
 using TMPro;
-using DragonU3DSDK.Asset;
 using System.Collections;
 
 namespace Framework
@@ -78,7 +77,7 @@ namespace Framework
                 CurrLocalize = LocalizationManager.Instance.GetCurrentLocale();
             }
             else
-                DebugUtil.LogError("### LocalizeTextMeshProUGUI Component error: " + str + " ###");
+                Debug.LogError("### LocalizeTextMeshProUGUI Component error: " + str + " ###");
 
             if (clearTerm)
             {
@@ -94,7 +93,7 @@ namespace Framework
                 return m_TmpText.text;
             else
             {
-                DebugUtil.LogError("### LocalizeTextMeshProUGUI Component error: " + gameObject.name + " ###");
+                Debug.LogError("### LocalizeTextMeshProUGUI Component error: " + gameObject.name + " ###");
                 return string.Empty;
             }
         }
@@ -106,7 +105,7 @@ namespace Framework
             if (m_TmpText != null)
                 m_TmpText.color = color;
             else
-                DebugUtil.LogError("### LocalizeTextMeshProUGUI Component error: " + gameObject.name + " ###");
+                Debug.LogError("### LocalizeTextMeshProUGUI Component error: " + gameObject.name + " ###");
         }
 
         public Color GetColor()

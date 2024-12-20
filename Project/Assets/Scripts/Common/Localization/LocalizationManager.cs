@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using DragonPlus.Config;
-using DragonU3DSDK;
-using DragonU3DSDK.SDKEvents;
-using DragonU3DSDK.Storage;
+using Framework.Storage;
 using TMPro;
 using UnityEngine;
 
@@ -302,9 +299,17 @@ namespace Framework
             return current_locale;
         }
 
+        // 首字母大写
+        public string FirstCharToUpper(string str)
+        {
+            char[] a = str.ToCharArray();
+            a[0] = char.ToUpper(a[0]);
+            return new string(a);
+        }
+
         public TMP_FontAsset GetLocaleFont()
         {
-            string locale = CommonUtils.FirstCharToUpper(current_locale);
+            string locale = FirstCharToUpper(current_locale);
             string key = string.Format("LocaleFont_{0} SDF", locale);
             TMP_FontAsset fontAsset = null;
 
@@ -324,7 +329,7 @@ namespace Framework
         // todo:默认材质的加载路径，目前不对
         public Material GetLocaleMaterial(string suffix)
         {
-            string locale = CommonUtils.FirstCharToUpper(current_locale);
+            string locale = FirstCharToUpper(current_locale);
             string key = string.Format("LocaleFont_{0} SDF {1}", locale, suffix);
             Material mat = null;
 
