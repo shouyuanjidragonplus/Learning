@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\UI\Controls\InfoBlock.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\UI\Controls\Data\OptionsControlBase.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRF\Scripts\UI\CopySizeIntoLayoutElement.cs" />
+    <Compile Include="Assets\Framework\Configuration\ConfigurationController.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRF\Scripts\Extensions\NetFxExtensions.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\SROptions.Test.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\UI\Other\IEnableTab.cs" />
@@ -81,8 +82,10 @@
     <Compile Include="Assets\Scripts\ThirdParty\SRF\Scripts\Helpers\SRReflection.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Services\IPinEntryService.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Services\Implementation\BugReportPopoverService.cs" />
+    <Compile Include="Assets\Framework\Asset\ResPublicLibraryController.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRF\Scripts\UI\ResponsiveResize.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\UI\DebugPanelRoot.cs" />
+    <Compile Include="Assets\Framework\Asset\AssetVersion\VersionItemInfo.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\UI\Controls\Data\NumberControl.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Internal\Util.cs" />
     <Compile Include="Assets\Scripts\Storage\Home\StorageHome.cs" />
@@ -96,6 +99,7 @@
     <Compile Include="Assets\Scripts\ThirdParty\SRF\Scripts\Components\SRSingleton.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Internal\Service.cs" />
     <Compile Include="Assets\Scripts\Common\Localization\LocaleItemConfig.cs" />
+    <Compile Include="Assets\Framework\Asset\AtlasConfigController.cs" />
     <Compile Include="Assets\Scripts\Storage\Common\StorageCommon.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRF\Scripts\UI\ResponsiveEnable.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRF\Scripts\Extensions\FloatExtensions.cs" />
@@ -105,6 +109,7 @@
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Profiler\SRPProfilerService.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Services\Implementation\DebugCameraServiceImpl.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Services\IOptionsService.cs" />
+    <Compile Include="Assets\Framework\Asset\SpriteAtlasHashProfile.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Services\IDebugCameraService.cs" />
     <Compile Include="Assets\Scripts\Manager.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Internal\OptionDefinition.cs" />
@@ -119,6 +124,7 @@
     <Compile Include="Assets\Scripts\ThirdParty\SRF\Scripts\Helpers\SRMath.Tweening.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\UI\Controls\Data\EnumControl.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Services\Implementation\PinnedUIServiceImpl.cs" />
+    <Compile Include="Assets\Framework\Asset\AssetConfigController.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Internal\Paths.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\UI\Tabs\ProfilerTabController.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Internal\Api.cs" />
@@ -148,6 +154,8 @@
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Services\Implementation\DockConsoleServiceImpl.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRF\Scripts\Helpers\MethodReference.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\AutoInitialize.cs" />
+    <Compile Include="Assets\Framework\Asset\AssetUtils\AssetUtils.cs" />
+    <Compile Include="Assets\Framework\Asset\AssetBundle\AssetBundleInfo.cs" />
     <Compile Include="Assets\Scripts\Common\Localization\LocalizationManager.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Settings.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\UI\Other\CategoryGroup.cs" />
@@ -180,6 +188,8 @@
     <Compile Include="Assets\Scripts\ThirdParty\SRF\Scripts\UI\Unselectable.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\UI\Other\VersionTextBehaviour.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRF\Scripts\Helpers\AssetUtil.cs" />
+    <Compile Include="Assets\Framework\Asset\AssetUtils\FilePathTools.cs" />
+    <Compile Include="Assets\Framework\Asset\AssetVersion\VersionInfo.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Services\Implementation\BugReportApiService.cs" />
     <Compile Include="Assets\Scripts\Common\Localization\LanguageModel.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\SRDebug.cs" />
@@ -206,6 +216,7 @@
     <Compile Include="Assets\Scripts\ThirdParty\SRF\Scripts\Helpers\SRMath.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Services\IDebugService.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRF\Scripts\Extensions\StringExtensions.cs" />
+    <Compile Include="Assets\Framework\Asset\SpriteHashPeofile.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\UI\Other\DockConsoleController.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Services\ISystemInformationService.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRF\Scripts\Service\SRDependencyServiceBase.cs" />

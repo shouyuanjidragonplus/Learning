@@ -6,7 +6,7 @@ SpriteAtlas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CoomonAtlas
+  m_Name: ShopAtlas
   m_EditorData:
     serializedVersion: 2
     textureSettings:
@@ -52,27 +52,22 @@ SpriteAtlas:
       padding: 4
       blockOffset: 1
       allowAlphaSplitting: 0
-      enableRotation: 0
-      enableTightPacking: 0
+      enableRotation: 1
+      enableTightPacking: 1
       enableAlphaDilation: 0
     secondaryTextureSettings: {}
-    variantMultiplier: 1
-    packables:
-    - {fileID: 102900000, guid: 74534b2507e1139479628dfcfb9a71a5, type: 3}
-    - {fileID: 102900000, guid: 4d73ae8a791d6e643a6b2afd06b634a3, type: 3}
+    variantMultiplier: 0.5
+    packables: []
     bindAsDefault: 0
     isAtlasV2: 0
     cachedData: {fileID: 0}
     packedSpriteRenderDataKeys:
-    - f21218406547a894c81e8d56953781e7: 21300000
-    - c6fccbc2c7dd2f74a80baacc5512fe20: 21300000
-  m_MasterAtlas: {fileID: 0}
+    - 647c0d1cd47565145b7a5f19092702b5: 21300000
+  m_MasterAtlas: {fileID: 4343727234628468602, guid: 9d96fcd39f8390049aca173125f55fcf, type: 2}
   m_PackedSprites:
-  - {fileID: 21300000, guid: f21218406547a894c81e8d56953781e7, type: 3}
-  - {fileID: 21300000, guid: c6fccbc2c7dd2f74a80baacc5512fe20, type: 3}
+  - {fileID: 21300000, guid: 647c0d1cd47565145b7a5f19092702b5, type: 3}
   m_PackedSpriteNamesToIndex:
-  - Head_1
-  - UICommon_Buttn_Blue_Bg
+  - UIShop_Button_Help
   m_RenderDataMap: {}
-  m_Tag: CoomonAtlas
-  m_IsVariant: 0
+  m_Tag: ShopAtlas
+  m_IsVariant: 1

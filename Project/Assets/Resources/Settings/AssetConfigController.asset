@@ -23,12 +23,45 @@ MonoBehaviour:
   - GroupName: UI
     Version: v1_0_0
     GroupIndex: 0
-    Paths: []
+    Paths:
+    - Path: Prefabs/Shop
+      InInitialPacket: 1
+      FromOutside: 0
+      NameOutside: 
+      GroupOutside: 
+      PathOutside: 
     UpdateWholeAB: 1
-  - GroupName: BuildingAtlas
+  - GroupName: LocalSpriteAtlas
     Version: v1_0_0
-    GroupIndex: 0
-    Paths: []
+    GroupIndex: 1
+    Paths:
+    - Path: SpriteAtlas/CoomonAtlas\Hd
+      InInitialPacket: 1
+      FromOutside: 0
+      NameOutside: 
+      GroupOutside: 
+      PathOutside: 
+    - Path: SpriteAtlas/CoomonAtlas\Sd
+      InInitialPacket: 1
+      FromOutside: 0
+      NameOutside: 
+      GroupOutside: 
+      PathOutside: 
+    - Path: SpriteAtlas/ShopAtlas\Hd
+      InInitialPacket: 1
+      FromOutside: 0
+      NameOutside: 
+      GroupOutside: 
+      PathOutside: 
+    - Path: SpriteAtlas/ShopAtlas\Sd
+      InInitialPacket: 1
+      FromOutside: 0
+      NameOutside: 
+      GroupOutside: 
+      PathOutside: 
     UpdateWholeAB: 0
-  ActivityResPaths: []
-  EnhancedEncryptionSecret: 
+  ActivityResPaths:
+  - Prefabs/Activity/Test
+  - SpriteAtlas/ActivityAtlas/TestAtlas\Hd
+  - SpriteAtlas/ActivityAtlas/TestAtlas\Sd
+  EnhancedEncryptionSecret: 55ccde5a7cb81567

@@ -23,9 +23,9 @@ SpriteAtlas:
     platformSettings:
     - serializedVersion: 3
       m_BuildTarget: Android
-      m_MaxTextureSize: 2048
+      m_MaxTextureSize: 4096
       m_ResizeAlgorithm: 0
-      m_TextureFormat: 50
+      m_TextureFormat: 48
       m_TextureCompression: 1
       m_CompressionQuality: 50
       m_CrunchedCompression: 0
@@ -36,9 +36,9 @@ SpriteAtlas:
       m_ForceMaximumCompressionQuality_BC6H_BC7: 0
     - serializedVersion: 3
       m_BuildTarget: iPhone
-      m_MaxTextureSize: 2048
+      m_MaxTextureSize: 4096
       m_ResizeAlgorithm: 0
-      m_TextureFormat: 50
+      m_TextureFormat: 48
       m_TextureCompression: 1
       m_CompressionQuality: 50
       m_CrunchedCompression: 0
@@ -61,10 +61,16 @@ SpriteAtlas:
     bindAsDefault: 0
     isAtlasV2: 0
     cachedData: {fileID: 0}
-    packedSpriteRenderDataKeys: []
+    packedSpriteRenderDataKeys:
+    - f21218406547a894c81e8d56953781e7: 21300000
+    - c6fccbc2c7dd2f74a80baacc5512fe20: 21300000
   m_MasterAtlas: {fileID: 4343727234628468602, guid: 011c5d1f79a0f43f4bd6e4eda6756a78, type: 2}
-  m_PackedSprites: []
-  m_PackedSpriteNamesToIndex: []
+  m_PackedSprites:
+  - {fileID: 21300000, guid: f21218406547a894c81e8d56953781e7, type: 3}
+  - {fileID: 21300000, guid: c6fccbc2c7dd2f74a80baacc5512fe20, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Head_1
+  - UICommon_Buttn_Blue_Bg
   m_RenderDataMap: {}
   m_Tag: CoomonAtlas
   m_IsVariant: 1

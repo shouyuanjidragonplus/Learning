@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf71d75d607df4221a57b9e981e7d1be, type: 3}
+  m_Name: AssetPatchVersionConfig
+  m_EditorClassIdentifier: 
+  AndroidAssetsPatchVersion:
+  - name: Prefabs/Shop
+    version: 3
+  - name: SpriteAtlas/CoomonAtlas\Hd
+    version: 3
+  - name: SpriteAtlas/CoomonAtlas\Sd
+    version: 3
+  - name: SpriteAtlas/ShopAtlas\Hd
+    version: 3
+  - name: SpriteAtlas/ShopAtlas\Sd
+    version: 3
+  - name: Prefabs/Activity/Test
+    version: 2
+  - name: SpriteAtlas/ActivityAtlas/TestAtlas\Hd
+    version: 2
+  - name: SpriteAtlas/ActivityAtlas/TestAtlas\Sd
+    version: 2
+  IOSAssetsPatchVersion:
+  - name: Prefabs/Shop
+    version: 2
+  - name: SpriteAtlas/CoomonAtlas\Hd
+    version: 2
+  - name: SpriteAtlas/CoomonAtlas\Sd
+    version: 2
+  - name: SpriteAtlas/ShopAtlas\Hd
+    version: 2
+  - name: SpriteAtlas/ShopAtlas\Sd
+    version: 2
+  - name: Prefabs/Activity/Test
+    version: 2
+  - name: SpriteAtlas/ActivityAtlas/TestAtlas\Hd
+    version: 2
+  - name: SpriteAtlas/ActivityAtlas/TestAtlas\Sd
+    version: 2
