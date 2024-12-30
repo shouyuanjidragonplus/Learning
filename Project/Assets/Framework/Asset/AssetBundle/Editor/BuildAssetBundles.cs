@@ -1428,6 +1428,7 @@ namespace Framework.Asset
 
             SpriteAtlasUtility.PackAllAtlases(EditorUserBuildSettings.activeBuildTarget, false);
 
+            Debug.Log($"assetbundlePatchPath路径={FilePathTools.assetbundlePatchPath}");
             CheckPatch(FilePathTools.assetbundlePatchPath);
 
             string backPath = FilePathTools.assetbundlePatchPath + "_Back";

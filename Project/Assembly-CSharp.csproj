@@ -109,7 +109,6 @@
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Profiler\SRPProfilerService.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Services\Implementation\DebugCameraServiceImpl.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Services\IOptionsService.cs" />
-    <Compile Include="Assets\Framework\Asset\SpriteAtlasHashProfile.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Services\IDebugCameraService.cs" />
     <Compile Include="Assets\Scripts\Manager.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Internal\OptionDefinition.cs" />
@@ -216,7 +215,6 @@
     <Compile Include="Assets\Scripts\ThirdParty\SRF\Scripts\Helpers\SRMath.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Services\IDebugService.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRF\Scripts\Extensions\StringExtensions.cs" />
-    <Compile Include="Assets\Framework\Asset\SpriteHashPeofile.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\UI\Other\DockConsoleController.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRDebugger\Scripts\Services\ISystemInformationService.cs" />
     <Compile Include="Assets\Scripts\ThirdParty\SRF\Scripts\Service\SRDependencyServiceBase.cs" />

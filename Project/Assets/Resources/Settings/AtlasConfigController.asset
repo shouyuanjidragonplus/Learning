@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: AtlasConfigController
   m_EditorClassIdentifier: 
   AtlasPathNodeList:
+  - AtlasName: CoomonAtlas
+    HdPath: SpriteAtlas/CoomonAtlas\Hd\CoomonAtlas
+    SdPath: SpriteAtlas/CoomonAtlas\Sd\CoomonAtlas
   - AtlasName: TestAtlas
     HdPath: SpriteAtlas/ActivityAtlas/TestAtlas\Hd\TestAtlas
     SdPath: SpriteAtlas/ActivityAtlas/TestAtlas\Sd\TestAtlas
+  - AtlasName: ShopAtlas
+    HdPath: SpriteAtlas/ShopAtlas\Hd\ShopAtlas
+    SdPath: SpriteAtlas/ShopAtlas\Sd\ShopAtlas

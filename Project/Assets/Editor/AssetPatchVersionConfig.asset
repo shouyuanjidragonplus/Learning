@@ -14,20 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AndroidAssetsPatchVersion:
   - name: Prefabs/Shop
-    version: 3
+    version: 2
   - name: SpriteAtlas/CoomonAtlas\Hd
-    version: 3
+    version: 2
   - name: SpriteAtlas/CoomonAtlas\Sd
-    version: 3
-  - name: SpriteAtlas/ShopAtlas\Hd
-    version: 3
-  - name: SpriteAtlas/ShopAtlas\Sd
-    version: 3
+    version: 2
   - name: Prefabs/Activity/Test
     version: 2
-  - name: SpriteAtlas/ActivityAtlas/TestAtlas\Hd
+  - name: SpriteAtlas/ActivityAtlas/TestAtlas/Hd
     version: 2
-  - name: SpriteAtlas/ActivityAtlas/TestAtlas\Sd
+  - name: SpriteAtlas/ActivityAtlas/TestAtlas/Sd
     version: 2
   IOSAssetsPatchVersion:
   - name: Prefabs/Shop
@@ -36,13 +32,9 @@ MonoBehaviour:
     version: 2
   - name: SpriteAtlas/CoomonAtlas\Sd
     version: 2
-  - name: SpriteAtlas/ShopAtlas\Hd
-    version: 2
-  - name: SpriteAtlas/ShopAtlas\Sd
-    version: 2
   - name: Prefabs/Activity/Test
     version: 2
-  - name: SpriteAtlas/ActivityAtlas/TestAtlas\Hd
+  - name: SpriteAtlas/ActivityAtlas/TestAtlas/Hd
     version: 2
-  - name: SpriteAtlas/ActivityAtlas/TestAtlas\Sd
+  - name: SpriteAtlas/ActivityAtlas/TestAtlas/Sd
     version: 2

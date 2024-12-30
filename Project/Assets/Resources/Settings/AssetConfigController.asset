@@ -12,19 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75be0defc4d035a40850b0e753ac03b5, type: 3}
   m_Name: AssetConfigController
   m_EditorClassIdentifier: 
-  RootVersion: v1_0_0
-  IOSRootVersion: v1_0_0
+  RootVersion: v1_0_1
+  IOSRootVersion: v1_0_1
   VersionCode: 1
   IOSVersionCode: 1
   UseAssetBundle: 0
   CopyBundleToDownloadPath: 0
-  ResPubLibraryUseAssetBundle: 1
+  ResPubLibraryUseAssetBundle: 0
   Groups:
   - GroupName: UI
     Version: v1_0_0
     GroupIndex: 0
     Paths:
     - Path: Prefabs/Shop
+      InInitialPacket: 1
+      FromOutside: 0
+      NameOutside: 
+      GroupOutside: 
+      PathOutside: 
+    - Path: Prefabs/Common
       InInitialPacket: 1
       FromOutside: 0
       NameOutside: 
@@ -47,21 +53,9 @@ MonoBehaviour:
       NameOutside: 
       GroupOutside: 
       PathOutside: 
-    - Path: SpriteAtlas/ShopAtlas\Hd
-      InInitialPacket: 1
-      FromOutside: 0
-      NameOutside: 
-      GroupOutside: 
-      PathOutside: 
-    - Path: SpriteAtlas/ShopAtlas\Sd
-      InInitialPacket: 1
-      FromOutside: 0
-      NameOutside: 
-      GroupOutside: 
-      PathOutside: 
     UpdateWholeAB: 0
   ActivityResPaths:
   - Prefabs/Activity/Test
-  - SpriteAtlas/ActivityAtlas/TestAtlas\Hd
-  - SpriteAtlas/ActivityAtlas/TestAtlas\Sd
+  - SpriteAtlas/ActivityAtlas/TestAtlas/Hd
+  - SpriteAtlas/ActivityAtlas/TestAtlas/Sd
   EnhancedEncryptionSecret: 55ccde5a7cb81567

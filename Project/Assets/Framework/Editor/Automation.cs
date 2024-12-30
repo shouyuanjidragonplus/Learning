@@ -17,9 +17,10 @@ namespace Framework
             T ac = ScriptableObject.CreateInstance<T>();
             AssetDatabase.CreateAsset(ac, "Assets/Resources/" + path + ".asset");
         }
+
         public static readonly string AtlasConfigName = "AtlasConfigController";
 
-        [MenuItem("Assets/资源配置/生成图集配置AtlasConfig")]
+        [MenuItem("Assets/资源配置/生成图集配置AtlasConfig", false, 0)]
         public static void CreateAtlasConfig()
         {
             AtlasConfigController asset = ScriptableObject.CreateInstance<AtlasConfigController>();
@@ -32,17 +33,20 @@ namespace Framework
 
             Selection.activeObject = asset;
         }
-        [MenuItem("Assets/资源配置/生成AssetConfig")]
+
+        [MenuItem("Assets/资源配置/生成AssetConfig", false, 1)]
         private static void CreateController()
         {
             CreateAsset<AssetConfigController>(AssetConfigController.AssetConfigPath);
         }
+
         [MenuItem("Assets/资源配置/生成Configuration", false, 2)]
         public static void CreateConfigrationAsset()
         {
             CreateAsset<ConfigurationController>(ConfigurationController.ConfigurationControllerPath);
         }
-        [MenuItem("Assets/资源配置/AtlasConfig", false, 0)]
+
+        [MenuItem("Assets/资源配置/AtlasConfig", false, 3)]
         static public void GameCofig_Atlas()
         {
             string[] filePaths = GetFilePaths();
@@ -72,7 +76,7 @@ namespace Framework
             UnityEditor.EditorUtility.DisplayDialog("AtlasConfig 【Success】", filePaths[0] + "\n" + filePaths[1] + "\n" + filePaths[2], "确定");
         }
 
-        [MenuItem("Assets/资源配置/AssetConfig-Activity", false, 1)]
+        [MenuItem("Assets/资源配置/AssetConfig-Activity", false, 4)]
         static public void GameCofig_Asset_Activity()
         {
             string[] filePaths = GetFilePaths();
@@ -104,8 +108,9 @@ namespace Framework
             AssetDatabase.Refresh();
             UnityEditor.EditorUtility.DisplayDialog("Activity 【Success】", filePaths[1] + "\n" + filePaths[2], "确定");
         }
-        [MenuItem ("Assets/资源配置/AssetConfig-Activity-Prefab", false, 2)]
-        static public void GameCofig_Asset_Prefab_Activity() 
+
+        [MenuItem("Assets/资源配置/AssetConfig-Activity-Prefab", false, 5)]
+        static public void GameCofig_Asset_Prefab_Activity()
         {
             if (Selection.assetGUIDs == null || Selection.assetGUIDs.Length != 1)
             {
@@ -113,32 +118,33 @@ namespace Framework
                 return;
             }
 
-            string selectionPath = AssetDatabase.GUIDToAssetPath (Selection.assetGUIDs[0]);
+            string selectionPath = AssetDatabase.GUIDToAssetPath(Selection.assetGUIDs[0]);
             selectionPath = selectionPath.Replace("Assets/Export/", "");
-        
+
             List<string> tempList = new List<string>(AssetConfigController.Instance.ActivityResPaths);
             tempList.Add(selectionPath);
-        
+
             AssetConfigController.Instance.ActivityResPaths = tempList.ToArray();
-        
+
             EditorUtility.SetDirty(AssetConfigController.Instance);
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
-            UnityEditor.EditorUtility.DisplayDialog("Activity 【Success】",  selectionPath, "确定");
+            UnityEditor.EditorUtility.DisplayDialog("Activity 【Success】", selectionPath, "确定");
         }
-        
+
         private const string localSpriteAtlas = "LocalSpriteAtlas";
-        [MenuItem ("Assets/资源配置/AssetConfig-LocalSpriteAtlas", false, 3)]
-        static public void GameCofig_Asset_LocalSpriteAtlas() 
-        {     
+
+        [MenuItem("Assets/资源配置/AssetConfig-LocalSpriteAtlas", false, 6)]
+        static public void GameCofig_Asset_LocalSpriteAtlas()
+        {
             string[] filePaths = GetFilePaths();
-            if(filePaths == null || filePaths.Length == 0)
+            if (filePaths == null || filePaths.Length == 0)
                 return;
 
             BundleGroup bundleGroup = null;
             foreach (BundleGroup group in AssetConfigController.Instance.Groups)
             {
-                if(!group.GroupName.Equals(localSpriteAtlas))
+                if (!group.GroupName.Equals(localSpriteAtlas))
                     continue;
 
                 bundleGroup = group;
@@ -150,17 +156,17 @@ namespace Framework
                 UnityEditor.EditorUtility.DisplayDialog("LocalSpriteAtlas 【Error】", "数组索引不存在 [ " + localSpriteAtlas + " ] 请手动检查 \n", "确定");
                 return;
             }
-        
-        
+
+
             foreach (BundleState state in bundleGroup.Paths)
             {
                 if (state.Path.Equals(filePaths[1]))
-                {  
+                {
                     UnityEditor.EditorUtility.DisplayDialog("LocalSpriteAtlas 【Error】", "图集文件已经存在 [ " + filePaths[1] + " ] 请手动检查 \n", "确定");
                     return;
                 }
                 else if (state.Path.Equals(filePaths[2]))
-                {  
+                {
                     UnityEditor.EditorUtility.DisplayDialog("LocalSpriteAtlas 【Error】", "图集文件已经存在 [ " + filePaths[2] + " ] 请手动检查 \n", "确定");
                     return;
                 }
@@ -169,16 +175,17 @@ namespace Framework
             for (int i = 1; i < filePaths.Length; i++)
             {
                 BundleState state = new BundleState();
-                state.Path = SubString(filePaths[i], i==1 ? "Hd" : "Sd");
-            
+                state.Path = SubString(filePaths[i], i == 1 ? "Hd" : "Sd");
+
                 bundleGroup.Paths.Add(state);
             }
-        
+
             EditorUtility.SetDirty(AssetConfigController.Instance);
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
-            UnityEditor.EditorUtility.DisplayDialog("LocalSpriteAtlas 【Success】",  filePaths[1] + "\n" + filePaths[2] , "确定");
+            UnityEditor.EditorUtility.DisplayDialog("LocalSpriteAtlas 【Success】", filePaths[1] + "\n" + filePaths[2], "确定");
         }
+
         private static string[] GetFilePaths()
         {
             if (Selection.assetGUIDs == null || Selection.assetGUIDs.Length != 1)
@@ -259,6 +266,7 @@ namespace Framework
 
             return filePaths;
         }
+
         private static string SubString(string orgStr, string subStr)
         {
             int index = orgStr.IndexOf(subStr);
