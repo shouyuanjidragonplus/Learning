@@ -41,19 +41,19 @@ MonoBehaviour:
     Version: v1_0_0
     GroupIndex: 6
     Paths:
-    - Path: SpriteAtlas/CoomonAtlas\Hd
+    - Path: SpriteAtlas/CoomonAtlas/Hd
       InInitialPacket: 1
       FromOutside: 0
       NameOutside: 
       GroupOutside: 
       PathOutside: 
-    - Path: SpriteAtlas/CoomonAtlas\Sd
+    - Path: SpriteAtlas/CoomonAtlas/Sd
       InInitialPacket: 1
       FromOutside: 0
       NameOutside: 
       GroupOutside: 
       PathOutside: 
-    UpdateWholeAB: 0
+    UpdateWholeAB: 1
   ActivityResPaths:
   - Prefabs/Activity/Test
   - SpriteAtlas/ActivityAtlas/TestAtlas/Hd

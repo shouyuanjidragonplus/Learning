@@ -15,9 +15,9 @@ MonoBehaviour:
   AndroidAssetsPatchVersion:
   - name: Prefabs/Shop
     version: 2
-  - name: SpriteAtlas/CoomonAtlas\Hd
+  - name: SpriteAtlas/CoomonAtlas/Hd
     version: 2
-  - name: SpriteAtlas/CoomonAtlas\Sd
+  - name: SpriteAtlas/CoomonAtlas/Sd
     version: 2
   - name: Prefabs/Activity/Test
     version: 2
@@ -28,9 +28,9 @@ MonoBehaviour:
   IOSAssetsPatchVersion:
   - name: Prefabs/Shop
     version: 2
-  - name: SpriteAtlas/CoomonAtlas\Hd
+  - name: SpriteAtlas/CoomonAtlas/Hd
     version: 2
-  - name: SpriteAtlas/CoomonAtlas\Sd
+  - name: SpriteAtlas/CoomonAtlas/Sd
     version: 2
   - name: Prefabs/Activity/Test
     version: 2

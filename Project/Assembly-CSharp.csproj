@@ -229,6 +229,7 @@
     <None Include="Assets\Resources\Export\Configs\LocaleConfig\locale_loading_es.json" />
     <None Include="Assets\Resources\Export\Configs\LocaleConfig\locale_loading_ru.json" />
     <None Include="Assets\Resources\Export\Configs\LocaleConfig\locale_loading_zh.json" />
+    <None Include="Assets\Resources\versionfile\Version.txt" />
     <None Include="Assets\Resources\Export\Configs\LocaleConfig\locale_loading_id.json" />
     <None Include="Assets\Resources\Export\Configs\LocaleConfig\locale_loading_nl.json" />
     <None Include="Assets\Resources\Export\Configs\LocaleConfig\locale_loading_pt.json" />

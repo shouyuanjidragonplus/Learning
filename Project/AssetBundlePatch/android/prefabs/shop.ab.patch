@@ -1,0 +1,133 @@
+{
+  "assets": {
+    "Assets/Export/Prefabs/Shop/ShopView.prefab": {
+      "md5_self": "c69ae01e8632137144202665cedf5ad2",
+      "md5_meta": "cd0aa2ce2ce7bed5b3251fca0d55adc5"
+    },
+    "Assets/Export/Textures/UICommon/UICommon_Buttn_Blue_Bg.png": {
+      "md5_self": "be668139f6ae5168b5139260bcc582c8",
+      "profile": {
+        "sprite_mode": 1,
+        "pixels_pre_unit": "100.00",
+        "sprite_mesh_type": 1,
+        "sprite_extrude": 1,
+        "sprite_alignment": 0,
+        "sprite_generate_physics_shape": 1,
+        "sprite_pivot": [
+          "0.50",
+          "0.50"
+        ],
+        "sprite_border": [
+          "62.00",
+          "0.00",
+          "62.00",
+          "0.00"
+        ],
+        "srgb": true,
+        "alpha_source": 1,
+        "alpha_is_transparency": true,
+        "read_write_enable": false,
+        "generate_mip_maps": false,
+        "wrap_mode": 1,
+        "filter_mode": 1,
+        "aniso_level": 1,
+        "default_max_texture_size": 2048,
+        "default_format": -1,
+        "default_texture_compression": 1,
+        "use_crunch_compression": false,
+        "crunch_compress_quality": 50,
+        "standalone_override": false,
+        "standalone_max_texture_size": 2048,
+        "standalone_format": -1,
+        "standalone_compress_quality": 50,
+        "ios_override": false,
+        "ios_max_texture_size": 2048,
+        "ios_format": -1,
+        "ios_compress_quality": 50,
+        "android_override": false,
+        "android_max_texture_size": 2048,
+        "android_format": -1,
+        "android_compress_quality": 50
+      }
+    },
+    "Assets/Export/Textures/UIView/UIShop/UIShop_Button_Help.png": {
+      "md5_self": "afac7b9bd91a749a11f0e3c77dbb9197",
+      "profile": {
+        "sprite_mode": 1,
+        "pixels_pre_unit": "100.00",
+        "sprite_mesh_type": 1,
+        "sprite_extrude": 1,
+        "sprite_alignment": 0,
+        "sprite_generate_physics_shape": 1,
+        "sprite_pivot": [
+          "0.50",
+          "0.50"
+        ],
+        "sprite_border": [
+          "0.00",
+          "0.00",
+          "0.00",
+          "0.00"
+        ],
+        "srgb": true,
+        "alpha_source": 1,
+        "alpha_is_transparency": true,
+        "read_write_enable": false,
+        "generate_mip_maps": false,
+        "wrap_mode": 1,
+        "filter_mode": 1,
+        "aniso_level": 1,
+        "default_max_texture_size": 2048,
+        "default_format": -1,
+        "default_texture_compression": 1,
+        "use_crunch_compression": false,
+        "crunch_compress_quality": 50,
+        "standalone_override": false,
+        "standalone_max_texture_size": 2048,
+        "standalone_format": -1,
+        "standalone_compress_quality": 50,
+        "ios_override": false,
+        "ios_max_texture_size": 2048,
+        "ios_format": -1,
+        "ios_compress_quality": 50,
+        "android_override": false,
+        "android_max_texture_size": 2048,
+        "android_format": -1,
+        "android_compress_quality": 50
+      }
+    },
+    "Assets/Plugins/CommonTools/TextMesh Pro/Fonts/LiberationSans.ttf": {
+      "md5_self": "bbbd0bdbfba093dec2ee4ca8b62e61f9",
+      "md5_meta": "248870e455a5e55ac6e1839203ceeea8"
+    },
+    "Assets/Plugins/CommonTools/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset": {
+      "md5_self": "bcc26d028d4645f0312dbaab45b794bf",
+      "md5_meta": "b88c7aadb26331a76f8fe2175b621005"
+    },
+    "Assets/Plugins/CommonTools/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset": {
+      "md5_self": "85a21ffef3750869e364ea7059c47244",
+      "md5_meta": "3152d2ce4e4028974dec62b3f987e6d9"
+    },
+    "Assets/Plugins/CommonTools/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile.shader": {
+      "md5_self": "c1d2d4f27275b212be8715422d64536f",
+      "md5_meta": "4820c4f2bc200bc227eb538e86fcf6f2"
+    },
+    "Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Font Asset Icon.psd": {
+      "md5_self": "e22c9903ffaea7b39e0b55018d979461",
+      "md5_meta": "dd5b0a43ec51e4956c9be71c594c2790"
+    },
+    "Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Text Component Icon.psd": {
+      "md5_self": "eaa0d217df9b73ac8630184f442ac620",
+      "md5_meta": "ad695065418dbe7b6f3834d1a1aedce5"
+    },
+    "Packages/com.unity.textmeshpro/Scripts/Runtime/TextMeshProUGUI.cs": {},
+    "Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_FontAsset.cs": {},
+    "Packages/com.unity.ugui/Runtime/UI/Core/Button.cs": {},
+    "Packages/com.unity.ugui/Runtime/UI/Core/Image.cs": {},
+    "Assets/Export/SpriteAtlas/CoomonAtlas/Hd/CoomonAtlas.spriteatlas": {},
+    "Assets/Export/SpriteAtlas/CoomonAtlas/Sd/CoomonAtlas.spriteatlas": {}
+  },
+  "version": 2,
+  "hash": "7c9b707ee9e17b8db8874a3056f40ba8",
+  "md5": "1f379f11bf11b704fe5b418c3d2bd2ba"
+}

@@ -1,0 +1,40 @@
+{
+  "assets": {
+    "Assets/Export/Prefabs/Common/Animations/CommonAniPopup.controller": {
+      "md5_self": "8e08f3377ba6e506ec3137a4dd0d2139",
+      "md5_meta": "3a8a8cd5ae3441ecb8bce1cfab9f1161"
+    },
+    "Assets/Export/Prefabs/Common/Animations/CommonButtonAni.controller": {
+      "md5_self": "3c0828d58c7854bb0f12ec4ffaf1c869",
+      "md5_meta": "0c518070a8fe13665bd0f5dac4956317"
+    },
+    "Assets/Export/Prefabs/Common/BgPopupBoand.prefab": {
+      "md5_self": "85cae1bdfa54413e940c85aa2522e8b6",
+      "md5_meta": "e26c2d85613eca11bb7983077ca1c3ff"
+    },
+    "Assets/Plugins/CommonTools/TextMesh Pro/Resources/Shaders/TMP_SDF.shader": {
+      "md5_self": "03dbcfbd13a766317c371bdec23132a9",
+      "md5_meta": "da934b1234a1eee3a3475f555e57b667"
+    },
+    "Assets/Resources/Export/Fonts/En/LocaleFont_En SDF.asset": {
+      "md5_self": "f18317f2009893de0e8f3d07584a3bb5",
+      "md5_meta": "a61ad71aa7f54d20a34acfc544c4dddc"
+    },
+    "Assets/Scripts/Common/Localization/LocalizeTextMeshProUGUI.cs": {},
+    "Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Font Asset Icon.psd": {
+      "md5_self": "e22c9903ffaea7b39e0b55018d979461",
+      "md5_meta": "dd5b0a43ec51e4956c9be71c594c2790"
+    },
+    "Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Text Component Icon.psd": {
+      "md5_self": "eaa0d217df9b73ac8630184f442ac620",
+      "md5_meta": "ad695065418dbe7b6f3834d1a1aedce5"
+    },
+    "Packages/com.unity.textmeshpro/Scripts/Runtime/TextMeshProUGUI.cs": {},
+    "Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_FontAsset.cs": {},
+    "Packages/com.unity.ugui/Runtime/UI/Core/Button.cs": {},
+    "Packages/com.unity.ugui/Runtime/UI/Core/Image.cs": {}
+  },
+  "version": 1,
+  "hash": "06367e211e1aae04811c2d22c1af2c2b",
+  "md5": "949f3126bf5eb9234712e1b1c131ddcc"
+}

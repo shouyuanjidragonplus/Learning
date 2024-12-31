@@ -1,0 +1,133 @@
+{
+  "assets": {
+    "Assets/Export/SpriteAtlas/CoomonAtlas/Sd/CoomonAtlas.spriteatlas": {
+      "profile": {
+        "type": 1,
+        "master_atlas_guid": "011c5d1f79a0f43f4bd6e4eda6756a78",
+        "include_in_build": false,
+        "variant_scale": "0.50",
+        "allow_rotation": true,
+        "tight_packing": true,
+        "block_offset": 1,
+        "padding": 4,
+        "read_write_enabled": false,
+        "generate_mip_maps": false,
+        "srgb": true,
+        "filter_model": 1,
+        "default_max_texture_size": 2048,
+        "default_format": -1,
+        "default_texture_compression": 1,
+        "use_crunch_compression": false,
+        "crunch_compress_quality": 50,
+        "standalone_override": false,
+        "standalone_max_texture_size": 2048,
+        "standalone_format": -1,
+        "standalone_compress_quality": 50,
+        "ios_override": true,
+        "ios_max_texture_size": 4096,
+        "ios_format": 50,
+        "ios_compress_quality": 50,
+        "android_override": true,
+        "android_max_texture_size": 4096,
+        "android_format": 50,
+        "android_compress_quality": 50,
+        "packing_guid": []
+      }
+    },
+    "Assets/Export/Textures/UICommon/UICommon_Buttn_Blue_Bg.png": {
+      "md5_self": "be668139f6ae5168b5139260bcc582c8",
+      "profile": {
+        "sprite_mode": 1,
+        "pixels_pre_unit": "100.00",
+        "sprite_mesh_type": 1,
+        "sprite_extrude": 1,
+        "sprite_alignment": 0,
+        "sprite_generate_physics_shape": 1,
+        "sprite_pivot": [
+          "0.50",
+          "0.50"
+        ],
+        "sprite_border": [
+          "62.00",
+          "0.00",
+          "62.00",
+          "0.00"
+        ],
+        "srgb": true,
+        "alpha_source": 1,
+        "alpha_is_transparency": true,
+        "read_write_enable": false,
+        "generate_mip_maps": false,
+        "wrap_mode": 1,
+        "filter_mode": 1,
+        "aniso_level": 1,
+        "default_max_texture_size": 2048,
+        "default_format": -1,
+        "default_texture_compression": 1,
+        "use_crunch_compression": false,
+        "crunch_compress_quality": 50,
+        "standalone_override": false,
+        "standalone_max_texture_size": 2048,
+        "standalone_format": -1,
+        "standalone_compress_quality": 50,
+        "ios_override": false,
+        "ios_max_texture_size": 2048,
+        "ios_format": -1,
+        "ios_compress_quality": 50,
+        "android_override": false,
+        "android_max_texture_size": 2048,
+        "android_format": -1,
+        "android_compress_quality": 50
+      }
+    },
+    "Assets/Export/Textures/UIIcons/Head_1.png": {
+      "md5_self": "9aee1bac040aeefd26e2b09d15785a12",
+      "profile": {
+        "sprite_mode": 1,
+        "pixels_pre_unit": "100.00",
+        "sprite_mesh_type": 1,
+        "sprite_extrude": 1,
+        "sprite_alignment": 0,
+        "sprite_generate_physics_shape": 1,
+        "sprite_pivot": [
+          "0.50",
+          "0.50"
+        ],
+        "sprite_border": [
+          "0.00",
+          "0.00",
+          "0.00",
+          "0.00"
+        ],
+        "srgb": true,
+        "alpha_source": 1,
+        "alpha_is_transparency": true,
+        "read_write_enable": false,
+        "generate_mip_maps": false,
+        "wrap_mode": 1,
+        "filter_mode": 1,
+        "aniso_level": 1,
+        "default_max_texture_size": 2048,
+        "default_format": -1,
+        "default_texture_compression": 1,
+        "use_crunch_compression": false,
+        "crunch_compress_quality": 50,
+        "standalone_override": false,
+        "standalone_max_texture_size": 2048,
+        "standalone_format": -1,
+        "standalone_compress_quality": 50,
+        "ios_override": false,
+        "ios_max_texture_size": 2048,
+        "ios_format": -1,
+        "ios_compress_quality": 50,
+        "android_override": false,
+        "android_max_texture_size": 2048,
+        "android_format": -1,
+        "android_compress_quality": 50
+      }
+    }
+  },
+  "version": 2,
+  "hash": "8e339273f44cdce7926e7353b6006a11",
+  "md5": "662713e07d394a3f2edb61400f68e258"
+}

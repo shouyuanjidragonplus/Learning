@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 138351685
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2202b4921eb811c43d1e50c1cc91281e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 033fafe2c9f6c610c3a734393882fd4c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 2202b4921eb811c43d1e50c1cc91281e
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Export/SpriteAtlas/CoomonAtlas/Sd/CoomonAtlas.spriteatlas
+Dependencies:
+- D:/git/Learning/Project/AssetBundlePatch/android/spriteatlas/coomonatlas/hd.ab

@@ -1,0 +1,11 @@
+ManifestFileVersion: 0
+CRC: 344003422
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: spriteatlas/coomonatlas/hd.ab
+      Dependencies: {}
+    Info_1:
+      Name: spriteatlas/coomonatlas/sd.ab
+      Dependencies:
+        Dependency_0: spriteatlas/coomonatlas/hd.ab
