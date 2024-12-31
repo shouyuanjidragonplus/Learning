@@ -17,12 +17,12 @@ MonoBehaviour:
   VersionCode: 1
   IOSVersionCode: 1
   UseAssetBundle: 0
-  CopyBundleToDownloadPath: 0
-  ResPubLibraryUseAssetBundle: 0
+  CopyBundleToDownloadPath: 1
+  ResPubLibraryUseAssetBundle: 1
   Groups:
   - GroupName: UI
     Version: v1_0_0
-    GroupIndex: 0
+    GroupIndex: 1
     Paths:
     - Path: Prefabs/Shop
       InInitialPacket: 1
@@ -39,7 +39,7 @@ MonoBehaviour:
     UpdateWholeAB: 1
   - GroupName: LocalSpriteAtlas
     Version: v1_0_0
-    GroupIndex: 1
+    GroupIndex: 6
     Paths:
     - Path: SpriteAtlas/CoomonAtlas\Hd
       InInitialPacket: 1
