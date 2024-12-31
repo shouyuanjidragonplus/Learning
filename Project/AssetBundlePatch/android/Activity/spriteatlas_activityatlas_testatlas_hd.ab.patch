@@ -1,0 +1,89 @@
+{
+  "assets": {
+    "Assets/Export/SpriteAtlas/ActivityAtlas/TestAtlas/Hd/TestAtlas.spriteatlas": {
+      "profile": {
+        "type": 0,
+        "master_atlas_guid": "",
+        "include_in_build": false,
+        "variant_scale": "1.00",
+        "allow_rotation": false,
+        "tight_packing": false,
+        "block_offset": 1,
+        "padding": 4,
+        "read_write_enabled": false,
+        "generate_mip_maps": false,
+        "srgb": true,
+        "filter_model": 1,
+        "default_max_texture_size": 2048,
+        "default_format": -1,
+        "default_texture_compression": 1,
+        "use_crunch_compression": false,
+        "crunch_compress_quality": 50,
+        "standalone_override": false,
+        "standalone_max_texture_size": 2048,
+        "standalone_format": -1,
+        "standalone_compress_quality": 50,
+        "ios_override": true,
+        "ios_max_texture_size": 4096,
+        "ios_format": 48,
+        "ios_compress_quality": 50,
+        "android_override": true,
+        "android_max_texture_size": 4096,
+        "android_format": 48,
+        "android_compress_quality": 50,
+        "packing_guid": [
+          "e80bfdfce29d0d248917ade606ca9f90"
+        ]
+      }
+    },
+    "Assets/Export/Textures/UIActivity/UITest/UITest_Box.png": {
+      "md5_self": "79db1ab69707ab4b8c2505b6be11a85f",
+      "profile": {
+        "sprite_mode": 1,
+        "pixels_pre_unit": "100.00",
+        "sprite_mesh_type": 1,
+        "sprite_extrude": 1,
+        "sprite_alignment": 0,
+        "sprite_generate_physics_shape": 1,
+        "sprite_pivot": [
+          "0.50",
+          "0.50"
+        ],
+        "sprite_border": [
+          "0.00",
+          "0.00",
+          "0.00",
+          "0.00"
+        ],
+        "srgb": true,
+        "alpha_source": 1,
+        "alpha_is_transparency": true,
+        "read_write_enable": false,
+        "generate_mip_maps": false,
+        "wrap_mode": 1,
+        "filter_mode": 1,
+        "aniso_level": 1,
+        "default_max_texture_size": 2048,
+        "default_format": -1,
+        "default_texture_compression": 1,
+        "use_crunch_compression": false,
+        "crunch_compress_quality": 50,
+        "standalone_override": false,
+        "standalone_max_texture_size": 2048,
+        "standalone_format": -1,
+        "standalone_compress_quality": 50,
+        "ios_override": false,
+        "ios_max_texture_size": 2048,
+        "ios_format": -1,
+        "ios_compress_quality": 50,
+        "android_override": false,
+        "android_max_texture_size": 2048,
+        "android_format": -1,
+        "android_compress_quality": 50
+      }
+    }
+  },
+  "version": 2,
+  "hash": "2686ec20bc208c3cf76dfda0d6ba49b4",
+  "md5": "ac58fa7088d1ebaa86b16ff383c3fbfc"
+}
