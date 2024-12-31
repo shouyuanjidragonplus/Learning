@@ -88,21 +88,21 @@ public class ConfigurationController : ScriptableObject
 //         }
 //     }
 //
-//     public string ResServerURL
-//     {
-//         get
-//         {
-//             if (version == VersionStatus.RELEASE)
-//             {
-//                 return Res_Server_URL_Release;
-//             }
-//             else
-//             {
-//                 return Res_Server_URL_Beta;
-//
-//             }
-//         }
-//     }
+     public string ResServerURL
+     {
+         get
+         {
+             if (version == VersionStatus.RELEASE)
+             {
+                 return Res_Server_URL_Release;
+             }
+             else
+             {
+                 return Res_Server_URL_Beta;
+
+             }
+         }
+     }
 //
 //     public bool BuildAppBundle
 //     {
@@ -156,13 +156,13 @@ public class ConfigurationController : ScriptableObject
 //     public bool Socket_IO_Enabled;
 //
 //
-//     [Space(10)]
-//     [Header("线上资源服务器地址")]
-//     public string Res_Server_URL_Release;
-//
-//     [Space(10)]
-//     [Header("测试资源服器地址")]
-//     public string Res_Server_URL_Beta;
+     [Space(10)]
+     [Header("线上资源服务器地址")]
+     public string Res_Server_URL_Release;
+
+     [Space(10)]
+     [Header("测试资源服器地址")]
+     public string Res_Server_URL_Beta;
 //
 //
 //     [Space(10)]

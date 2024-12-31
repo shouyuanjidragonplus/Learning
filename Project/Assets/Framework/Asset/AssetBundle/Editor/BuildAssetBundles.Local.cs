@@ -25,7 +25,7 @@ namespace Framework.Asset
 #endif
         private static BuildAssetBundleOptions recommandBundleOptions = BuildAssetBundleOptions.ChunkBasedCompression | BuildAssetBundleOptions.DeterministicAssetBundle
 #if !UNITY_STANDALONE && !DISABLE_AB_ENCRYPTION
-            //| BuildAssetBundleOptions.EnableProtection
+            | BuildAssetBundleOptions.EnableProtection
 #endif
             ;
 

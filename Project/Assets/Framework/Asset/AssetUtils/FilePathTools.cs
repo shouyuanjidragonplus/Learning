@@ -19,7 +19,7 @@ public static class FilePathTools
     public static readonly string streamingAssetsPath_Platform_ForWWWLoad = "file:///" + streamingAssetsPath_Platform;
 #endif
 #if UNITY_ANDROID
-        public static readonly string targetName = "android";
+    public static readonly string targetName = "android";
 #elif UNITY_IPHONE
         public static readonly string targetName = "iphone";
 #elif UNITY_STANDALONE_OSX
@@ -34,6 +34,16 @@ public static class FilePathTools
     public static readonly string assetbundleMonitorPath = Application.dataPath.Substring(0, Application.dataPath.LastIndexOf("/Assets")) + "/AssetBundleMonitor/Data";
     public static readonly string assetBundleOutPath_ForWWWLoad = "file:///" + Application.dataPath + "/AssetBundleOut/" + targetName;
 #endif
+
+    /*==================== persistent目录缓存,避免多次字符串拼接 ========================*/
+#if UNITY_EDITOR || !UNITY_STANDALONE
+    public static readonly string downLoadPath = Application.persistentDataPath + "/DownLoad/";
+#else
+        public static readonly string downLoadPath = Directory.GetCurrentDirectory() + "/DownLoad/";
+#endif
+    public static readonly string persistentDataPath_Platform = downLoadPath + targetName;
+    public static readonly string persistentDataPath_Platform_ForWWWLoad = "file:///" + persistentDataPath_Platform;
+
     // 获取文件夹下的所有文件，包括子文件夹 不包含.meta文件
     public static FileInfo[] GetFiles(string path)
     {
@@ -107,6 +117,20 @@ public static class FilePathTools
         return path.Replace(@"\", "/");
     }
 
+    // 将短路径拼接成编辑器下的全路径
+    public static string GetAssetEditorPath(string path)
+    {
+        return "Assets/Export/" + path;
+    }
+    /// <summary>
+    /// // 返回bundle包的绝对路径
+    /// </summary>
+    /// <param name="relativePath">相对路径</param>
+    /// <returns></returns>
+    public static string GetBundleLoadPath(string relativePath)
+    {
+        return persistentDataPath_Platform + "/" + relativePath;
+    }
     // 替换掉第一个遇到的指定字符串
     public static string ReplaceFirst(string str, string oldValue, string newValue)
     {
@@ -160,6 +184,7 @@ public static class FilePathTools
             }
         }
     }
+
     // 创建文件目录前的文件夹，保证创建文件的时候不会出现文件夹不存在的情况
     public static void CreateFolderByFilePath(string path)
     {
@@ -170,6 +195,7 @@ public static class FilePathTools
             dir.Create();
         }
     }
+
     // 创建目录
     public static void CreateDirectory(string filePath)
     {
@@ -180,6 +206,21 @@ public static class FilePathTools
             {
                 Directory.CreateDirectory(dirName);
             }
+        }
+    }
+    // AssetBundle的下载路径
+    public static string AssetBundleDownloadPath
+    {
+        get
+        {
+
+#if UNITY_IPHONE
+                return ConfigurationController.Instance.ResServerURL + "iphone";
+#elif UNITY_ANDROID
+            return ConfigurationController.Instance.ResServerURL + "android";
+#else
+                return ConfigurationController.Instance.ResServerURL + "mac";
+#endif
         }
     }
 }
