@@ -183,7 +183,6 @@
     <Compile Include="Assets\Framework\BestHTTP\BestHTTP\PlatformSupport\Threading\ThreadedRunner.cs" />
     <Compile Include="Assets\Framework\BestHTTP\BestHTTP\SecureProtocol\crypto\engines\ChaCha7539Engine.cs" />
     <Compile Include="Assets\Framework\BestHTTP\BestHTTP\SecureProtocol\crypto\ICipherBuilderWithKey.cs" />
-    <Compile Include="Assets\Framework\Asset\AssetBundleAsyncLoader\AssetBundleAsyncLoadProgress.cs" />
     <Compile Include="Assets\Framework\BestHTTP\BestHTTP\SecureProtocol\asn1\cmp\PollRepContent.cs" />
     <Compile Include="Assets\Framework\BestHTTP\BestHTTP\SecureProtocol\security\PublicKeyFactory.cs" />
     <Compile Include="Assets\Framework\BestHTTP\BestHTTP\SecureProtocol\crypto\generators\KDFCounterBytesGenerator.cs" />
