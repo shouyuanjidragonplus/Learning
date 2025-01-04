@@ -24,7 +24,7 @@ namespace Framework
         }
     }
 
-    public class EventSpawner : Manager<EventSpawner>
+    public class EventSpawner : MonoSingleton<EventSpawner>
     {
         private Queue<ISubject> eventQueue = new Queue<ISubject>();
         private readonly object eventLock = new object();

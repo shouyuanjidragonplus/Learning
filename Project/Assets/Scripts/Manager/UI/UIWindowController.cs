@@ -1,7 +1,9 @@
+using Framework.Base;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using Zero.Engine.Base;
 
 
 public abstract class UIWindowController : UIWindow
@@ -16,8 +18,7 @@ public abstract class UIWindowController : UIWindow
         var obj = FindObj(key, parObj);
         if (obj == null)
         {
-            DragonU3DSDK.DebugUtil.LogError("GetItem failed, window controller name : {0},  key = {1}",
-                GetType().ToString(), key);
+            Zlogger.Error("GetItem failed, window controller name : {0},  key = {1}", GetType().ToString(), key);
         }
 
         return obj;
@@ -48,8 +49,7 @@ public abstract class UIWindowController : UIWindow
             var com = go.GetComponent<T>();
             if (com == null)
             {
-                DragonU3DSDK.DebugUtil.LogError(
-                    "GetItem failed, window controller name : {0},  game object name = {1}, Component type:{2}",
+                Zlogger.Error("GetItem failed, window controller name : {0},  game object name = {1}, Component type:{2}",
                     GetType().ToString(), go.name, typeof(T).ToString());
             }
 

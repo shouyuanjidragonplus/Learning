@@ -14,7 +14,7 @@ using UnityEngine.Playables;
 
 namespace Framework.Asset
 {
-    public partial class ResourcesManager : Manager<ResourcesManager>, IEventHandler<DownloadFileEvent>
+    public partial class ResourcesManager : MonoSingleton<ResourcesManager>, IEventHandler<DownloadFileEvent>
     {
         // bundle包的缓存池
         public OnMemoryAssetBundleManager AssetBundleCache { private set; get; }

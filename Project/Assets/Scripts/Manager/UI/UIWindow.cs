@@ -247,7 +247,7 @@ public abstract class UIWindow : MonoBehaviour
         if (button == null)
         {
             button = obj.AddComponent<Button>();
-            obj.AddComponent<CKEmptyRaycast>();
+            obj.AddComponent<EmptyRaycast>();
         }
 
         button.onClick.RemoveAllListeners();

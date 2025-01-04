@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Driver : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public static bool isWhiteListDevice = false;
     void Start()
     {
         SRDebug.Init();

@@ -18,7 +18,7 @@ public class Language
     public bool IsEnabled { get; set; }
 }
 
-public class LanguageModel : Manager<LanguageModel>
+public class LanguageModel : MonoSingleton<LanguageModel>
 {
     StorageCommon storageCommon
     {

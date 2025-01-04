@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using Framework.Asset;
 using UnityEngine;
 using UnityEngine.UI;
+using Zero.Engine.Game;
 
-public partial class UIManager : Manager<UIManager>
+public partial class UIManager : MonoSingleton<UIManager>
 {
     public Dictionary<string, UIWindow> mMemoryWindows = new Dictionary<string, UIWindow>();
     public Stack<UIWindow> mStackWindows = new Stack<UIWindow>();
@@ -303,7 +305,7 @@ public partial class UIManager : Manager<UIManager>
                         if (e.Current.canvas == null)
                             continue;
 
-                        if (e.Current.WindowName == UINameConst.MergeMain || e.Current.WindowName == UINameConst.UICurrencyGroup || e.Current.WindowName == UINameConst.UIMainHome)
+                        if (CheckFixed(e.Current))
                         {
                             count++;
                         }
@@ -320,6 +322,12 @@ public partial class UIManager : Manager<UIManager>
         }
 
         return count;
+    }
+    //检查常驻界面
+    private bool CheckFixed(UIWindow window)
+    {
+        //return window.WindowName == UINameConst.MergeMain || window.WindowName == UINameConst.UICurrencyGroup || window.WindowName == UINameConst.UIMainHome;
+        return false;
     }
 
     public int extraSiblingIndex = 0;
@@ -421,7 +429,7 @@ public partial class UIManager : Manager<UIManager>
         yield return wait;
         while (true)
         {
-            var screenOrientation = DragonNativeBridge.GetScreenOrientation();
+            var screenOrientation = DeviceInfo.GetScreenOrientation();
             if (screenOrientation != _currentOrientation)
             {
                 _currentOrientation = screenOrientation;

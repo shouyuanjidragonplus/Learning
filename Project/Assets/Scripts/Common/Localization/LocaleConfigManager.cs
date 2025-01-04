@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
-using DragonU3DSDK;
 using Framework.Asset;
 using Newtonsoft.Json;
 using UnityEngine;
 
 namespace Framework
 {
-    public class LocaleConfigManager : Manager<LocaleConfigManager>
+    public class LocaleConfigManager : MonoSingleton<LocaleConfigManager>
     {
         Dictionary<string, Dictionary<string, string>> localeConfigs = new Dictionary<string, Dictionary<string, string>>();
 

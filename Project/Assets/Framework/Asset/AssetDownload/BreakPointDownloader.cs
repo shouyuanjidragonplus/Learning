@@ -116,7 +116,7 @@ namespace Framework.Asset
             {
                 if (ex.GetType() == typeof(System.IO.IOException))
                 {
-                    if (Utils.IsDiskFull(ex))
+                    if (Framework.Util.Utils.IsDiskFull(ex))
                     {
                         EventManager.Instance.Trigger<SDKEvents.DownloadFileEvent>().Data(this.m_DownloadInfo.fileName, "DiskFullException", this.m_DownloadInfo.downloadedSize)
                             .Trigger();

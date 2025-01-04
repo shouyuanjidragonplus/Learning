@@ -5,12 +5,11 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
-using DragonU3DSDK.Util;
 using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Networking;
 
-namespace Framework
+namespace Framework.Util
 {
     public static class EnumDef
     {

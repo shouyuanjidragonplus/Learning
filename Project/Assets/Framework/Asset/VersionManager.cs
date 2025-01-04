@@ -22,7 +22,7 @@ namespace Framework.Asset
         Force = 2, //强制更新
     }
 
-    public class VersionManager : Manager<VersionManager>
+    public class VersionManager : MonoSingleton<VersionManager>
     {
         private VersionInfo localVersionFile;
         private VersionInfo remoteVersionFile;
@@ -507,7 +507,7 @@ namespace Framework.Asset
                 {
                     if (ex.GetType() == typeof(System.IO.IOException))
                     {
-                        if (Utils.IsDiskFull(ex) && !diskFullError)
+                        if (Framework.Util.Utils.IsDiskFull(ex) && !diskFullError)
                         {
                             diskFullError = true;
                             EventManager.Instance.Trigger<SDKEvents.ConfirmWindowEvent>().Data(new SDKEvents.ConfirmWindowEvent.UIData()

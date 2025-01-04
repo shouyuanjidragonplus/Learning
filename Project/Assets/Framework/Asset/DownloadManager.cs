@@ -12,7 +12,7 @@ using UnityEngine.Networking;
 
 namespace Framework.Asset
 {
-    public class DownloadManager : Manager<DownloadManager>
+    public class DownloadManager : MonoSingleton<DownloadManager>
     {
         // 最大并行下载个数
         private int maxDownloads = 4;
@@ -110,24 +110,24 @@ namespace Framework.Asset
                 HTTPRequest headRequest = task.HeadRequest;
                 if (headRequest != null)
                 {
-                    long headstarttime = Framework.Utils.TotalMilliseconds();
+                    long headstarttime = Framework.Util.Utils.TotalMilliseconds();
                     //EventManager.Instance.Trigger<SDKEvents.DownloadFileEvent>().Data(task.DownloadInfo.fileName, "head_abort", 0, task.DownloadInfo.retry.ToString()).Trigger();
                     //DragonU3DSDK.Network.BI.BIManager.Instance.SendCommonGameEvent(DragonU3DSDK.Network.API.Protocol.BiEventCommon.Types.CommonGameEventType.HeadFileAbort, task.DownloadInfo.fileName, 0.ToString(), task.DownloadInfo.retry.ToString());
-                    long headbistarttime = Framework.Utils.TotalMilliseconds();
+                    long headbistarttime = Framework.Util.Utils.TotalMilliseconds();
                     headRequest.Abort();
-                    long headaborttime = Framework.Utils.TotalMilliseconds();
+                    long headaborttime = Framework.Util.Utils.TotalMilliseconds();
 
                     //DebugUtil.LogError("Download Downloading loop {0} headBI is {1} headAbort is {2}", i, (headbistarttime - headstarttime), (headaborttime - headbistarttime));
                 }
 
                 if (task.Downloader != null)
                 {
-                    long taskstarttime = Framework.Utils.TotalMilliseconds();
+                    long taskstarttime = Framework.Util.Utils.TotalMilliseconds();
                     //EventManager.Instance.Trigger<SDKEvents.DownloadFileEvent>().Data(task.DownloadInfo.fileName, "abort", task.DownloadInfo.downloadedSize, task.DownloadInfo.retry.ToString()).Trigger();
                     //DragonU3DSDK.Network.BI.BIManager.Instance.SendCommonGameEvent(DragonU3DSDK.Network.API.Protocol.BiEventCommon.Types.CommonGameEventType.HeadFileAbort, task.DownloadInfo.fileName, 0.ToString(), task.DownloadInfo.retry.ToString());
-                    long taskbistarttime = Framework.Utils.TotalMilliseconds();
+                    long taskbistarttime = Framework.Util.Utils.TotalMilliseconds();
                     task.Downloader.CancelDownload(false);
-                    long tastaborttime = Framework.Utils.TotalMilliseconds();
+                    long tastaborttime = Framework.Util.Utils.TotalMilliseconds();
 
                     //DebugUtil.LogError("Download Downloading loop {0} taskBI is {1} headAbort is {2}", i, (taskbistarttime - taskstarttime), (tastaborttime - taskbistarttime));
                 }
@@ -147,31 +147,31 @@ namespace Framework.Asset
 
             isAborting = true;
 
-            long totalstarttime = Framework.Utils.TotalMilliseconds();
+            long totalstarttime = Framework.Util.Utils.TotalMilliseconds();
             pendingDownloads.Clear();
 
             List<DownloadingTask> list = new List<DownloadingTask>(this.m_DownloadingTasks.Values);
             //DebugUtil.LogError("Download Downloading task num is " + list.Count);
 
 
-            long starttime = Framework.Utils.TotalMilliseconds();
+            long starttime = Framework.Util.Utils.TotalMilliseconds();
             for (int i = 0; i < list.Count; i++)
             {
-                long loopstarttime = Framework.Utils.TotalMilliseconds();
+                long loopstarttime = Framework.Util.Utils.TotalMilliseconds();
                 AbortDownloadTask(list[i]);
-                long loopendtime = Framework.Utils.TotalMilliseconds();
+                long loopendtime = Framework.Util.Utils.TotalMilliseconds();
 
                 //DebugUtil.LogError("Download Downloading loop {0} time is {1}", i, (loopendtime - loopstarttime));
             }
 
-            long endtime = Framework.Utils.TotalMilliseconds();
+            long endtime = Framework.Util.Utils.TotalMilliseconds();
 
             //DebugUtil.LogError("Download Downloading loop time is " + (endtime - starttime));
 
             this.m_DownloadingTasks.Clear();
             pendingDownloads.Clear();
             downloadThreads = 0;
-            long totalendtime = Framework.Utils.TotalMilliseconds();
+            long totalendtime = Framework.Util.Utils.TotalMilliseconds();
 
             //DebugUtil.LogError("Download Downloading total time is " + (totalendtime - totalstarttime));
             isAborting = false;

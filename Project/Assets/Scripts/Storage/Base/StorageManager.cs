@@ -14,7 +14,7 @@ using UnityEngine;
 
 namespace Framework.Storage
 {
-    public class StorageManager : Manager<StorageManager>
+    public class StorageManager : MonoSingleton<StorageManager>
     {
         // 本地存档版本
         private ulong _localVersion;

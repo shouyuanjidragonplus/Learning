@@ -2,9 +2,9 @@
 using System.IO;
 using System.Security.Cryptography;
 
-namespace DragonU3DSDK.Util
+namespace Framework.Util
 {
-    public class RijndaelManager : Manager<RijndaelManager>
+    public class RijndaelManager : MonoSingleton<RijndaelManager>
     {
         byte[] rijndaelKey = new byte[] { 0x0F, 0x02, 0x01, 0x02, 0x01, 0x02, 0x01, 0x02,
                                       0x02, 0x02, 0x01, 0x02, 0x01, 0x02, 0x01, 0x02,
