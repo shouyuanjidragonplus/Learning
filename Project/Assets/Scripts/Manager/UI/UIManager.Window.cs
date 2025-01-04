@@ -51,5 +51,6 @@ public static class UIAnimationConst
 public static partial class UINameConst
 {
     public static readonly string UILogin = "Home/UILogin";
+    public static readonly string UIMainGroup = "Home/UIMainGroup";
     public static readonly string MergeMain = "Home/MergeMain";
 }

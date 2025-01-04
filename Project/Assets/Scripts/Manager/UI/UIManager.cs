@@ -17,8 +17,7 @@ public partial class UIManager : MonoSingleton<UIManager>
     private bool m_HavePopUp = false;
 
     public bool HavePopUpWindow => m_HavePopUp;
-
-    public void Init()
+    public void AwakeProc()
     {
         allWindowMeta();
     }

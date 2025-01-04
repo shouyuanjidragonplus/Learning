@@ -66,5 +66,8 @@ namespace Framework.Storage
                 Debug.Assert(false, "Error Init Storage !!!");
             }
         }
+        public void SaveToLocal()
+        { 
+        }
     }
 }

@@ -28,6 +28,9 @@ public static partial class EventEnum
     public const string OnLevelUp = "OnLevelUp"; //升级
     public static readonly string STORE_SWITCH_TAG = "STORE_SWITCH_TAG";
 
+    public const string ExitFsmState = "ExitFsmState";
+    public const string EnterFsmState = "EnterFsmState";
+
 
     public const string BackHomeStep = "BackHomeStep";
 

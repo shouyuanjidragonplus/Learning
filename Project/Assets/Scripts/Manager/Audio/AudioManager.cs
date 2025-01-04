@@ -13,4 +13,8 @@ public class AudioManager : MonoSingleton<AudioManager>
     { 
     
     }
+    public void StopAllMusic()
+    { 
+    
+    }
 }
