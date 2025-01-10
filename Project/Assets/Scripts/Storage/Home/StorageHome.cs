@@ -16,9 +16,9 @@ namespace Framework.Storage
          
         // 玩家身上金币数
         [JsonProperty]
-        StorageDictionary<string,int> currency = new StorageDictionary<string,int>(true);
+        StorageDictionary<string,StorageCurrency> currency = new StorageDictionary<string,StorageCurrency>(true);
         [JsonIgnore]
-        public StorageDictionary<string,int> Currency
+        public StorageDictionary<string,StorageCurrency> Currency
         {
             get
             {

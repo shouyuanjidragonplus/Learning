@@ -1,8 +1,4 @@
 ﻿using DG.Tweening;
-using DragonPlus;
-using DragonU3DSDK.Account;
-using Gameplay;
-
 public class SceneFsmLogin : IFsmState
 {
     public StatusType Type => StatusType.Login;
@@ -12,7 +8,7 @@ public class SceneFsmLogin : IFsmState
         WaitingManager.Instance.OpenWindow(10.0f, 0.5f, () =>
         {
             LoadingController.HideLoading();
-            UIManager.Instance.OpenWindow(UINameConst.UILogin);
+            UIManager.Instance.OpenView(UINameConst.UILogin);
         });
         
         UILoginController.RunOnce();
@@ -20,7 +16,7 @@ public class SceneFsmLogin : IFsmState
         {
             WaitingManager.Instance.CloseWindow();
             LoadingController.HideLoading();
-            UIManager.Instance.OpenWindow(UINameConst.UILogin);
+            UIManager.Instance.OpenView(UINameConst.UILogin);
         });
         EventDispatcher.Instance.DispatchEventImmediately(EventEnum.BackLogin);
     }

@@ -9,6 +9,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Zero.Engine.Base;
+using Framework.Storage;
 
 public class LoadingController : MonoBehaviour
 {
