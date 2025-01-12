@@ -30,8 +30,6 @@ public class SceneFsmLoading : IFsmState
         EventDispatcher.Instance.DispatchEventImmediately(EventEnum.LOADING_START);
         EventDispatcher.Instance.AddEventListener(EventEnum.LOADING_FINISH, LoadingFinish);
         ResourcesManager.Instance.UnLoadAllCache();
-        LoadingController loadingCtr = LoadingController.ShowLoading();
-        loadingCtr.StartLoading();
     }
     public void Update(float deltaTime)
     {
