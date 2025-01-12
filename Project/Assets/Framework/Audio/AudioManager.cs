@@ -9,21 +9,21 @@ namespace Framework.Audio
     /// </summary>
     public class AudioManager : MonoSingleton<AudioManager>
     {
-        private static float vol = 1f;
-        private static float musicVol = 1f;
-        private static float soundsVol = 1f;
+        private float vol = 1f;
+        private float musicVol = 1f;
+        private float soundsVol = 1f;
 
-        private static Dictionary<int, Audio> musicAudio;
-        private static Dictionary<int, Audio> soundsAudio;
+        private Dictionary<int, Audio> musicAudio;
+        private Dictionary<int, Audio> soundsAudio;
 
-        private static int nativeAudioInitID = -100;
+        private int nativeAudioInitID = -100;
 
-        private static bool musicClose = false;
-        private static bool soundClose = false;
+        private bool musicClose = false;
+        private bool soundClose = false;
 
-        private static bool initialized = false;
-        
-        private static List<int> _toBeRemoved = new List<int>();
+        private bool initialized = false;
+
+        private List<int> _toBeRemoved = new List<int>();
 
         protected override void InitImmediately()
         {
@@ -32,19 +32,17 @@ namespace Framework.Audio
             if (!listener)
                 Instance.gameObject.AddComponent<AudioListener>();
 #endif
+            Instance.Init();
         }
 
-        private static int GetNativeAudioId()
+        private int GetNativeAudioId()
         {
             return nativeAudioInitID--;
         }
 
-        public static bool MusicClose
+        public bool MusicClose
         {
-            get
-            {
-                return musicClose;
-            }
+            get { return musicClose; }
             set
             {
                 musicClose = value;
@@ -59,12 +57,9 @@ namespace Framework.Audio
             }
         }
 
-        public static bool SoundClose
+        public bool SoundClose
         {
-            get
-            {
-                return soundClose;
-            }
+            get { return soundClose; }
             set
             {
                 soundClose = value;
@@ -78,65 +73,50 @@ namespace Framework.Audio
         /// <summary>
         /// The gameobject that the sound manager is attached to
         /// </summary>
-        public static GameObject gameobject { get { return instance.gameObject; } }
+        public GameObject gameobject
+        {
+            get { return Instance.gameObject; }
+        }
 
         /// <summary>
         /// When set to true, new Audios that have the same audio clip as any other Audio, will be ignored
         /// </summary>
-        public static bool ignoreDuplicateMusic { get; set; }
+        public bool ignoreDuplicateMusic { get; set; }
 
         /// <summary>
         /// When set to true, new Audios that have the same audio clip as any other Audio, will be ignored
         /// </summary>
-        public static bool ignoreDuplicateSounds { get; set; }
+        public bool ignoreDuplicateSounds { get; set; }
 
 
         /// <summary>
         /// Global volume
         /// </summary>
-        public static float globalVolume
+        public float globalVolume
         {
-            get
-            {
-                return vol;
-            }
-            set
-            {
-                vol = value;
-            }
+            get { return vol; }
+            set { vol = value; }
         }
 
         /// <summary>
         /// Global music volume
         /// </summary>
-        public static float globalMusicVolume
+        public float globalMusicVolume
         {
-            get
-            {
-                return musicVol;
-            }
-            set
-            {
-                musicVol = value;
-            }
+            get { return musicVol; }
+            set { musicVol = value; }
         }
 
         /// <summary>
         /// Global sounds volume
         /// </summary>
-        public static float globalSoundsVolume
+        public float globalSoundsVolume
         {
-            get
-            {
-                return soundsVol;
-            }
-            set
-            {
-                soundsVol = value;
-            }
+            get { return soundsVol; }
+            set { soundsVol = value; }
         }
 
-        public static bool AnyMusicPlaying()
+        public bool AnyMusicPlaying()
         {
             var e = musicAudio.GetEnumerator();
             while (e.MoveNext())
@@ -152,10 +132,6 @@ namespace Framework.Audio
             return false;
         }
 
-        static AudioManager()
-        {
-            instance.Init();
-        }
 
         private void OnEnable()
         {
@@ -184,6 +160,7 @@ namespace Framework.Audio
                     }
                 }
             }
+
             // Stop sound fx
             keys = new List<int>(soundsAudio.Keys);
             foreach (var key in keys)
@@ -217,9 +194,10 @@ namespace Framework.Audio
                 {
                     musicAudio.Remove(_toBeRemoved[i]);
                 }
+
                 _toBeRemoved.Clear();
             }
-            
+
             // Update sound fx            
             e = soundsAudio.GetEnumerator();
             while (e.MoveNext())
@@ -239,6 +217,7 @@ namespace Framework.Audio
                 {
                     soundsAudio.Remove(_toBeRemoved[i]);
                 }
+
                 _toBeRemoved.Clear();
             }
         }
@@ -266,7 +245,7 @@ namespace Framework.Audio
         /// </summary>
         /// <param name="audioID">The id of the Audio to be retrieved</param>
         /// <returns>Audio that has as its id the audioID, null if no such Audio is found</returns>
-        public static Audio GetAudio(int audioID)
+        public Audio GetAudio(int audioID)
         {
             Audio audio;
 
@@ -290,7 +269,7 @@ namespace Framework.Audio
         /// </summary>
         /// <param name="audioClip">The audio clip of the Audio to be retrieved</param>
         /// <returns>First occurrence of Audio that has as plays the audioClip, null if no such Audio is found</returns>
-        public static Audio GetAudio(AudioClip audioClip)
+        public Audio GetAudio(AudioClip audioClip)
         {
             Audio audio = GetMusicAudio(audioClip);
             if (audio != null)
@@ -312,7 +291,7 @@ namespace Framework.Audio
         /// </summary>
         /// <param name="audioID">The id of the music Audio to be returned</param>
         /// <returns>Music Audio that has as its id the audioID if one is found, null if no such Audio is found</returns>
-        public static Audio GetMusicAudio(int audioID)
+        public Audio GetMusicAudio(int audioID)
         {
             List<int> keys = new List<int>(musicAudio.Keys);
             foreach (int key in keys)
@@ -331,7 +310,7 @@ namespace Framework.Audio
         /// </summary>
         /// <param name="audioClip">The audio clip of the music Audio to be retrieved</param>
         /// <returns>First occurrence of music Audio that has as plays the audioClip, null if no such Audio is found</returns>
-        public static Audio GetMusicAudio(AudioClip audioClip)
+        public Audio GetMusicAudio(AudioClip audioClip)
         {
             List<int> keys;
             keys = new List<int>(musicAudio.Keys);
@@ -352,7 +331,7 @@ namespace Framework.Audio
         /// </summary>
         /// <param name="audioID">The id of the sound fx Audio to be returned</param>
         /// <returns>Sound fx Audio that has as its id the audioID if one is found, null if no such Audio is found</returns>
-        public static Audio GetSoundAudio(int audioID)
+        public Audio GetSoundAudio(int audioID)
         {
             List<int> keys = new List<int>(soundsAudio.Keys);
             foreach (int key in keys)
@@ -371,7 +350,7 @@ namespace Framework.Audio
         /// </summary>
         /// <param name="audioClip">The audio clip of the sound Audio to be retrieved</param>
         /// <returns>First occurrence of sound Audio that has as plays the audioClip, null if no such Audio is found</returns>
-        public static Audio GetSoundAudio(AudioClip audioClip)
+        public Audio GetSoundAudio(AudioClip audioClip)
         {
             List<int> keys;
             keys = new List<int>(soundsAudio.Keys);
@@ -387,18 +366,16 @@ namespace Framework.Audio
             return null;
         }
 
-
         #endregion
 
         #region Play Functions
-
 
         /// <summary>
         /// Play background music
         /// </summary>
         /// <param name="clip">The audio clip to play</param>
         /// <returns>The ID of the created Audio object</returns>
-        public static int PlayMusic(AudioClip clip)
+        public int PlayMusic(AudioClip clip)
         {
             return PlayMusic(clip, 1f, false, false, 1f, 1f, -1f, null);
         }
@@ -409,7 +386,7 @@ namespace Framework.Audio
         /// <param name="clip">The audio clip to play</param>
         /// <param name="volume"> The volume the music will have</param>
         /// <returns>The ID of the created Audio object</returns>
-        public static int PlayMusic(AudioClip clip, float volume)
+        public int PlayMusic(AudioClip clip, float volume)
         {
             return PlayMusic(clip, volume, false, false, 1f, 1f, -1f, null);
         }
@@ -422,7 +399,7 @@ namespace Framework.Audio
         /// <param name="loop">Wether the music is looped</param>
         /// <param name = "persist" > Whether the audio persists in between scene changes</param>
         /// <returns>The ID of the created Audio object</returns>
-        public static int PlayMusic(AudioClip clip, float volume, bool loop, bool persist)
+        public int PlayMusic(AudioClip clip, float volume, bool loop, bool persist)
         {
             return PlayMusic(clip, volume, loop, persist, 1f, 1f, -1f, null);
         }
@@ -437,7 +414,7 @@ namespace Framework.Audio
         /// <param name="fadeInValue">How many seconds it needs for the audio to fade in/ reach target volume (if higher than current)</param>
         /// <param name="fadeOutValue"> How many seconds it needs for the audio to fade out/ reach target volume (if lower than current)</param>
         /// <returns>The ID of the created Audio object</returns>
-        public static int PlayMusic(AudioClip clip, float volume, bool loop, bool persist, float fadeInSeconds, float fadeOutSeconds)
+        public int PlayMusic(AudioClip clip, float volume, bool loop, bool persist, float fadeInSeconds, float fadeOutSeconds)
         {
             return PlayMusic(clip, volume, loop, persist, fadeInSeconds, fadeOutSeconds, -1f, null);
         }
@@ -454,7 +431,8 @@ namespace Framework.Audio
         /// <param name="currentMusicfadeOutSeconds"> How many seconds it needs for current music audio to fade out. It will override its own fade out seconds. If -1 is passed, current music will keep its own fade out seconds</param>
         /// <param name="sourceTransform">The transform that is the source of the music (will become 3D audio). If 3D audio is not wanted, use null</param>
         /// <returns>The ID of the created Audio object</returns>
-        public static int PlayMusic(AudioClip clip, float volume, bool loop, bool persist, float fadeInSeconds, float fadeOutSeconds, float currentMusicfadeOutSeconds, Transform sourceTransform)
+        public int PlayMusic(AudioClip clip, float volume, bool loop, bool persist, float fadeInSeconds, float fadeOutSeconds, float currentMusicfadeOutSeconds,
+            Transform sourceTransform)
         {
             if (clip == null)
             {
@@ -491,7 +469,7 @@ namespace Framework.Audio
         }
 
 
-        public static int PlaySound(string soundName)
+        public int PlaySound(string soundName)
         {
             //TODO use Resources.Load not a good idea
             AudioClip sound = Resources.Load<AudioClip>(soundName);
@@ -503,7 +481,7 @@ namespace Framework.Audio
         /// </summary>
         /// <param name="clip">The audio clip to play</param>
         /// <returns>The ID of the created Audio object</returns>
-        public static int PlaySound(AudioClip clip)
+        public int PlaySound(AudioClip clip)
         {
             return PlaySound(clip, 1f, false, null);
         }
@@ -514,7 +492,7 @@ namespace Framework.Audio
         /// <param name="clip">The audio clip to play</param>
         /// <param name="volume"> The volume the music will have</param>
         /// <returns>The ID of the created Audio object</returns>
-        public static int PlaySound(AudioClip clip, float volume)
+        public int PlaySound(AudioClip clip, float volume)
         {
             return PlaySound(clip, volume, false, null);
         }
@@ -525,12 +503,12 @@ namespace Framework.Audio
         /// <param name="clip">The audio clip to play</param>
         /// <param name="loop">Wether the sound is looped</param>
         /// <returns>The ID of the created Audio object</returns>
-        public static int PlaySound(AudioClip clip, bool loop)
+        public int PlaySound(AudioClip clip, bool loop)
         {
             return PlaySound(clip, 1f, loop, null);
         }
 
-        public static int PlaySound(AudioClip clip, bool loop, float pitch)
+        public int PlaySound(AudioClip clip, bool loop, float pitch)
         {
             return PlaySound(clip, 1.0f, loop, null, pitch);
         }
@@ -543,7 +521,7 @@ namespace Framework.Audio
         /// <param name="loop">Wether the sound is looped</param>
         /// <param name="sourceTransform">The transform that is the source of the sound (will become 3D audio). If 3D audio is not wanted, use null</param>
         /// <returns>The ID of the created Audio object</returns>
-        public static int PlaySound(AudioClip clip, float volume, bool loop, Transform sourceTransform, float pitch = 1.0f)
+        public int PlaySound(AudioClip clip, float volume, bool loop, Transform sourceTransform, float pitch = 1.0f)
         {
             if (clip == null)
             {
@@ -577,15 +555,14 @@ namespace Framework.Audio
 #endif
         }
 
+        #endregion
 
-#endregion
-
-#region Stop Functions
+        #region Stop Functions
 
         /// <summary>
         /// Stop all audio playing
         /// </summary>
-        public static void StopAll()
+        public void StopAll()
         {
             StopAll(-1f);
         }
@@ -594,7 +571,7 @@ namespace Framework.Audio
         /// Stop all audio playing
         /// </summary>
         /// <param name="fadeOutSeconds"> How many seconds it needs for all music audio to fade out. It will override  their own fade out seconds. If -1 is passed, all music will keep their own fade out seconds</param>
-        public static void StopAll(float fadeOutSeconds)
+        public void StopAll(float fadeOutSeconds)
         {
             StopAllMusic(fadeOutSeconds);
             StopAllSounds();
@@ -603,7 +580,7 @@ namespace Framework.Audio
         /// <summary>
         /// Stop all music playing
         /// </summary>
-        public static void StopAllMusic()
+        public void StopAllMusic()
         {
             StopAllMusic(-1f);
         }
@@ -612,7 +589,7 @@ namespace Framework.Audio
         /// Stop all music playing
         /// </summary>
         /// <param name="fadeOutSeconds"> How many seconds it needs for all music audio to fade out. It will override  their own fade out seconds. If -1 is passed, all music will keep their own fade out seconds</param>
-        public static void StopAllMusic(float fadeOutSeconds)
+        public void StopAllMusic(float fadeOutSeconds)
         {
             List<int> keys = new List<int>(musicAudio.Keys);
             foreach (int key in keys)
@@ -622,6 +599,7 @@ namespace Framework.Audio
                 {
                     audio.fadeOutSeconds = fadeOutSeconds;
                 }
+
                 audio.Stop();
             }
         }
@@ -629,7 +607,7 @@ namespace Framework.Audio
         /// <summary>
         /// Stop all sound fx playing
         /// </summary>
-        public static void StopAllSounds()
+        public void StopAllSounds()
         {
             List<int> keys = new List<int>(soundsAudio.Keys);
             foreach (int key in keys)
@@ -639,7 +617,7 @@ namespace Framework.Audio
             }
         }
 
-        public static void StopSoundById(int soundId)
+        public void StopSoundById(int soundId)
         {
             if (soundId >= 0)
             {
@@ -655,14 +633,14 @@ namespace Framework.Audio
             }
         }
 
-#endregion
+        #endregion
 
-#region Pause Functions
+        #region Pause Functions
 
         /// <summary>
         /// Pause all audio playing
         /// </summary>
-        public static void PauseAll()
+        public void PauseAll()
         {
             PauseAllMusic();
             PauseAllSounds();
@@ -671,7 +649,7 @@ namespace Framework.Audio
         /// <summary>
         /// Pause all music playing
         /// </summary>
-        public static void PauseAllMusic()
+        public void PauseAllMusic()
         {
             List<int> keys = new List<int>(musicAudio.Keys);
             foreach (int key in keys)
@@ -684,7 +662,7 @@ namespace Framework.Audio
         /// <summary>
         /// Pause all sound fx playing
         /// </summary>
-        public static void PauseAllSounds()
+        public void PauseAllSounds()
         {
             List<int> keys = new List<int>(soundsAudio.Keys);
             foreach (int key in keys)
@@ -694,14 +672,14 @@ namespace Framework.Audio
             }
         }
 
-#endregion
+        #endregion
 
-#region Resume Functions
+        #region Resume Functions
 
         /// <summary>
         /// Resume all audio playing
         /// </summary>
-        public static void ResumeAll()
+        public void ResumeAll()
         {
             ResumeAllMusic();
             ResumeAllSounds();
@@ -710,9 +688,8 @@ namespace Framework.Audio
         /// <summary>
         /// Resume all music playing
         /// </summary>
-        public static void ResumeAllMusic()
+        public void ResumeAllMusic()
         {
-        
             if (MusicClose)
                 return;
 
@@ -727,7 +704,7 @@ namespace Framework.Audio
         /// <summary>
         /// Resume all sound fx playing
         /// </summary>
-        public static void ResumeAllSounds()
+        public void ResumeAllSounds()
         {
             List<int> keys = new List<int>(soundsAudio.Keys);
             foreach (int key in keys)
@@ -737,8 +714,7 @@ namespace Framework.Audio
             }
         }
 
-
-#endregion
+        #endregion
     }
 
     public class Audio
@@ -769,10 +745,7 @@ namespace Framework.Audio
         /// </summary>
         public AudioClip clip
         {
-            get
-            {
-                return audioSource == null ? initClip : audioSource.clip;
-            }
+            get { return audioSource == null ? initClip : audioSource.clip; }
         }
 
         /// <summary>
@@ -825,7 +798,7 @@ namespace Framework.Audio
         {
             if (sourceTransform == null)
             {
-                this.sourceTransform = AudioManager.gameobject.transform;
+                this.sourceTransform = AudioManager.Instance.gameobject.transform;
             }
             else
             {
@@ -861,7 +834,7 @@ namespace Framework.Audio
             audioSource.clip = _clip;
             audioSource.loop = _loop;
             audioSource.volume = 0f;
-            if (sourceTransform != AudioManager.gameobject.transform)
+            if (sourceTransform != AudioManager.Instance.gameobject.transform)
             {
                 audioSource.spatialBlend = 1;
             }
@@ -1043,15 +1016,15 @@ namespace Framework.Audio
             switch (audioType)
             {
                 case AudioType.Music:
-                    {
-                        audioSource.volume = volume * AudioManager.globalMusicVolume * AudioManager.globalVolume;
-                        break;
-                    }
+                {
+                    audioSource.volume = volume * AudioManager.Instance.globalMusicVolume * AudioManager.Instance.globalVolume;
+                    break;
+                }
                 case AudioType.Sound:
-                    {
-                        audioSource.volume = volume * AudioManager.globalSoundsVolume * AudioManager.globalVolume;
-                        break;
-                    }
+                {
+                    audioSource.volume = volume * AudioManager.Instance.globalSoundsVolume * AudioManager.Instance.globalVolume;
+                    break;
+                }
             }
 
             if (volume == 0f && stopping)

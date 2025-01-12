@@ -29,7 +29,7 @@ public class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
         }
     }
 
-    // Õâ¸ö·½·¨Èç¹ûoverride£¬»áÔÚInstance´´½¨ÍêÁ¢¿Ìµ÷ÓÃ, ÅÉÉúÀà¿ÉÒÔÓÃÀ´Ä¬ÈÏ³õÊ¼»¯Ò»Ğ©¶«Î÷
+    // è¿™ä¸ªæ–¹æ³•å¦‚æœoverrideï¼Œä¼šåœ¨Instanceåˆ›å»ºå®Œç«‹åˆ»è°ƒç”¨, æ´¾ç”Ÿç±»å¯ä»¥ç”¨æ¥é»˜è®¤åˆå§‹åŒ–ä¸€äº›ä¸œè¥¿
     protected virtual void InitImmediately()
     {
     }

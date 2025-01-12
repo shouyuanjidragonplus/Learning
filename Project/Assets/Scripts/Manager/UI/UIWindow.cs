@@ -83,11 +83,11 @@ public abstract class UIWindow : MonoBehaviour
         {
             if (mWindowName.Contains("Popup"))
             {
-                AudioManager.Instance.PlaySound(SfxNameConst.sfx_pop_open);
+                AudioManager.PlaySound(AudioConst.sfx_pop_open);
             }
             else
             {
-                AudioManager.Instance.PlaySound(SfxNameConst.panel_in);
+                AudioManager.PlaySound(AudioConst.panel_in);
             }
         }
     }
@@ -124,7 +124,7 @@ public abstract class UIWindow : MonoBehaviour
 
     public virtual bool OnBack()
     {
-        AudioManager.Instance.PlaySound(SfxNameConst.button_s);
+        AudioManager.PlaySound(AudioConst.button_s);
         return UIManager.Instance.CloseWindow(mWindowName, true);
     }
 
@@ -213,7 +213,7 @@ public abstract class UIWindow : MonoBehaviour
                 {
                     if (playAudio)
                     {
-                        AudioManager.Instance.PlaySound(SfxNameConst.button_s);
+                        AudioManager.PlaySound(AudioConst.button_s);
                     }
 
                     action?.Invoke(obj);
@@ -254,7 +254,7 @@ public abstract class UIWindow : MonoBehaviour
         button.onClick.AddListener(() =>
         {
             if (playAudio)
-                AudioManager.Instance.PlaySound(SfxNameConst.button_s);
+                AudioManager.PlaySound(AudioConst.button_s);
             action?.Invoke(obj);
         });
 
