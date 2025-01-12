@@ -4,11 +4,6 @@ using System.Collections.Generic;
 using System.IO;
 using Framework.Asset;
 using UnityEngine;
-public enum AudioType
-{
-    MUSIC,
-    SOUND
-}
 
 public class AudioManager
 {
@@ -26,7 +21,7 @@ public class AudioManager
 
     public static float PlayMusic(string musicName, bool loop = true)
     {
-        AudioClip au = LoadAudio(AudioType.MUSIC, musicName);
+        AudioClip au = LoadAudio(Framework.Audio.AudioType.MUSIC, musicName);
 
         if (au != null)
         {
@@ -58,11 +53,12 @@ public class AudioManager
 
         return PlaySound(soundName, loop);
     }
+
     public static int PlaySound(string soundName, float volume = 1)
     {
         try
         {
-            AudioClip audio = LoadAudio(AudioType.SOUND, soundName);
+            AudioClip audio = LoadAudio(Framework.Audio.AudioType.SOUND, soundName);
             if (audio != null)
             {
                 return Framework.Audio.AudioManager.Instance.PlaySound(audio);
@@ -75,11 +71,12 @@ public class AudioManager
 
         return -1;
     }
+
     public static float PlaySound(string soundName, bool loop)
     {
         try
         {
-            AudioClip audio = LoadAudio(AudioType.SOUND, soundName);
+            AudioClip audio = LoadAudio(Framework.Audio.AudioType.SOUND, soundName);
             if (audio != null)
             {
                 if (Framework.Audio.AudioManager.Instance.PlaySound(audio, loop) > 0)
@@ -119,15 +116,15 @@ public class AudioManager
         Framework.Audio.AudioManager.Instance.ResumeAllMusic();
     }
 
-    private static AudioClip LoadAudio(AudioType type, string audioName)
+    private static AudioClip LoadAudio(Framework.Audio.AudioType type, string audioName)
     {
         string prefix = "BGM";
         switch (type)
         {
-            case AudioType.MUSIC:
+            case Framework.Audio.AudioType.MUSIC:
                 prefix = "BGM";
                 break;
-            case AudioType.SOUND:
+            case Framework.Audio.AudioType.SOUND:
                 prefix = "Sounds";
                 break;
         }

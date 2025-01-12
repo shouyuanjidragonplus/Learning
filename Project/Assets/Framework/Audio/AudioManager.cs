@@ -4,6 +4,11 @@ using UnityEngine.SceneManagement;
 
 namespace Framework.Audio
 {
+    public enum AudioType
+    {
+        MUSIC,
+        SOUND
+    }
     /// <summary>
     /// 音效管理器，提供统一的音乐音效播放基础封装。暂自我管理单例。
     /// </summary>
@@ -455,7 +460,7 @@ namespace Framework.Audio
             StopAllMusic(currentMusicfadeOutSeconds);
 
             // Create the audioSource
-            Audio audio = new Audio(Audio.AudioType.Music, clip, loop, persist, volume, fadeInSeconds, fadeOutSeconds, sourceTransform);
+            Audio audio = new Audio(AudioType.MUSIC, clip, loop, persist, volume, fadeInSeconds, fadeOutSeconds, sourceTransform);
 
             // Add it to music list
             musicAudio.Add(audio.audioID, audio);
@@ -545,7 +550,7 @@ namespace Framework.Audio
 
 #if UNITY_EDITOR || UNITY_IOS || UNITY_ANDROID
             // Create the audioSource
-            Audio audio = new Audio(Audio.AudioType.Sound, clip, loop, false, volume, 0f, 0f, sourceTransform);
+            Audio audio = new Audio(AudioType.SOUND, clip, loop, false, volume, 0f, 0f, sourceTransform);
             audio.SetPitch(pitch);
             // Add it to music list
             soundsAudio.Add(audio.audioID, audio);
@@ -788,12 +793,6 @@ namespace Framework.Audio
         /// </summary>
         public bool activated { get; private set; }
 
-        public enum AudioType
-        {
-            Music,
-            Sound,
-        }
-
         public Audio(AudioType audioType, AudioClip clip, bool loop, bool persist, float volume, float fadeInValue, float fadeOutValue, Transform sourceTransform)
         {
             if (sourceTransform == null)
@@ -1015,12 +1014,12 @@ namespace Framework.Audio
 
             switch (audioType)
             {
-                case AudioType.Music:
+                case AudioType.MUSIC:
                 {
                     audioSource.volume = volume * AudioManager.Instance.globalMusicVolume * AudioManager.Instance.globalVolume;
                     break;
                 }
-                case AudioType.Sound:
+                case AudioType.SOUND:
                 {
                     audioSource.volume = volume * AudioManager.Instance.globalSoundsVolume * AudioManager.Instance.globalVolume;
                     break;
