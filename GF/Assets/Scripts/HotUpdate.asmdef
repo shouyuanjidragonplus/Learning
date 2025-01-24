@@ -2,7 +2,8 @@
     "name": "HotUpdate",
     "rootNamespace": "",
     "references": [
-        "UnityGameFramework.Runtime"
+        "UnityGameFramework.Runtime",
+        "Builtin.Runtime"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
