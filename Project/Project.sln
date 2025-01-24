@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spine-unity-editor", "spine
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{3ca28aeb-5526-2be2-2ebb-05697394edb3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{1aa36d5f-a94f-b499-feb5-ba957025cc7d}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,8 @@ Global
 		{1c24546d-c8fa-c153-4073-cf7bfb42a039}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3ca28aeb-5526-2be2-2ebb-05697394edb3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3ca28aeb-5526-2be2-2ebb-05697394edb3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1aa36d5f-a94f-b499-feb5-ba957025cc7d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1aa36d5f-a94f-b499-feb5-ba957025cc7d}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
