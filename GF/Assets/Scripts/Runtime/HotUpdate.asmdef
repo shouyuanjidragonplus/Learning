@@ -2,9 +2,9 @@
     "name": "HotUpdate",
     "rootNamespace": "",
     "references": [
+        "Unity.TextMeshPro",
         "UnityGameFramework.Runtime",
-        "GameMain.Runtime",
-        "Unity.TextMeshPro"
+        "GameMain.Runtime"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
