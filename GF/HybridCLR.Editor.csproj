@@ -46,112 +46,112 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="E:\git\hybridclr_unity\Editor\ABI\ABIUtil.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\BinaryWriterExtensions.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\UnityBinFile.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\CompressionType.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\BuildProcessors\AddLil2cppSourceCodeToXcodeproj2022OrNewer.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityHook\HookUtils.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\Commands\PrebuildCommand.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\GlobalgamedatasPatcher.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\ABI\TypeInfo.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityHook\HookUtils_OSX.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\Meta\GenericMethod.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\StorageBlock.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\Node.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Commands\AOTReferenceGeneratorCommand.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\Meta\AssemblyCache.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\ABI\TypeCreator.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\ABI\PlatformABI.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\Settings\EditorStatusWatcher.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Compress\LZMA\LzmaDecoder.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\Settings\HybridCLRSettingProvider.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\UnityBinFileDefines.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityHook\HybridCLRHooks\GetIl2CppFolderHook.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\ABI\MethodDesc.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Meta\GenericClass.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\ABI\ParamOrReturnType.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\Meta\AssemblyReferenceDeepCollector.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\BinaryReaderExtensions.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Compress\LZ\IMatchFinder.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\BuildProcessors\MsvcStdextWorkaround.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Compress\LZ\LzBinTree.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\SevenZipHelper.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\UnityBinUtils.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Compress\LZ\LzBinTree.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Common\InBuffer.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\BuildProcessors\BuildProcessorUtil.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\Meta\AssemblyCacheBase.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Compress\RangeCoder\RangeCoderBit.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\Meta\AssemblyCacheBase.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\MethodBridge\Generator.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Compress\LZ\LzOutWindow.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\ArchiveFlags.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\AOT\ConstraintContext.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\BuildProcessors\AddLil2cppSourceCodeToXcodeproj2019.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\StreamFile.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityHook\HybridCLRHooks\CopyStrippedAOTAssembliesHook.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityHook\HookPool.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\BuildProcessors\ScriptingAssembliesJsonPatcher.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\BuildProcessors\AddLil2cppSourceCodeToXcodeproj2020Or2021.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Il2CppDef\Il2CppDefGenerator.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\EndianBinaryReader.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Compress\RangeCoder\RangeCoderBitTree.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Common\CommandLineParser.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityHook\MethodHook.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Meta\IAssemblyResolver.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Compress\LZMA\LzmaBase.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Template\FileRegionReplace.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\Link\LinkXmlWriter.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityHook\CodePatcher.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\EndianType.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\ReversePInvokeWrap\Analyzer.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\ABI\ValueTypeSizeAligmentCalculator.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\BuildProcessors\AddLil2cppSourceCodeToXcodeproj2023OrNewer.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Meta\MetaUtil.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\BundleFileInfo.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\Installer\InstallerWindow.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\HashUtil.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Installer\BashUtil.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\BundleFileWriter.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityHook\LDasm.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Common\CRC.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Commands\CompileDllCommand.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\AOT\Analyzer.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\ScriptingAssembliesJsonPatcher.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\BuildProcessors\FilterHotFixAssemblies.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Commands\LinkGeneratorCommand.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Common\OutBuffer.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Compress\LZMA\LzmaEncoder.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\EndianBinaryWriter.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Link\Analyzer.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\Meta\GenericArgumentContext.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\Commands\StripAOTDllCommand.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityHook\HybridCLRHooks\PatchScriptingAssembliesJsonHook.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\MethodBridge\Analyzer.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\BundleFileReader.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\Commands\Il2CppDefGeneratorCommand.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Compress\RangeCoder\RangeCoder.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\Meta\MethodReferenceAnalyzer.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Settings\MenuProvider.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\StorageBlockFlags.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\AOT\GenericReferenceWriter.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Installer\InstallerController.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\StreamExtensions.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\BuildProcessors\CheckSettings.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Settings\ScriptableSignleton.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Settings\SettingsPresetReceiver.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\ICoder.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\Meta\CombinedAssemblyResolver.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\BuildProcessors\CopyStrippedAOTAssemblies.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\BuildProcessors\PatchScriptingAssemblyList.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\Meta\FixedSetAssemblyResolver.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\BinaryWriterExtensions.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\BuildProcessors\AddLil2cppSourceCodeToXcodeproj2022OrNewer.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\Commands\PrebuildCommand.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\Meta\GenericMethod.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityHook\HookUtils_OSX.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\Meta\AssemblyCache.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\Settings\EditorStatusWatcher.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\Settings\HybridCLRSettingProvider.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\UnityBinFileDefines.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\Meta\AssemblyReferenceDeepCollector.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\BinaryReaderExtensions.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\BuildProcessors\MsvcStdextWorkaround.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\UnityBinUtils.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\ArchiveFlags.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\AOT\ConstraintContext.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\BuildProcessors\AddLil2cppSourceCodeToXcodeproj2019.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\StreamFile.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityHook\HybridCLRHooks\CopyStrippedAOTAssembliesHook.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\BuildProcessors\AddLil2cppSourceCodeToXcodeproj2020Or2021.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Compress\RangeCoder\RangeCoderBitTree.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Common\CommandLineParser.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityHook\MethodHook.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\Link\LinkXmlWriter.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityHook\CodePatcher.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\ReversePInvokeWrap\Analyzer.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\ABI\ValueTypeSizeAligmentCalculator.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\Installer\InstallerWindow.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\BundleFileInfo.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\HashUtil.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Common\CRC.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Common\OutBuffer.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\Meta\GenericArgumentContext.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\Commands\StripAOTDllCommand.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\BundleFileReader.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\Commands\Il2CppDefGeneratorCommand.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Compress\RangeCoder\RangeCoder.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\Meta\MethodReferenceAnalyzer.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\StorageBlockFlags.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\SettingsUtil.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Commands\MethodBridgeGeneratorCommand.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\AOT\AOTAssemblyMetadataStripper.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\ICoder.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Meta\PathAssemblyResolver.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\MethodBridge\CalliAnalyzer.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\HotUpdate\MissingMetadataChecker.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\Meta\CombinedAssemblyResolver.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Meta\AssemblyResolverBase.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\ABI\ParamInfo.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\BuildProcessors\CopyStrippedAOTAssemblies.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\Header.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\BuildProcessors\PatchScriptingAssemblyList.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\Meta\FixedSetAssemblyResolver.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Settings\HybridCLRSettings.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Compress\LZ\LzInWindow.cs" />
     <None Include="E:\git\hybridclr_unity\Editor\HybridCLR.Editor.asmdef" />
@@ -422,17 +422,17 @@
     <Reference Include="GameFramework">
       <HintPath>E:\git\Learning\GF\Assets\Plugins\UnityGameFramework\Libraries\GameFramework.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Protobuf">
-      <HintPath>E:\git\Learning\GF\Assets\Plugins\ThirdParty\Google.Protobuf.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>E:\git\Learning\GF\Assets\Plugins\UnityGameFramework\Libraries\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
     <Reference Include="dnlib">
       <HintPath>E:\git\hybridclr_unity\Plugins\dnlib.dll</HintPath>
     </Reference>
+    <Reference Include="Google.Protobuf">
+      <HintPath>E:\git\Learning\GF\Assets\Plugins\ThirdParty\Google.Protobuf.dll</HintPath>
+    </Reference>
     <Reference Include="LZ4">
       <HintPath>E:\git\hybridclr_unity\Plugins\LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>E:\git\Learning\GF\Assets\Plugins\UnityGameFramework\Libraries\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>E:\git\Learning\GF\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

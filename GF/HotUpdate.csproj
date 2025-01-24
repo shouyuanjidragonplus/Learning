@@ -45,11 +45,17 @@
     <Analyzer Include="D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Base\GF.cs" />
-    <Compile Include="Assets\Scripts\Procedures\ProcedureLaunch.cs" />
-    <Compile Include="Assets\Scripts\Common\SettingConst.cs" />
-    <Compile Include="Assets\Scripts\Event\GFEventArgs.cs" />
-    <None Include="Assets\Scripts\HotUpdate.asmdef" />
+    <Compile Include="Assets\Scripts\Runtime\Procedures\ProcedureLoadHotfixDll.cs" />
+    <Compile Include="Assets\Scripts\Runtime\Procedures\ProcedureLaunch.cs" />
+    <Compile Include="Assets\Scripts\Runtime\Common\SettingConst.cs" />
+    <Compile Include="Assets\Scripts\Runtime\Component\StartComponent\StartComponent.cs" />
+    <Compile Include="Assets\Scripts\Runtime\Event\GFEventArgs.cs" />
+    <Compile Include="Assets\Scripts\Runtime\Procedures\ProcedureSplash.cs" />
+    <Compile Include="Assets\Scripts\Runtime\Procedures\ProcedureUpdateResources.cs" />
+    <Compile Include="Assets\Scripts\Runtime\HotfixEntry.cs" />
+    <Compile Include="Assets\Scripts\Runtime\Component\DriverComponent\DriverComponent.cs" />
+    <Compile Include="Assets\Scripts\Runtime\Base\GF.cs" />
+    <None Include="Assets\Scripts\Runtime\HotUpdate.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -314,17 +320,17 @@
     <Reference Include="GameFramework">
       <HintPath>E:\git\Learning\GF\Assets\Plugins\UnityGameFramework\Libraries\GameFramework.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Protobuf">
-      <HintPath>E:\git\Learning\GF\Assets\Plugins\ThirdParty\Google.Protobuf.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>E:\git\Learning\GF\Assets\Plugins\UnityGameFramework\Libraries\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
     <Reference Include="dnlib">
       <HintPath>E:\git\hybridclr_unity\Plugins\dnlib.dll</HintPath>
     </Reference>
+    <Reference Include="Google.Protobuf">
+      <HintPath>E:\git\Learning\GF\Assets\Plugins\ThirdParty\Google.Protobuf.dll</HintPath>
+    </Reference>
     <Reference Include="LZ4">
       <HintPath>E:\git\hybridclr_unity\Plugins\LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>E:\git\Learning\GF\Assets\Plugins\UnityGameFramework\Libraries\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -716,6 +722,9 @@
     <Reference Include="System.Xml.XPath.XDocument">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -728,9 +737,9 @@
       <Project>{13709862-4e40-7821-77e8-afbc51dca3af}</Project>
       <Name>UnityGameFramework.Runtime</Name>
     </ProjectReference>
-    <ProjectReference Include="Builtin.Runtime.csproj">
-      <Project>{00a50eaf-85a0-380f-13bc-6421bd7c9f08}</Project>
-      <Name>Builtin.Runtime</Name>
+    <ProjectReference Include="GameMain.Runtime.csproj">
+      <Project>{d7aea626-3613-bfe1-d1ff-449e49af8d89}</Project>
+      <Name>GameMain.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
