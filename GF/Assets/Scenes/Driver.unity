@@ -1484,11 +1484,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AvailableProcedureTypeNames:
-  - GameMain.ProcedureLaunch
-  - GameMain.ProcedureLoadHotfixDll
-  - GameMain.ProcedureSplash
-  - GameMain.ProcedureUpdateResources
-  m_EntranceProcedureTypeName: GameMain.ProcedureLaunch
+  - ProcedureLaunch
+  m_EntranceProcedureTypeName: ProcedureLaunch
 --- !u!4 &1155936538
 Transform:
   m_ObjectHideFlags: 0

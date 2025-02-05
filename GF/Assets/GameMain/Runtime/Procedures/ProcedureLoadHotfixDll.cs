@@ -7,12 +7,13 @@ using GameFramework;
 using GameFramework.Event;
 using GameFramework.Procedure;
 using GameFramework.Resource;
+using GameMain;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
 
-namespace GameMain
-{
+// namespace GameMain
+// {
     public class ProcedureLoadHotfixDll : ProcedureBase
     {
         /// <summary>
@@ -152,4 +153,4 @@ namespace GameMain
             GF.Event.Fire(this, ReferencePool.Acquire<LoadHotfixDllEventArgs>().Fill(dllName, dllAssembly, userData));
         }
     }
-}
+//}

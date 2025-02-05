@@ -83,16 +83,16 @@
     <Compile Include="E:\git\hybridclr_unity\Editor\Installer\BashUtil.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\BundleFileWriter.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityHook\LDasm.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\Commands\CompileDllCommand.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\AOT\Analyzer.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\ScriptingAssembliesJsonPatcher.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\BuildProcessors\FilterHotFixAssemblies.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\Commands\LinkGeneratorCommand.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Compress\LZMA\LzmaEncoder.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\Commands\LinkGeneratorCommand.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\EndianBinaryWriter.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Link\Analyzer.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityHook\HybridCLRHooks\PatchScriptingAssembliesJsonHook.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\Commands\CompileDllCommand.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\MethodBridge\Analyzer.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityHook\HybridCLRHooks\PatchScriptingAssembliesJsonHook.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Settings\MenuProvider.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\AOT\GenericReferenceWriter.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Installer\InstallerController.cs" />
@@ -138,19 +138,19 @@
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Common\OutBuffer.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Meta\GenericArgumentContext.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Commands\StripAOTDllCommand.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\BundleFileReader.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Commands\Il2CppDefGeneratorCommand.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\BundleFileReader.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Compress\RangeCoder\RangeCoder.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\Meta\MethodReferenceAnalyzer.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\StorageBlockFlags.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\Meta\MethodReferenceAnalyzer.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\SettingsUtil.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Commands\MethodBridgeGeneratorCommand.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\AOT\AOTAssemblyMetadataStripper.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Meta\PathAssemblyResolver.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\MethodBridge\CalliAnalyzer.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\HotUpdate\MissingMetadataChecker.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Editor\Meta\AssemblyResolverBase.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\ABI\ParamInfo.cs" />
+    <Compile Include="E:\git\hybridclr_unity\Editor\Meta\AssemblyResolverBase.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\UnityFS\Header.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\Settings\HybridCLRSettings.cs" />
     <Compile Include="E:\git\hybridclr_unity\Editor\3rds\7zip\Compress\LZ\LzInWindow.cs" />
@@ -418,9 +418,6 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="GameFramework">
-      <HintPath>E:\git\Learning\GF\Assets\Plugins\UnityGameFramework\Libraries\GameFramework.dll</HintPath>
     </Reference>
     <Reference Include="dnlib">
       <HintPath>E:\git\hybridclr_unity\Plugins\dnlib.dll</HintPath>

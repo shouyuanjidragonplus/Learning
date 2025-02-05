@@ -28,7 +28,7 @@ namespace UnityGameFramework.Editor
         {
             base.OnInspectorGUI();
 
-            serializedObject.Update();
+            serializedObject.Update(); 
 
             ProcedureComponent t = (ProcedureComponent)target;
 

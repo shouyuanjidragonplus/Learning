@@ -30,7 +30,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169,0649</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup>
@@ -62,8 +62,8 @@
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Setting\SettingHelperBase.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Resource\BuiltinVersionListSerializer.PackageVersionListDeserializeCallback.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Debugger\DebuggerComponent.SystemInformationWindow.cs" />
-    <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\DataTable\DataTableHelperBase.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Debugger\DebuggerComponent.InputAccelerationInformationWindow.cs" />
+    <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\DataTable\DataTableHelperBase.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Resource\BuiltinVersionListSerializer.LocalVersionListDeserializeCallback.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\UI\CloseUIFormCompleteEventArgs.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Setting\PlayerPrefsSettingHelper.cs" />
@@ -163,8 +163,8 @@
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Variable\VarDecimal.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Setting\SettingComponent.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\DataTable\LoadDataTableSuccessEventArgs.cs" />
-    <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Config\ConfigComponent.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\WebRequest\WWWWebRequestAgentHelper.cs" />
+    <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Config\ConfigComponent.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Setting\DefaultSettingSerializer.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Resource\ResourceApplySuccessEventArgs.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Network\NetworkConnectedEventArgs.cs" />
@@ -233,8 +233,8 @@
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Utility\DefaultVersionHelper.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\UI\DefaultUIGroupHelper.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Debugger\DebuggerComponent.LogNode.cs" />
-    <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\DataTable\DefaultDataTableHelper.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Debugger\DebuggerComponent.GraphicsInformationWindow.cs" />
+    <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\DataTable\DefaultDataTableHelper.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Entity\ShowEntityFailureEventArgs.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Resource\BuiltinVersionListSerializer.LocalVersionListSerializeCallback.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Debugger\DebuggerComponent.ObjectPoolInformationWindow.cs" />
@@ -256,11 +256,11 @@
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Debugger\DebuggerComponent.WebPlayerInformationWindow.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Event\EventComponent.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Variable\VarSByte.cs" />
-    <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Scene\LoadSceneUpdateEventArgs.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Variable\VarByte.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\UI\UIComponent.UIGroup.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Resource\ResourceHelperBase.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Config\ConfigHelperBase.cs" />
+    <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\Scene\LoadSceneUpdateEventArgs.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\WebRequest\WebRequestAgentHelperBase.cs" />
     <None Include="Assets\Plugins\UnityGameFramework\Scripts\Runtime\UnityGameFramework.Runtime.asmdef" />
     <Reference Include="UnityEngine">
@@ -523,9 +523,6 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="GameFramework">
-      <HintPath>E:\git\Learning\GF\Assets\Plugins\UnityGameFramework\Libraries\GameFramework.dll</HintPath>
     </Reference>
     <Reference Include="dnlib">
       <HintPath>E:\git\hybridclr_unity\Plugins\dnlib.dll</HintPath>
@@ -937,6 +934,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="GameFramework.csproj">
+      <Project>{4fd8065c-8dba-d6d4-c550-34f818e050e2}</Project>
+      <Name>GameFramework</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -3,12 +3,13 @@
     "rootNamespace": "",
     "references": [
         "Unity.TextMeshPro",
+        "GameFramework",
         "UnityGameFramework.Runtime",
         "GameMain.Runtime"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
-    "allowUnsafeCode": false,
+    "allowUnsafeCode": true,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,

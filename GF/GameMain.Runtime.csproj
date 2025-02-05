@@ -30,7 +30,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169,0649</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup>
@@ -47,10 +47,18 @@
   <ItemGroup>
     <Compile Include="Assets\GameMain\Runtime\Base\GameEntry.Builtin.cs" />
     <Compile Include="Assets\GameMain\Runtime\Sound\SoundExtension.cs" />
+    <Compile Include="Assets\GameMain\Runtime\Procedures\ProcedureLaunch.cs" />
     <Compile Include="Assets\GameMain\Runtime\EventArgs\LoadHotfixDllEventArgs.cs" />
+    <Compile Include="Assets\GameMain\Runtime\Component\DriverComponent\DriverComponent.cs" />
     <Compile Include="Assets\GameMain\Runtime\Definition\Constant\Constant.Setting.cs" />
+    <Compile Include="Assets\GameMain\Runtime\Component\StartComponent\StartComponent.cs" />
     <Compile Include="Assets\GameMain\Runtime\Base\GameEntry.Custom.cs" />
+    <Compile Include="Assets\GameMain\Runtime\Base\GF.cs" />
+    <Compile Include="Assets\GameMain\Runtime\Event\GFEventArgs.cs" />
+    <Compile Include="Assets\GameMain\Runtime\Procedures\ProcedureLoadHotfixDll.cs" />
     <Compile Include="Assets\GameMain\Runtime\Base\GameEntry.cs" />
+    <Compile Include="Assets\GameMain\Runtime\Procedures\ProcedureSplash.cs" />
+    <Compile Include="Assets\GameMain\Runtime\Procedures\ProcedureUpdateResources.cs" />
     <None Include="Assets\GameMain\Runtime\GameMain.Runtime.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -312,9 +320,6 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="GameFramework">
-      <HintPath>E:\git\Learning\GF\Assets\Plugins\UnityGameFramework\Libraries\GameFramework.dll</HintPath>
     </Reference>
     <Reference Include="dnlib">
       <HintPath>E:\git\hybridclr_unity\Plugins\dnlib.dll</HintPath>
@@ -718,6 +723,9 @@
     <Reference Include="System.Xml.XPath.XDocument">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -726,6 +734,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="GameFramework.csproj">
+      <Project>{4fd8065c-8dba-d6d4-c550-34f818e050e2}</Project>
+      <Name>GameFramework</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityGameFramework.Runtime.csproj">
       <Project>{13709862-4e40-7821-77e8-afbc51dca3af}</Project>
       <Name>UnityGameFramework.Runtime</Name>

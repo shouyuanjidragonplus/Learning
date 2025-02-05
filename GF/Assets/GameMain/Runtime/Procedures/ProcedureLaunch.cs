@@ -1,11 +1,12 @@
 ﻿using GameFramework.Localization;
 using System;
 using GameFramework.Procedure;
+using GameMain;
 using UnityGameFramework.Runtime;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
 
-namespace GameMain
-{
+//namespace GameMain
+//{
     public class ProcedureLaunch : ProcedureBase
     {
         protected override void OnEnter(ProcedureOwner procedureOwner)
@@ -121,4 +122,4 @@ namespace GameMain
             Log.Info("Init sound settings complete.");
         }
     }
-}
+//}

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using GameFramework.Procedure;
 using UnityEngine;
 
-namespace GameMain
-{
+//namespace GameMain
+//{
     public class ProcedureUpdateResources : ProcedureBase
     {
     }
-}
+//}
