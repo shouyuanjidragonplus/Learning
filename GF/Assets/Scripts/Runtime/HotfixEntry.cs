@@ -2,7 +2,8 @@ using GameFramework;
 using GameFramework.Fsm;
 using GameFramework.Procedure;
 using System;
-using UnityGameFramework.Runtime;
+using UnityEngine;
+
 /// <summary>
 /// 热更逻辑入口
 /// </summary>
@@ -10,20 +11,22 @@ public class HotfixEntry
 {
     public static async void StartHotfixLogic(bool enableHotfix)
     {
-        Log.Info<bool>("Hotfix Enable:{0}", enableHotfix);
+        Debug.LogFormat("Hotfix Enable:{0}", enableHotfix);
 
+        GF.Fsm.DestroyFsm<IProcedureManager>();
+        var fsmManager = GameFrameworkEntry.GetModule<IFsmManager>();
+        var procManager = GameFrameworkEntry.GetModule<IProcedureManager>();
+        //var appConfig = await AppConfigs.GetInstanceSync();
+        //临时使用本地配置
+        var appConfig = AppConfigs.GetInstanceEditor();
 
-        //GF.Fsm.DestroyFsm<IProcedureManager>();
-        //var fsmManager = GameFrameworkEntry.GetModule<IFsmManager>();
-        //var procManager = GameFrameworkEntry.GetModule<IProcedureManager>();
-        // var appConfig = await AppConfigs.GetInstanceSync();
-        //
-        // ProcedureBase[] procedures = new ProcedureBase[appConfig.Procedures.Length];
-        // for (int i = 0; i < appConfig.Procedures.Length; i++)
-        // {
-        //     procedures[i] = Activator.CreateInstance(Type.GetType(appConfig.Procedures[i])) as ProcedureBase;
-        // }
-        //procManager.Initialize(fsmManager, procedures);
-        //procManager.StartProcedure<ProcedurePreload>();
+        ProcedureBase[] procedures = new ProcedureBase[appConfig.Procedures.Length];
+        for (int i = 0; i < appConfig.Procedures.Length; i++)
+        {
+            procedures[i] = Activator.CreateInstance(Type.GetType(appConfig.Procedures[i])) as ProcedureBase;
+        }
+
+        procManager.Initialize(fsmManager, procedures);
+        procManager.StartProcedure<ProcedurePreload>();
     }
 }

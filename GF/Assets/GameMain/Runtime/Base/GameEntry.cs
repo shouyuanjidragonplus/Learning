@@ -14,7 +14,7 @@ namespace GameMain
     /// </summary>
     public partial class GameEntry : MonoBehaviour
     {
-        protected void InitGameEntry()
+        protected void Start()
         {
             InitBuiltinComponents();
             InitCustomComponents();

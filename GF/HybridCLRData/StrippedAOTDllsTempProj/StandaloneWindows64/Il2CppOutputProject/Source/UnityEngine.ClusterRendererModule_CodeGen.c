@@ -1,0 +1,92 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void ClusterNetwork_get_isMasterOfCluster_m1A23B652D70CA8969488D6BB554E6D5C312DF6A0 (void);
+extern void ClusterNetwork_get_isDisconnected_m8FF9AE3D83B98F91D68E52A8D6DFC5FF9F051B9A (void);
+extern void ClusterNetwork_get_nodeIndex_mDEF75ECD50D0706C9406836E3ED54BE2E382A52A (void);
+extern void ClusterNetwork_set_nodeIndex_m9B5FCBE65AE0FBC62495BADA254FC83E07746A50 (void);
+extern void ClusterNetwork__ctor_mE8CB719C1E58D194F4A91E6A1ECA29C6C7D3E678 (void);
+extern void ClusterSerialization_SaveTimeManagerState_mC465D6286EDFDA1E0B5512E11FBFA12008A768AE (void);
+extern void ClusterSerialization_RestoreTimeManagerState_mFF51822DFEBE6486C2688669335EE6FF07A47934 (void);
+extern void ClusterSerialization_SaveInputManagerState_m16FC30472FCDF13640339CD10DE0555FBD72A1AE (void);
+extern void ClusterSerialization_RestoreInputManagerState_m4893C28AE5EB200C12997E904F7FD131494C1CFE (void);
+extern void ClusterSerialization_SaveClusterInputState_m4109EFCD4036D2A2DD36F77A2D257E2D36043100 (void);
+extern void ClusterSerialization_RestoreClusterInputState_m929CFBA89B8D310F01B985B31F8C777225D576ED (void);
+extern void ClusterSerialization_SaveTimeManagerStateInternal_m58ACC55F3F90483E79E7353D013C58F8D714A71A (void);
+extern void ClusterSerialization_RestoreTimeManagerStateInternal_m1363D08BF1F8F72E47B2AC3B531FC98B127CD7BB (void);
+extern void ClusterSerialization_SaveInputManagerStateInternal_m4DD87573FE61965DB09E644FEDEDDF4BBA4CE00E (void);
+extern void ClusterSerialization_RestoreInputManagerStateInternal_m5FB7687B5551BCCAEE9D15DC7953CB94A48A8B4F (void);
+extern void ClusterSerialization_SaveClusterInputStateInternal_mC7B8B0D0EAB7CE9E7DD6EECCF76B1C1387B9B3E6 (void);
+extern void ClusterSerialization_RestoreClusterInputStateInternal_mE2ABDDC3D316B5183950E556A619FF1B00F5F89C (void);
+static Il2CppMethodPointer s_methodPointers[17] = 
+{
+	ClusterNetwork_get_isMasterOfCluster_m1A23B652D70CA8969488D6BB554E6D5C312DF6A0,
+	ClusterNetwork_get_isDisconnected_m8FF9AE3D83B98F91D68E52A8D6DFC5FF9F051B9A,
+	ClusterNetwork_get_nodeIndex_mDEF75ECD50D0706C9406836E3ED54BE2E382A52A,
+	ClusterNetwork_set_nodeIndex_m9B5FCBE65AE0FBC62495BADA254FC83E07746A50,
+	ClusterNetwork__ctor_mE8CB719C1E58D194F4A91E6A1ECA29C6C7D3E678,
+	ClusterSerialization_SaveTimeManagerState_mC465D6286EDFDA1E0B5512E11FBFA12008A768AE,
+	ClusterSerialization_RestoreTimeManagerState_mFF51822DFEBE6486C2688669335EE6FF07A47934,
+	ClusterSerialization_SaveInputManagerState_m16FC30472FCDF13640339CD10DE0555FBD72A1AE,
+	ClusterSerialization_RestoreInputManagerState_m4893C28AE5EB200C12997E904F7FD131494C1CFE,
+	ClusterSerialization_SaveClusterInputState_m4109EFCD4036D2A2DD36F77A2D257E2D36043100,
+	ClusterSerialization_RestoreClusterInputState_m929CFBA89B8D310F01B985B31F8C777225D576ED,
+	ClusterSerialization_SaveTimeManagerStateInternal_m58ACC55F3F90483E79E7353D013C58F8D714A71A,
+	ClusterSerialization_RestoreTimeManagerStateInternal_m1363D08BF1F8F72E47B2AC3B531FC98B127CD7BB,
+	ClusterSerialization_SaveInputManagerStateInternal_m4DD87573FE61965DB09E644FEDEDDF4BBA4CE00E,
+	ClusterSerialization_RestoreInputManagerStateInternal_m5FB7687B5551BCCAEE9D15DC7953CB94A48A8B4F,
+	ClusterSerialization_SaveClusterInputStateInternal_mC7B8B0D0EAB7CE9E7DD6EECCF76B1C1387B9B3E6,
+	ClusterSerialization_RestoreClusterInputStateInternal_mE2ABDDC3D316B5183950E556A619FF1B00F5F89C,
+};
+static const int32_t s_InvokerIndices[17] = 
+{
+	13569,
+	13569,
+	13593,
+	13419,
+	8524,
+	12949,
+	12811,
+	12949,
+	12811,
+	12949,
+	12811,
+	11952,
+	11706,
+	11952,
+	11706,
+	11952,
+	11706,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_ClusterRendererModule_CodeGenModule;
+const Il2CppCodeGenModule g_UnityEngine_ClusterRendererModule_CodeGenModule = 
+{
+	"UnityEngine.ClusterRendererModule.dll",
+	17,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};

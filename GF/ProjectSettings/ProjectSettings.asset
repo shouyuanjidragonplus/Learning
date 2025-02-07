@@ -161,6 +161,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
+    Android: com.DefaultCompany.GF
     Standalone: com.DefaultCompany.GF
   buildNumber:
     Standalone: 0
@@ -836,10 +837,11 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: UNITY_UOS_SECURITY
-    Standalone: UNITY_UOS_SECURITY
-    WebGL: UNITY_UOS_SECURITY
-    iPhone: UNITY_UOS_SECURITY
+    Android: UNITY_UOS_SECURITY;ENABLE_LOG
+    Standalone: UNITY_UOS_SECURITY;ENABLE_LOG
+    WebGL: UNITY_UOS_SECURITY;ENABLE_LOG
+    Windows Store Apps: ENABLE_LOG
+    iPhone: UNITY_UOS_SECURITY;ENABLE_LOG
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:

@@ -1,0 +1,2627 @@
+﻿#include "pch-cpp.hpp"
+
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include <limits>
+
+
+template <typename T1>
+struct VirtualActionInvoker1
+{
+	typedef void (*Action)(void*, T1, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+
+struct NativeData_1_tC4B322C277AE5C5DDDB91613DC77DFFD8055FEA8;
+struct NativeData_1_t65AFA17EB9105E7D7BD52DE10398A347505D63E3;
+struct NativeData_1_tC603028E6A7146FCB3B8868E99F8805F38C9B087;
+struct Stack_1_t449446E5136420475692B1E6D20F61A25110B525;
+struct Stack_1_tAD790A47551563636908E21E4F08C54C0C323EB5;
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
+struct DLSSContextU5BU5D_tB3EA2A13AE824F24AD69B34D981BB2D36CD41E31;
+struct DLSSDebugFeatureInfosU5BU5D_tEBA4C9F992E76B8CCAB9228F93E47A5491CDC2C1;
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+struct CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7;
+struct DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09;
+struct DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE;
+struct GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30;
+struct GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456;
+struct InitDeviceContext_tAA4E19E77C4191C5C90CF10340BA30925D2CEC54;
+struct NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB;
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
+struct String_t;
+struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700;
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
+
+IL2CPP_EXTERN_C RuntimeClass* Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* DLSSDebugFeatureInfosU5BU5D_tEBA4C9F992E76B8CCAB9228F93E47A5491CDC2C1_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* GC_t920F9CF6EBB7C787E5010A4352E1B587F356DC58_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* InitDeviceContext_tAA4E19E77C4191C5C90CF10340BA30925D2CEC54_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Marshal_tD976A56A90263C3CE2B780D4B1CADADE2E70B4A7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* NativeData_1_t65AFA17EB9105E7D7BD52DE10398A347505D63E3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* NativeData_1_tC4B322C277AE5C5DDDB91613DC77DFFD8055FEA8_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* NativeData_1_tC603028E6A7146FCB3B8868E99F8805F38C9B087_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Stack_1_t449446E5136420475692B1E6D20F61A25110B525_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteralC75DDBE10FBC42810C77E11DD602386C634DD895;
+IL2CPP_EXTERN_C String_t* _stringLiteralD17768C3B31CAAABBF3AA5F14A359A7C3C2CF794;
+IL2CPP_EXTERN_C const RuntimeMethod* NativeData_1__ctor_m29F2594EEE6094A8B7989D5B91BC86B5CBA3A920_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* NativeData_1__ctor_m8D1CF955C12F163131031579F4CC9E6051EC7B37_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* NativeData_1__ctor_m95A30309AC04E765F5BF8DC41C73EA89BDA136F1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* NativeData_1_get_Ptr_m3916EEC4BB2BE16C7E962C69E3EADCCBF0EE4324_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* NativeData_1_get_Ptr_m9DC75F18D04A418F8B0B932066AD16F3F738607B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* NativeData_1_get_Ptr_mEC506124B64ED9B7C40F739B1A6B63A005BCED9B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Stack_1_Pop_mDC95FE2BD440D7149069776709F5D6F1996286FF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Stack_1_Push_m67FDDBD6FE4904AFFD5D18F174811FCDB8F5E6B9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Stack_1__ctor_m8ECDF2305BBB208D58AA217E1A9991BE2E5F69AE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Stack_1_get_Count_mDE5B9ED41A1B223EF4C0D23184E76075C7CD5CB7_RuntimeMethod_var;
+
+struct DLSSDebugFeatureInfosU5BU5D_tEBA4C9F992E76B8CCAB9228F93E47A5491CDC2C1;
+
+IL2CPP_EXTERN_C_BEGIN
+IL2CPP_EXTERN_C_END
+
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+struct U3CModuleU3E_tCF1FA8CBA441CCCAB97494C19BEA3983E8120366 
+{
+};
+struct Stack_1_t449446E5136420475692B1E6D20F61A25110B525  : public RuntimeObject
+{
+	DLSSContextU5BU5D_tB3EA2A13AE824F24AD69B34D981BB2D36CD41E31* ____array;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct Stack_1_tAD790A47551563636908E21E4F08C54C0C323EB5  : public RuntimeObject
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ____array;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09  : public RuntimeObject
+{
+	NativeData_1_t65AFA17EB9105E7D7BD52DE10398A347505D63E3* ___m_InitData;
+	NativeData_1_tC4B322C277AE5C5DDDB91613DC77DFFD8055FEA8* ___m_ExecData;
+};
+struct GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30  : public RuntimeObject
+{
+	InitDeviceContext_tAA4E19E77C4191C5C90CF10340BA30925D2CEC54* ___m_InitDeviceContext;
+	Stack_1_t449446E5136420475692B1E6D20F61A25110B525* ___s_ContextObjectPool;
+};
+struct GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456  : public RuntimeObject
+{
+	uint32_t ___m_ViewId;
+	uint32_t ___m_DeviceVersion;
+	uint32_t ___m_NgxVersion;
+	DLSSDebugFeatureInfosU5BU5D_tEBA4C9F992E76B8CCAB9228F93E47A5491CDC2C1* ___m_DlssDebugFeatures;
+};
+struct InitDeviceContext_tAA4E19E77C4191C5C90CF10340BA30925D2CEC54  : public RuntimeObject
+{
+	NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* ___m_ProjectId;
+	NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* ___m_EngineVersion;
+	NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* ___m_AppDir;
+	NativeData_1_tC603028E6A7146FCB3B8868E99F8805F38C9B087* ___m_InitData;
+};
+struct NVUnityPlugin_tD2C375B81FAA63E9FEAFC5165BE52ECE3718F0D8  : public RuntimeObject
+{
+};
+struct String_t  : public RuntimeObject
+{
+	int32_t ____stringLength;
+	Il2CppChar ____firstChar;
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F  : public RuntimeObject
+{
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
+{
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
+{
+};
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22 
+{
+	bool ___m_value;
+};
+struct DLSSCommandExecutionData_tD7BBF3FFD6F84E88BFAFE740E9EE66C698493231 
+{
+	int32_t ___m_Reset;
+	float ___m_Sharpness;
+	float ___m_MVScaleX;
+	float ___m_MVScaleY;
+	float ___m_JitterOffsetX;
+	float ___m_JitterOffsetY;
+	float ___m_PreExposure;
+	uint32_t ___m_SubrectOffsetX;
+	uint32_t ___m_SubrectOffsetY;
+	uint32_t ___m_SubrectWidth;
+	uint32_t ___m_SubrectHeight;
+	uint32_t ___m_InvertXAxis;
+	uint32_t ___m_InvertYAxis;
+	uint32_t ___m_FeatureSlot;
+};
+struct DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF 
+{
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___U3CcolorInputU3Ek__BackingField;
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___U3CcolorOutputU3Ek__BackingField;
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___U3CdepthU3Ek__BackingField;
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___U3CmotionVectorsU3Ek__BackingField;
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___U3CtransparencyMaskU3Ek__BackingField;
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___U3CexposureTextureU3Ek__BackingField;
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___U3CbiasColorMaskU3Ek__BackingField;
+};
+struct DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF_marshaled_pinvoke
+{
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___U3CcolorInputU3Ek__BackingField;
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___U3CcolorOutputU3Ek__BackingField;
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___U3CdepthU3Ek__BackingField;
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___U3CmotionVectorsU3Ek__BackingField;
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___U3CtransparencyMaskU3Ek__BackingField;
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___U3CexposureTextureU3Ek__BackingField;
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___U3CbiasColorMaskU3Ek__BackingField;
+};
+struct DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF_marshaled_com
+{
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___U3CcolorInputU3Ek__BackingField;
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___U3CcolorOutputU3Ek__BackingField;
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___U3CdepthU3Ek__BackingField;
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___U3CmotionVectorsU3Ek__BackingField;
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___U3CtransparencyMaskU3Ek__BackingField;
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___U3CexposureTextureU3Ek__BackingField;
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___U3CbiasColorMaskU3Ek__BackingField;
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_com
+{
+};
+struct GraphicsDeviceDebugInfo_t2E7FC2BFA50FB64A073A0E69FA5A95346337B114 
+{
+	uint32_t ___NVDeviceVersion;
+	uint32_t ___NGXVersion;
+	DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE* ___dlssInfos;
+	uint32_t ___dlssInfosCount;
+};
+struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C 
+{
+	int32_t ___m_value;
+};
+struct Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3 
+{
+	int64_t ___m_value;
+};
+struct IntPtr_t 
+{
+	void* ___m_value;
+};
+struct OptimalDLSSSettingsData_t6520B090F25B090E6EF719F3568B21A29CB16774 
+{
+	uint32_t ___m_OutRenderWidth;
+	uint32_t ___m_OutRenderHeight;
+	float ___m_Sharpness;
+	uint32_t ___m_MaxWidth;
+	uint32_t ___m_MaxHeight;
+	uint32_t ___m_MinWidth;
+	uint32_t ___m_MinHeight;
+};
+struct UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B 
+{
+	uint32_t ___m_value;
+};
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915 
+{
+	union
+	{
+		struct
+		{
+		};
+		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
+	};
+};
+struct NativeData_1_tC4B322C277AE5C5DDDB91613DC77DFFD8055FEA8  : public RuntimeObject
+{
+	intptr_t ___m_MarshalledValue;
+	DLSSCommandExecutionData_tD7BBF3FFD6F84E88BFAFE740E9EE66C698493231 ___Value;
+};
+struct CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7  : public RuntimeObject
+{
+	intptr_t ___m_Ptr;
+};
+struct DLSSFeatureFlags_t6BE37871EE9DC99F78294DFECD50F07BBF1815A0 
+{
+	int32_t ___value__;
+};
+struct DLSSQuality_tCC5B2BE95CB4DC7341E2B245DF5DFF4FA2FD74A3 
+{
+	int32_t ___value__;
+};
+struct GraphicsDeviceFeature_t6C3BE99BD14384E0A96093BA6247981DEF2C5B5F 
+{
+	int32_t ___value__;
+};
+struct InitDeviceCmdData_t9907FA253D99F96C451E1E5B477B202727368F95 
+{
+	intptr_t ___m_ProjectId;
+	intptr_t ___m_EngineVersion;
+	intptr_t ___m_AppDir;
+};
+struct NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB  : public RuntimeObject
+{
+	String_t* ___m_Str;
+	intptr_t ___m_MarshalledString;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
+{
+	intptr_t ___m_CachedPtr;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
+{
+	intptr_t ___m_CachedPtr;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
+{
+	intptr_t ___m_CachedPtr;
+};
+struct PluginEvent_t90E1B6ED4F9F014F12AFDBAEAA8536F75E58479D 
+{
+	int32_t ___value__;
+};
+struct Textures_tBC2F6D5291DDFBAB077398C7A89C0FC76F4FA536 
+{
+	int32_t ___value__;
+};
+struct NativeData_1_tC603028E6A7146FCB3B8868E99F8805F38C9B087  : public RuntimeObject
+{
+	intptr_t ___m_MarshalledValue;
+	InitDeviceCmdData_t9907FA253D99F96C451E1E5B477B202727368F95 ___Value;
+};
+struct DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0 
+{
+	uint32_t ___m_InputRTWidth;
+	uint32_t ___m_InputRTHeight;
+	uint32_t ___m_OutputRTWidth;
+	uint32_t ___m_OutputRTHeight;
+	int32_t ___m_Quality;
+	int32_t ___m_Flags;
+	uint32_t ___m_FeatureSlot;
+};
+struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct NativeData_1_t65AFA17EB9105E7D7BD52DE10398A347505D63E3  : public RuntimeObject
+{
+	intptr_t ___m_MarshalledValue;
+	DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0 ___Value;
+};
+struct DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE 
+{
+	bool ___m_ValidFeature;
+	uint32_t ___m_FeatureSlot;
+	DLSSCommandExecutionData_tD7BBF3FFD6F84E88BFAFE740E9EE66C698493231 ___m_ExecData;
+	DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0 ___m_InitData;
+};
+struct DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE_marshaled_pinvoke
+{
+	int32_t ___m_ValidFeature;
+	uint32_t ___m_FeatureSlot;
+	DLSSCommandExecutionData_tD7BBF3FFD6F84E88BFAFE740E9EE66C698493231 ___m_ExecData;
+	DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0 ___m_InitData;
+};
+struct DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE_marshaled_com
+{
+	int32_t ___m_ValidFeature;
+	uint32_t ___m_FeatureSlot;
+	DLSSCommandExecutionData_tD7BBF3FFD6F84E88BFAFE740E9EE66C698493231 ___m_ExecData;
+	DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0 ___m_InitData;
+};
+struct GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_StaticFields
+{
+	String_t* ___s_DefaultProjectID;
+	String_t* ___s_DefaultAppDir;
+	GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* ___sGraphicsDeviceInstance;
+};
+struct String_t_StaticFields
+{
+	String_t* ___Empty;
+};
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	String_t* ___TrueString;
+	String_t* ___FalseString;
+};
+struct IntPtr_t_StaticFields
+{
+	intptr_t ___Zero;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
+{
+	int32_t ___OffsetOfInstanceIDInCPlusPlusObject;
+};
+struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700_StaticFields
+{
+	int32_t ___GenerateAllMips;
+};
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+struct DLSSDebugFeatureInfosU5BU5D_tEBA4C9F992E76B8CCAB9228F93E47A5491CDC2C1  : public RuntimeArray
+{
+	ALIGN_FIELD (8) DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE m_Items[1];
+
+	inline DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE value)
+	{
+		m_Items[index] = value;
+	}
+};
+
+
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeData_1__ctor_m8D1CF955C12F163131031579F4CC9E6051EC7B37_gshared (NativeData_1_tC603028E6A7146FCB3B8868E99F8805F38C9B087* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t NativeData_1_get_Ptr_m3916EEC4BB2BE16C7E962C69E3EADCCBF0EE4324_gshared (NativeData_1_tC603028E6A7146FCB3B8868E99F8805F38C9B087* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeData_1__ctor_m95A30309AC04E765F5BF8DC41C73EA89BDA136F1_gshared (NativeData_1_t65AFA17EB9105E7D7BD52DE10398A347505D63E3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeData_1__ctor_m29F2594EEE6094A8B7989D5B91BC86B5CBA3A920_gshared (NativeData_1_tC4B322C277AE5C5DDDB91613DC77DFFD8055FEA8* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t NativeData_1_get_Ptr_mEC506124B64ED9B7C40F739B1A6B63A005BCED9B_gshared (NativeData_1_t65AFA17EB9105E7D7BD52DE10398A347505D63E3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t NativeData_1_get_Ptr_m9DC75F18D04A418F8B0B932066AD16F3F738607B_gshared (NativeData_1_tC4B322C277AE5C5DDDB91613DC77DFFD8055FEA8* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Stack_1__ctor_m70E8EDA96A608CE9BAB7FC8313B233AADA573BD4_gshared (Stack_1_tAD790A47551563636908E21E4F08C54C0C323EB5* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Stack_1_get_Count_mD08AE71D49787D30DDD9D484BCD323D646744D2E_gshared_inline (Stack_1_tAD790A47551563636908E21E4F08C54C0C323EB5* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Stack_1_Pop_m2AFF69249659372F07EE25817DBCAFE74E1CF778_gshared (Stack_1_tAD790A47551563636908E21E4F08C54C0C323EB5* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Stack_1_Push_m709DD11BC1291A905814182CF9A367DE7399A778_gshared (Stack_1_tAD790A47551563636908E21E4F08C54C0C323EB5* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
+
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InitDeviceCmdData_set_projectId_mA2A63128021904FD25BF50E3CD6706A8007A7ED2 (InitDeviceCmdData_t9907FA253D99F96C451E1E5B477B202727368F95* __this, intptr_t ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InitDeviceCmdData_set_engineVersion_m35968F968E54B3D246D5376407DBE6BEF2A881CB (InitDeviceCmdData_t9907FA253D99F96C451E1E5B477B202727368F95* __this, intptr_t ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InitDeviceCmdData_set_appDir_m73F8B3C7B955425825FB6DDCEE3BDA8B1B8F03EF (InitDeviceCmdData_t9907FA253D99F96C451E1E5B477B202727368F95* __this, intptr_t ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DLSSCommandInitializationData_set_featureSlot_m8265564028A7488733B178E8DAF159E22BB3073C (DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0* __this, uint32_t ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t DLSSCommandInitializationData_get_featureSlot_mA35E18D88F1FDBA2255AD1026CD2F287C524FEA8 (DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_colorInput_mCA1C9468C5E51299F4AE7D8F3DE27212D45888B7_inline (DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_colorOutput_mEDA6CE6C9B969F7C8536EFDACE47B052FCC265C7_inline (DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_depth_mA10825F11D6DEA9B8A411BBB4D806E62839C10E5_inline (DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_motionVectors_m6E2674E42A4212BD7D484EEC7B343EF6B2C7A25C_inline (DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_transparencyMask_mFE6C8B48F71E267FA357B3DA3C3F1CD0280F752D_inline (DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_exposureTexture_m2119B86AED4F7313782B5CD33E08F55F5C228688_inline (DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_biasColorMask_m7A65B25DA8DD8A7CC832DA3F6FAC4147292E2274_inline (DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DLSSCommandExecutionData_set_featureSlot_m74E7D6880FA19E441DE9AD687DA09151DC9EC9A2 (DLSSCommandExecutionData_tD7BBF3FFD6F84E88BFAFE740E9EE66C698493231* __this, uint32_t ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeStr_Dispose_m32B62539BEB70F08A1C53A4C8CF99785152A8E60 (NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Marshal_StringToHGlobalUni_mB7E29E7F6698E32996E51507A281E0AF7BA721AB (String_t* ___0_s, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GC_SuppressFinalize_m71815DBD5A0CD2EA1BE43317B08B7A14949EDC65 (RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntPtr_op_Inequality_m90EFC9C4CAD9A33E309F2DDF98EE4E1DD253637B (intptr_t ___0_value1, intptr_t ___1_value2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Marshal_FreeHGlobal_m298EF0650E82E326EDA8048488DC384BB9171EB9 (intptr_t ___0_hglobal, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Finalize_mC98C96301CCABFE00F1A7EF8E15DF507CACD42B2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeStr__ctor_mC7E3027D34C011D6289958C71E0AACBBFC9FBDBB (NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* __this, const RuntimeMethod* method) ;
+inline void NativeData_1__ctor_m8D1CF955C12F163131031579F4CC9E6051EC7B37 (NativeData_1_tC603028E6A7146FCB3B8868E99F8805F38C9B087* __this, const RuntimeMethod* method)
+{
+	((  void (*) (NativeData_1_tC603028E6A7146FCB3B8868E99F8805F38C9B087*, const RuntimeMethod*))NativeData_1__ctor_m8D1CF955C12F163131031579F4CC9E6051EC7B37_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeStr_set_Str_m7C0F940788E18203A53CCE47D195E5518081D161 (NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* __this, String_t* ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t NativeStr_get_Ptr_mE2306EB96AB26D4E51C929E5C4B5B5E9F8DD189A (NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* __this, const RuntimeMethod* method) ;
+inline intptr_t NativeData_1_get_Ptr_m3916EEC4BB2BE16C7E962C69E3EADCCBF0EE4324 (NativeData_1_tC603028E6A7146FCB3B8868E99F8805F38C9B087* __this, const RuntimeMethod* method)
+{
+	return ((  intptr_t (*) (NativeData_1_tC603028E6A7146FCB3B8868E99F8805F38C9B087*, const RuntimeMethod*))NativeData_1_get_Ptr_m3916EEC4BB2BE16C7E962C69E3EADCCBF0EE4324_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0* DLSSContext_get_initData_mC1A7801AE93394A9C939C1C157194730C132B108 (DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* __this, const RuntimeMethod* method) ;
+inline void NativeData_1__ctor_m95A30309AC04E765F5BF8DC41C73EA89BDA136F1 (NativeData_1_t65AFA17EB9105E7D7BD52DE10398A347505D63E3* __this, const RuntimeMethod* method)
+{
+	((  void (*) (NativeData_1_t65AFA17EB9105E7D7BD52DE10398A347505D63E3*, const RuntimeMethod*))NativeData_1__ctor_m95A30309AC04E765F5BF8DC41C73EA89BDA136F1_gshared)(__this, method);
+}
+inline void NativeData_1__ctor_m29F2594EEE6094A8B7989D5B91BC86B5CBA3A920 (NativeData_1_tC4B322C277AE5C5DDDB91613DC77DFFD8055FEA8* __this, const RuntimeMethod* method)
+{
+	((  void (*) (NativeData_1_tC4B322C277AE5C5DDDB91613DC77DFFD8055FEA8*, const RuntimeMethod*))NativeData_1__ctor_m29F2594EEE6094A8B7989D5B91BC86B5CBA3A920_gshared)(__this, method);
+}
+inline intptr_t NativeData_1_get_Ptr_mEC506124B64ED9B7C40F739B1A6B63A005BCED9B (NativeData_1_t65AFA17EB9105E7D7BD52DE10398A347505D63E3* __this, const RuntimeMethod* method)
+{
+	return ((  intptr_t (*) (NativeData_1_t65AFA17EB9105E7D7BD52DE10398A347505D63E3*, const RuntimeMethod*))NativeData_1_get_Ptr_mEC506124B64ED9B7C40F739B1A6B63A005BCED9B_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t DLSSContext_get_featureSlot_mA693D65D671EDEFE2CD567C5DB25EB45679C94A3 (DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* __this, const RuntimeMethod* method) ;
+inline intptr_t NativeData_1_get_Ptr_m9DC75F18D04A418F8B0B932066AD16F3F738607B (NativeData_1_tC4B322C277AE5C5DDDB91613DC77DFFD8055FEA8* __this, const RuntimeMethod* method)
+{
+	return ((  intptr_t (*) (NativeData_1_tC4B322C277AE5C5DDDB91613DC77DFFD8055FEA8*, const RuntimeMethod*))NativeData_1_get_Ptr_m9DC75F18D04A418F8B0B932066AD16F3F738607B_gshared)(__this, method);
+}
+inline void Stack_1__ctor_m8ECDF2305BBB208D58AA217E1A9991BE2E5F69AE (Stack_1_t449446E5136420475692B1E6D20F61A25110B525* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Stack_1_t449446E5136420475692B1E6D20F61A25110B525*, const RuntimeMethod*))Stack_1__ctor_m70E8EDA96A608CE9BAB7FC8313B233AADA573BD4_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InitDeviceContext__ctor_m3079B2017D6BE43131681088B01AD4DB0A98E475 (InitDeviceContext_tAA4E19E77C4191C5C90CF10340BA30925D2CEC54* __this, String_t* ___0_projectId, String_t* ___1_engineVersion, String_t* ___2_appDir, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t InitDeviceContext_GetInitCmdPtr_m282C84946FC0CC248F2AB8B1701747A436675C57 (InitDeviceContext_tAA4E19E77C4191C5C90CF10340BA30925D2CEC54* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GraphicsDevice_NVUP_InitApi_mDB36041E3BF64360747B0D653CF6B02D225F99A6 (intptr_t ___0_initData, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice_NVUP_ShutdownApi_mB135A1BD53DE98C8CFE1F4504C0480265A28CD0F (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice_Shutdown_mFC2DA779468536A76CAD1047C5F50CA439007A67 (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t GraphicsDevice_NVUP_GetRenderEventCallback_mDF13712BE6611B1A51FA06E87B358F47D13E8FA5 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GraphicsDevice_NVUP_GetBaseEventId_mE72681217E20C87579F18D59F477EC2B6ADA2DD2 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_IssuePluginEventAndData_m6218AC6654E29A7245DBB8F739FE99F6804FBB0C (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, intptr_t ___0_callback, int32_t ___1_eventID, intptr_t ___2_data, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GraphicsDevice_Initialize_mAD60479B849826EF9063AB0727A3187BCF1DFBF2 (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice__ctor_m1AB70C26331576F6AC52A7BDDBB29F82B3B5D51F (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, String_t* ___0_projectId, String_t* ___1_engineVersion, String_t* ___2_appDir, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GraphicsDevice_CreateSetTextureUserData_m18C859E040ADD6CA6E6B54518F89F6E7D99EE73B (int32_t ___0_featureId, int32_t ___1_textureSlot, bool ___2_clearTextureTable, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t GraphicsDevice_NVUP_GetSetTextureEventCallback_m1769E18E4ED28BDF263745067875290B4BAC8AE3 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommandBuffer_IssuePluginCustomTextureUpdateV2_m2F0FCB75B743412D3AD504F7A95DE4D854A8D601 (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* __this, intptr_t ___0_callback, Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___1_targetTexture, uint32_t ___2_userData, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice_NVUP_GetGraphicsDeviceDebugInfo_m7F096032C4498C19357B2A37BBF8D13731172275 (uint32_t ___0_debugViewId, GraphicsDeviceDebugInfo_t2E7FC2BFA50FB64A073A0E69FA5A95346337B114* ___1_data, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t GraphicsDevice_NVUP_CreateDebugView_mA5F663E7D2043EB1B42AF9AD3BD88601E1D1D09C (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice_NVUP_DeleteDebugView_m4DE8E72CDCB3226D8DC2DA5DB7BC0B61FF5DECB7 (uint32_t ___0_debugViewId, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_unityVersion_m27BB3207901305BD239E1C3A74035E15CF3E5D21 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* GraphicsDevice_InternalCreate_m5D3E02A910983CB4DCA70AF4B2C0095756080F81 (String_t* ___0_appIdOrProjectId, String_t* ___1_engineVersion, String_t* ___2_appDir, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t GraphicsDevice_NVUP_GetDeviceVersion_mA7ABA3AA87EF2C364D7CD7CBB0D1226469085B52 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GraphicsDevice_NVUP_IsFeatureAvailable_m6BD94CF6B3B28F30D6F39DA4ADAB83B4247F8D37 (int32_t ___0_featureID, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GraphicsDevice_IsFeatureAvailable_m3D0A20B4442B2FD7CDD40040DF27CF6F6173FBE6 (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, int32_t ___0_featureID, const RuntimeMethod* method) ;
+inline int32_t Stack_1_get_Count_mDE5B9ED41A1B223EF4C0D23184E76075C7CD5CB7_inline (Stack_1_t449446E5136420475692B1E6D20F61A25110B525* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (Stack_1_t449446E5136420475692B1E6D20F61A25110B525*, const RuntimeMethod*))Stack_1_get_Count_mD08AE71D49787D30DDD9D484BCD323D646744D2E_gshared_inline)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DLSSContext__ctor_mC06E2DD3BB8DDAE8596A4B987DD12523D6591ED2 (DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* __this, const RuntimeMethod* method) ;
+inline DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* Stack_1_Pop_mDC95FE2BD440D7149069776709F5D6F1996286FF (Stack_1_t449446E5136420475692B1E6D20F61A25110B525* __this, const RuntimeMethod* method)
+{
+	return ((  DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* (*) (Stack_1_t449446E5136420475692B1E6D20F61A25110B525*, const RuntimeMethod*))Stack_1_Pop_m2AFF69249659372F07EE25817DBCAFE74E1CF778_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t GraphicsDevice_NVUP_CreateFeatureSlot_mBC0AF6EA3B32E95A3B5BD3DC641A2A33C0AA371B (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DLSSContext_Init_mBFCE0E41FD97E2A66496BFD7DCFA8AD887E114B9 (DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* __this, DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0 ___0_initSettings, uint32_t ___1_featureSlot, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DLSSContext_GetInitCmdPtr_mAFE77BCCF2E9F35991B3195D292D0C0C6968FFEF (DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice_InsertEventCall_m110ADA1F9BEFEE10474ABAD57D34C7743DC17813 (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, int32_t ___1_pluginEvent, intptr_t ___2_ptr, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntPtr__ctor_m2C033540A2F274766CF5C2A120587DD997E3F6DC (intptr_t* __this, int64_t ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DLSSContext_Reset_mEE1081070FB0EC73C6FBB593B8C50A9E76F1E8BC (DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* __this, const RuntimeMethod* method) ;
+inline void Stack_1_Push_m67FDDBD6FE4904AFFD5D18F174811FCDB8F5E6B9 (Stack_1_t449446E5136420475692B1E6D20F61A25110B525* __this, DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (Stack_1_t449446E5136420475692B1E6D20F61A25110B525*, DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09*, const RuntimeMethod*))Stack_1_Push_m709DD11BC1291A905814182CF9A367DE7399A778_gshared)(__this, ___0_item, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice_SetTexture_m983E7CBCF81DFCFFFDD9BE8DBBB3226EAFBE492D (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* ___1_dlssContext, int32_t ___2_textureSlot, Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___3_texture, bool ___4_clearTextureTable, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DLSSContext_GetExecuteCmdPtr_mE421C1F81246ADF577A66C7895FC5510438B5D08 (DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GraphicsDevice_NVUP_GetOptimalSettings_mCBECE6E24A40A920CBCE568337E3CE7076931D3C (uint32_t ___0_inTargetWidth, uint32_t ___1_inTargetHeight, int32_t ___2_inPerfVQuality, OptimalDLSSSettingsData_t6520B090F25B090E6EF719F3568B21A29CB16774* ___3_data, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t GraphicsDevice_CreateDebugViewId_m0104B8035725D1F0C1ED56C76E1B00B4B985B2BB (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDeviceDebugView__ctor_m1EC04F6C78F9A3B84967200D88C7D187AC451141 (GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456* __this, uint32_t ___0_viewId, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GraphicsDeviceDebugInfo_t2E7FC2BFA50FB64A073A0E69FA5A95346337B114 GraphicsDevice_GetDebugInfo_m49C6C7D6238546B026C4716DC7E01094326AFB4A (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, uint32_t ___0_debugViewId, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice_DeleteDebugViewId_m0270D0E8672DCAD37BA4858E64D857B736030A96 (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, uint32_t ___0_debugViewId, const RuntimeMethod* method) ;
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+IL2CPP_EXTERN_C int32_t STDCALL NVUP_InitApi(intptr_t);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+IL2CPP_EXTERN_C void STDCALL NVUP_ShutdownApi();
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+IL2CPP_EXTERN_C int32_t STDCALL NVUP_IsFeatureAvailable(int32_t);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+IL2CPP_EXTERN_C int32_t STDCALL NVUP_GetOptimalSettings(uint32_t, uint32_t, int32_t, OptimalDLSSSettingsData_t6520B090F25B090E6EF719F3568B21A29CB16774*);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+IL2CPP_EXTERN_C intptr_t STDCALL NVUP_GetRenderEventCallback();
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+IL2CPP_EXTERN_C intptr_t STDCALL NVUP_GetSetTextureEventCallback();
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+IL2CPP_EXTERN_C uint32_t STDCALL NVUP_CreateFeatureSlot();
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+IL2CPP_EXTERN_C uint32_t STDCALL NVUP_GetDeviceVersion();
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+IL2CPP_EXTERN_C uint32_t STDCALL NVUP_CreateDebugView();
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+IL2CPP_EXTERN_C void STDCALL NVUP_GetGraphicsDeviceDebugInfo(uint32_t, GraphicsDeviceDebugInfo_t2E7FC2BFA50FB64A073A0E69FA5A95346337B114*);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+IL2CPP_EXTERN_C void STDCALL NVUP_DeleteDebugView(uint32_t);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+IL2CPP_EXTERN_C int32_t STDCALL NVUP_GetBaseEventId();
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NVUnityPlugin_Load_mFC6D442E8210CD50C0D941493DD87716E841CB27 (const RuntimeMethod* method) 
+{
+	typedef bool (*NVUnityPlugin_Load_mFC6D442E8210CD50C0D941493DD87716E841CB27_ftn) ();
+	static NVUnityPlugin_Load_mFC6D442E8210CD50C0D941493DD87716E841CB27_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (NVUnityPlugin_Load_mFC6D442E8210CD50C0D941493DD87716E841CB27_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.NVIDIA.NVUnityPlugin::Load()");
+	bool icallRetVal = _il2cpp_icall_func();
+	return icallRetVal;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NVUnityPlugin_IsLoaded_m03D6E1DAC66FF23413205B65F4BB9DB1B569E70D (const RuntimeMethod* method) 
+{
+	typedef bool (*NVUnityPlugin_IsLoaded_m03D6E1DAC66FF23413205B65F4BB9DB1B569E70D_ftn) ();
+	static NVUnityPlugin_IsLoaded_m03D6E1DAC66FF23413205B65F4BB9DB1B569E70D_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (NVUnityPlugin_IsLoaded_m03D6E1DAC66FF23413205B65F4BB9DB1B569E70D_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.NVIDIA.NVUnityPlugin::IsLoaded()");
+	bool icallRetVal = _il2cpp_icall_func();
+	return icallRetVal;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InitDeviceCmdData_set_projectId_mA2A63128021904FD25BF50E3CD6706A8007A7ED2 (InitDeviceCmdData_t9907FA253D99F96C451E1E5B477B202727368F95* __this, intptr_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		intptr_t L_0 = ___0_value;
+		__this->___m_ProjectId = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void InitDeviceCmdData_set_projectId_mA2A63128021904FD25BF50E3CD6706A8007A7ED2_AdjustorThunk (RuntimeObject* __this, intptr_t ___0_value, const RuntimeMethod* method)
+{
+	InitDeviceCmdData_t9907FA253D99F96C451E1E5B477B202727368F95* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<InitDeviceCmdData_t9907FA253D99F96C451E1E5B477B202727368F95*>(__this + _offset);
+	InitDeviceCmdData_set_projectId_mA2A63128021904FD25BF50E3CD6706A8007A7ED2(_thisAdjusted, ___0_value, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InitDeviceCmdData_set_engineVersion_m35968F968E54B3D246D5376407DBE6BEF2A881CB (InitDeviceCmdData_t9907FA253D99F96C451E1E5B477B202727368F95* __this, intptr_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		intptr_t L_0 = ___0_value;
+		__this->___m_EngineVersion = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void InitDeviceCmdData_set_engineVersion_m35968F968E54B3D246D5376407DBE6BEF2A881CB_AdjustorThunk (RuntimeObject* __this, intptr_t ___0_value, const RuntimeMethod* method)
+{
+	InitDeviceCmdData_t9907FA253D99F96C451E1E5B477B202727368F95* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<InitDeviceCmdData_t9907FA253D99F96C451E1E5B477B202727368F95*>(__this + _offset);
+	InitDeviceCmdData_set_engineVersion_m35968F968E54B3D246D5376407DBE6BEF2A881CB(_thisAdjusted, ___0_value, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InitDeviceCmdData_set_appDir_m73F8B3C7B955425825FB6DDCEE3BDA8B1B8F03EF (InitDeviceCmdData_t9907FA253D99F96C451E1E5B477B202727368F95* __this, intptr_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		intptr_t L_0 = ___0_value;
+		__this->___m_AppDir = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void InitDeviceCmdData_set_appDir_m73F8B3C7B955425825FB6DDCEE3BDA8B1B8F03EF_AdjustorThunk (RuntimeObject* __this, intptr_t ___0_value, const RuntimeMethod* method)
+{
+	InitDeviceCmdData_t9907FA253D99F96C451E1E5B477B202727368F95* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<InitDeviceCmdData_t9907FA253D99F96C451E1E5B477B202727368F95*>(__this + _offset);
+	InitDeviceCmdData_set_appDir_m73F8B3C7B955425825FB6DDCEE3BDA8B1B8F03EF(_thisAdjusted, ___0_value, method);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DLSSCommandInitializationData_set_featureSlot_m8265564028A7488733B178E8DAF159E22BB3073C (DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0* __this, uint32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		uint32_t L_0 = ___0_value;
+		__this->___m_FeatureSlot = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void DLSSCommandInitializationData_set_featureSlot_m8265564028A7488733B178E8DAF159E22BB3073C_AdjustorThunk (RuntimeObject* __this, uint32_t ___0_value, const RuntimeMethod* method)
+{
+	DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0*>(__this + _offset);
+	DLSSCommandInitializationData_set_featureSlot_m8265564028A7488733B178E8DAF159E22BB3073C(_thisAdjusted, ___0_value, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t DLSSCommandInitializationData_get_featureSlot_mA35E18D88F1FDBA2255AD1026CD2F287C524FEA8 (DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0* __this, const RuntimeMethod* method) 
+{
+	uint32_t V_0 = 0;
+	{
+		uint32_t L_0 = __this->___m_FeatureSlot;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		uint32_t L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  uint32_t DLSSCommandInitializationData_get_featureSlot_mA35E18D88F1FDBA2255AD1026CD2F287C524FEA8_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0*>(__this + _offset);
+	uint32_t _returnValue;
+	_returnValue = DLSSCommandInitializationData_get_featureSlot_mA35E18D88F1FDBA2255AD1026CD2F287C524FEA8(_thisAdjusted, method);
+	return _returnValue;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C void DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF_marshal_pinvoke(const DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF& unmarshaled, DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF_marshaled_pinvoke& marshaled)
+{
+	Exception_t* ___U3CcolorInputU3Ek__BackingFieldException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '<colorInput>k__BackingField' of type 'DLSSTextureTable': Reference type field marshaling is not supported.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___U3CcolorInputU3Ek__BackingFieldException, NULL);
+}
+IL2CPP_EXTERN_C void DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF_marshal_pinvoke_back(const DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF_marshaled_pinvoke& marshaled, DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF& unmarshaled)
+{
+	Exception_t* ___U3CcolorInputU3Ek__BackingFieldException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '<colorInput>k__BackingField' of type 'DLSSTextureTable': Reference type field marshaling is not supported.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___U3CcolorInputU3Ek__BackingFieldException, NULL);
+}
+IL2CPP_EXTERN_C void DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF_marshal_pinvoke_cleanup(DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF_marshaled_pinvoke& marshaled)
+{
+}
+IL2CPP_EXTERN_C void DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF_marshal_com(const DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF& unmarshaled, DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF_marshaled_com& marshaled)
+{
+	Exception_t* ___U3CcolorInputU3Ek__BackingFieldException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '<colorInput>k__BackingField' of type 'DLSSTextureTable': Reference type field marshaling is not supported.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___U3CcolorInputU3Ek__BackingFieldException, NULL);
+}
+IL2CPP_EXTERN_C void DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF_marshal_com_back(const DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF_marshaled_com& marshaled, DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF& unmarshaled)
+{
+	Exception_t* ___U3CcolorInputU3Ek__BackingFieldException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '<colorInput>k__BackingField' of type 'DLSSTextureTable': Reference type field marshaling is not supported.");
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___U3CcolorInputU3Ek__BackingFieldException, NULL);
+}
+IL2CPP_EXTERN_C void DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF_marshal_com_cleanup(DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF_marshaled_com& marshaled)
+{
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_colorInput_mCA1C9468C5E51299F4AE7D8F3DE27212D45888B7 (DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* __this, const RuntimeMethod* method) 
+{
+	{
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_0 = __this->___U3CcolorInputU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C  Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_colorInput_mCA1C9468C5E51299F4AE7D8F3DE27212D45888B7_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF*>(__this + _offset);
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* _returnValue;
+	_returnValue = DLSSTextureTable_get_colorInput_mCA1C9468C5E51299F4AE7D8F3DE27212D45888B7_inline(_thisAdjusted, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_colorOutput_mEDA6CE6C9B969F7C8536EFDACE47B052FCC265C7 (DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* __this, const RuntimeMethod* method) 
+{
+	{
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_0 = __this->___U3CcolorOutputU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C  Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_colorOutput_mEDA6CE6C9B969F7C8536EFDACE47B052FCC265C7_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF*>(__this + _offset);
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* _returnValue;
+	_returnValue = DLSSTextureTable_get_colorOutput_mEDA6CE6C9B969F7C8536EFDACE47B052FCC265C7_inline(_thisAdjusted, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_depth_mA10825F11D6DEA9B8A411BBB4D806E62839C10E5 (DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* __this, const RuntimeMethod* method) 
+{
+	{
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_0 = __this->___U3CdepthU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C  Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_depth_mA10825F11D6DEA9B8A411BBB4D806E62839C10E5_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF*>(__this + _offset);
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* _returnValue;
+	_returnValue = DLSSTextureTable_get_depth_mA10825F11D6DEA9B8A411BBB4D806E62839C10E5_inline(_thisAdjusted, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_motionVectors_m6E2674E42A4212BD7D484EEC7B343EF6B2C7A25C (DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* __this, const RuntimeMethod* method) 
+{
+	{
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_0 = __this->___U3CmotionVectorsU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C  Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_motionVectors_m6E2674E42A4212BD7D484EEC7B343EF6B2C7A25C_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF*>(__this + _offset);
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* _returnValue;
+	_returnValue = DLSSTextureTable_get_motionVectors_m6E2674E42A4212BD7D484EEC7B343EF6B2C7A25C_inline(_thisAdjusted, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_transparencyMask_mFE6C8B48F71E267FA357B3DA3C3F1CD0280F752D (DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* __this, const RuntimeMethod* method) 
+{
+	{
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_0 = __this->___U3CtransparencyMaskU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C  Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_transparencyMask_mFE6C8B48F71E267FA357B3DA3C3F1CD0280F752D_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF*>(__this + _offset);
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* _returnValue;
+	_returnValue = DLSSTextureTable_get_transparencyMask_mFE6C8B48F71E267FA357B3DA3C3F1CD0280F752D_inline(_thisAdjusted, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_exposureTexture_m2119B86AED4F7313782B5CD33E08F55F5C228688 (DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* __this, const RuntimeMethod* method) 
+{
+	{
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_0 = __this->___U3CexposureTextureU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C  Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_exposureTexture_m2119B86AED4F7313782B5CD33E08F55F5C228688_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF*>(__this + _offset);
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* _returnValue;
+	_returnValue = DLSSTextureTable_get_exposureTexture_m2119B86AED4F7313782B5CD33E08F55F5C228688_inline(_thisAdjusted, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_biasColorMask_m7A65B25DA8DD8A7CC832DA3F6FAC4147292E2274 (DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* __this, const RuntimeMethod* method) 
+{
+	{
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_0 = __this->___U3CbiasColorMaskU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C  Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_biasColorMask_m7A65B25DA8DD8A7CC832DA3F6FAC4147292E2274_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF*>(__this + _offset);
+	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* _returnValue;
+	_returnValue = DLSSTextureTable_get_biasColorMask_m7A65B25DA8DD8A7CC832DA3F6FAC4147292E2274_inline(_thisAdjusted, method);
+	return _returnValue;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DLSSCommandExecutionData_set_featureSlot_m74E7D6880FA19E441DE9AD687DA09151DC9EC9A2 (DLSSCommandExecutionData_tD7BBF3FFD6F84E88BFAFE740E9EE66C698493231* __this, uint32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		uint32_t L_0 = ___0_value;
+		__this->___m_FeatureSlot = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void DLSSCommandExecutionData_set_featureSlot_m74E7D6880FA19E441DE9AD687DA09151DC9EC9A2_AdjustorThunk (RuntimeObject* __this, uint32_t ___0_value, const RuntimeMethod* method)
+{
+	DLSSCommandExecutionData_tD7BBF3FFD6F84E88BFAFE740E9EE66C698493231* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<DLSSCommandExecutionData_tD7BBF3FFD6F84E88BFAFE740E9EE66C698493231*>(__this + _offset);
+	DLSSCommandExecutionData_set_featureSlot_m74E7D6880FA19E441DE9AD687DA09151DC9EC9A2(_thisAdjusted, ___0_value, method);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C void DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE_marshal_pinvoke(const DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE& unmarshaled, DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE_marshaled_pinvoke& marshaled)
+{
+	marshaled.___m_ValidFeature = static_cast<int32_t>(unmarshaled.___m_ValidFeature);
+	marshaled.___m_FeatureSlot = unmarshaled.___m_FeatureSlot;
+	marshaled.___m_ExecData = unmarshaled.___m_ExecData;
+	marshaled.___m_InitData = unmarshaled.___m_InitData;
+}
+IL2CPP_EXTERN_C void DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE_marshal_pinvoke_back(const DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE_marshaled_pinvoke& marshaled, DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE& unmarshaled)
+{
+	bool unmarshaledm_ValidFeature_temp_0 = false;
+	unmarshaledm_ValidFeature_temp_0 = static_cast<bool>(marshaled.___m_ValidFeature);
+	unmarshaled.___m_ValidFeature = unmarshaledm_ValidFeature_temp_0;
+	uint32_t unmarshaledm_FeatureSlot_temp_1 = 0;
+	unmarshaledm_FeatureSlot_temp_1 = marshaled.___m_FeatureSlot;
+	unmarshaled.___m_FeatureSlot = unmarshaledm_FeatureSlot_temp_1;
+	DLSSCommandExecutionData_tD7BBF3FFD6F84E88BFAFE740E9EE66C698493231 unmarshaledm_ExecData_temp_2;
+	memset((&unmarshaledm_ExecData_temp_2), 0, sizeof(unmarshaledm_ExecData_temp_2));
+	unmarshaledm_ExecData_temp_2 = marshaled.___m_ExecData;
+	unmarshaled.___m_ExecData = unmarshaledm_ExecData_temp_2;
+	DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0 unmarshaledm_InitData_temp_3;
+	memset((&unmarshaledm_InitData_temp_3), 0, sizeof(unmarshaledm_InitData_temp_3));
+	unmarshaledm_InitData_temp_3 = marshaled.___m_InitData;
+	unmarshaled.___m_InitData = unmarshaledm_InitData_temp_3;
+}
+IL2CPP_EXTERN_C void DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE_marshal_pinvoke_cleanup(DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE_marshaled_pinvoke& marshaled)
+{
+}
+IL2CPP_EXTERN_C void DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE_marshal_com(const DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE& unmarshaled, DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE_marshaled_com& marshaled)
+{
+	marshaled.___m_ValidFeature = static_cast<int32_t>(unmarshaled.___m_ValidFeature);
+	marshaled.___m_FeatureSlot = unmarshaled.___m_FeatureSlot;
+	marshaled.___m_ExecData = unmarshaled.___m_ExecData;
+	marshaled.___m_InitData = unmarshaled.___m_InitData;
+}
+IL2CPP_EXTERN_C void DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE_marshal_com_back(const DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE_marshaled_com& marshaled, DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE& unmarshaled)
+{
+	bool unmarshaledm_ValidFeature_temp_0 = false;
+	unmarshaledm_ValidFeature_temp_0 = static_cast<bool>(marshaled.___m_ValidFeature);
+	unmarshaled.___m_ValidFeature = unmarshaledm_ValidFeature_temp_0;
+	uint32_t unmarshaledm_FeatureSlot_temp_1 = 0;
+	unmarshaledm_FeatureSlot_temp_1 = marshaled.___m_FeatureSlot;
+	unmarshaled.___m_FeatureSlot = unmarshaledm_FeatureSlot_temp_1;
+	DLSSCommandExecutionData_tD7BBF3FFD6F84E88BFAFE740E9EE66C698493231 unmarshaledm_ExecData_temp_2;
+	memset((&unmarshaledm_ExecData_temp_2), 0, sizeof(unmarshaledm_ExecData_temp_2));
+	unmarshaledm_ExecData_temp_2 = marshaled.___m_ExecData;
+	unmarshaled.___m_ExecData = unmarshaledm_ExecData_temp_2;
+	DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0 unmarshaledm_InitData_temp_3;
+	memset((&unmarshaledm_InitData_temp_3), 0, sizeof(unmarshaledm_InitData_temp_3));
+	unmarshaledm_InitData_temp_3 = marshaled.___m_InitData;
+	unmarshaled.___m_InitData = unmarshaledm_InitData_temp_3;
+}
+IL2CPP_EXTERN_C void DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE_marshal_com_cleanup(DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE_marshaled_com& marshaled)
+{
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeStr_set_Str_m7C0F940788E18203A53CCE47D195E5518081D161 (NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* __this, String_t* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Marshal_tD976A56A90263C3CE2B780D4B1CADADE2E70B4A7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		String_t* L_0 = ___0_value;
+		__this->___m_Str = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Str), (void*)L_0);
+		NativeStr_Dispose_m32B62539BEB70F08A1C53A4C8CF99785152A8E60(__this, NULL);
+		String_t* L_1 = ___0_value;
+		V_0 = (bool)((!(((RuntimeObject*)(String_t*)L_1) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		String_t* L_3 = __this->___m_Str;
+		il2cpp_codegen_runtime_class_init_inline(Marshal_tD976A56A90263C3CE2B780D4B1CADADE2E70B4A7_il2cpp_TypeInfo_var);
+		intptr_t L_4;
+		L_4 = Marshal_StringToHGlobalUni_mB7E29E7F6698E32996E51507A281E0AF7BA721AB(L_3, NULL);
+		__this->___m_MarshalledString = L_4;
+	}
+
+IL_0028:
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t NativeStr_get_Ptr_mE2306EB96AB26D4E51C929E5C4B5B5E9F8DD189A (NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* __this, const RuntimeMethod* method) 
+{
+	intptr_t V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		intptr_t L_0 = __this->___m_MarshalledString;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		intptr_t L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeStr_Dispose_m32B62539BEB70F08A1C53A4C8CF99785152A8E60 (NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GC_t920F9CF6EBB7C787E5010A4352E1B587F356DC58_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		VirtualActionInvoker1< bool >::Invoke(5, __this, (bool)1);
+		il2cpp_codegen_runtime_class_init_inline(GC_t920F9CF6EBB7C787E5010A4352E1B587F356DC58_il2cpp_TypeInfo_var);
+		GC_SuppressFinalize_m71815DBD5A0CD2EA1BE43317B08B7A14949EDC65(__this, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeStr_Dispose_m53EDA1BE0FA507EAAAE167A9B33E1816D1E8B190 (NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* __this, bool ___0_disposing, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Marshal_tD976A56A90263C3CE2B780D4B1CADADE2E70B4A7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		intptr_t L_0 = __this->___m_MarshalledString;
+		bool L_1;
+		L_1 = IntPtr_op_Inequality_m90EFC9C4CAD9A33E309F2DDF98EE4E1DD253637B(L_0, 0, NULL);
+		V_0 = L_1;
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		intptr_t L_3 = __this->___m_MarshalledString;
+		il2cpp_codegen_runtime_class_init_inline(Marshal_tD976A56A90263C3CE2B780D4B1CADADE2E70B4A7_il2cpp_TypeInfo_var);
+		Marshal_FreeHGlobal_m298EF0650E82E326EDA8048488DC384BB9171EB9(L_3, NULL);
+		__this->___m_MarshalledString = 0;
+	}
+
+IL_002e:
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeStr_Finalize_m4DBF0F3B7279622A41D3F98C05CE2075F1393778 (NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* __this, const RuntimeMethod* method) 
+{
+	{
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_000c:
+			{
+				Object_Finalize_mC98C96301CCABFE00F1A7EF8E15DF507CACD42B2(__this, NULL);
+				return;
+			}
+		});
+		try
+		{
+			VirtualActionInvoker1< bool >::Invoke(5, __this, (bool)0);
+			goto IL_0014;
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0014:
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeStr__ctor_mC7E3027D34C011D6289958C71E0AACBBFC9FBDBB (NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* __this, const RuntimeMethod* method) 
+{
+	{
+		__this->___m_Str = (String_t*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Str), (void*)(String_t*)NULL);
+		__this->___m_MarshalledString = 0;
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InitDeviceContext__ctor_m3079B2017D6BE43131681088B01AD4DB0A98E475 (InitDeviceContext_tAA4E19E77C4191C5C90CF10340BA30925D2CEC54* __this, String_t* ___0_projectId, String_t* ___1_engineVersion, String_t* ___2_appDir, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeData_1__ctor_m8D1CF955C12F163131031579F4CC9E6051EC7B37_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeData_1_tC603028E6A7146FCB3B8868E99F8805F38C9B087_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* L_0 = (NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB*)il2cpp_codegen_object_new(NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB_il2cpp_TypeInfo_var);
+		NativeStr__ctor_mC7E3027D34C011D6289958C71E0AACBBFC9FBDBB(L_0, NULL);
+		__this->___m_ProjectId = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ProjectId), (void*)L_0);
+		NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* L_1 = (NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB*)il2cpp_codegen_object_new(NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB_il2cpp_TypeInfo_var);
+		NativeStr__ctor_mC7E3027D34C011D6289958C71E0AACBBFC9FBDBB(L_1, NULL);
+		__this->___m_EngineVersion = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_EngineVersion), (void*)L_1);
+		NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* L_2 = (NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB*)il2cpp_codegen_object_new(NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB_il2cpp_TypeInfo_var);
+		NativeStr__ctor_mC7E3027D34C011D6289958C71E0AACBBFC9FBDBB(L_2, NULL);
+		__this->___m_AppDir = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_AppDir), (void*)L_2);
+		NativeData_1_tC603028E6A7146FCB3B8868E99F8805F38C9B087* L_3 = (NativeData_1_tC603028E6A7146FCB3B8868E99F8805F38C9B087*)il2cpp_codegen_object_new(NativeData_1_tC603028E6A7146FCB3B8868E99F8805F38C9B087_il2cpp_TypeInfo_var);
+		NativeData_1__ctor_m8D1CF955C12F163131031579F4CC9E6051EC7B37(L_3, NativeData_1__ctor_m8D1CF955C12F163131031579F4CC9E6051EC7B37_RuntimeMethod_var);
+		__this->___m_InitData = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_InitData), (void*)L_3);
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* L_4 = __this->___m_ProjectId;
+		String_t* L_5 = ___0_projectId;
+		NullCheck(L_4);
+		NativeStr_set_Str_m7C0F940788E18203A53CCE47D195E5518081D161(L_4, L_5, NULL);
+		NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* L_6 = __this->___m_EngineVersion;
+		String_t* L_7 = ___1_engineVersion;
+		NullCheck(L_6);
+		NativeStr_set_Str_m7C0F940788E18203A53CCE47D195E5518081D161(L_6, L_7, NULL);
+		NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* L_8 = __this->___m_AppDir;
+		String_t* L_9 = ___2_appDir;
+		NullCheck(L_8);
+		NativeStr_set_Str_m7C0F940788E18203A53CCE47D195E5518081D161(L_8, L_9, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t InitDeviceContext_GetInitCmdPtr_m282C84946FC0CC248F2AB8B1701747A436675C57 (InitDeviceContext_tAA4E19E77C4191C5C90CF10340BA30925D2CEC54* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeData_1_get_Ptr_m3916EEC4BB2BE16C7E962C69E3EADCCBF0EE4324_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	intptr_t V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		NativeData_1_tC603028E6A7146FCB3B8868E99F8805F38C9B087* L_0 = __this->___m_InitData;
+		NullCheck(L_0);
+		InitDeviceCmdData_t9907FA253D99F96C451E1E5B477B202727368F95* L_1 = (InitDeviceCmdData_t9907FA253D99F96C451E1E5B477B202727368F95*)(&L_0->___Value);
+		NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* L_2 = __this->___m_ProjectId;
+		NullCheck(L_2);
+		intptr_t L_3;
+		L_3 = NativeStr_get_Ptr_mE2306EB96AB26D4E51C929E5C4B5B5E9F8DD189A(L_2, NULL);
+		InitDeviceCmdData_set_projectId_mA2A63128021904FD25BF50E3CD6706A8007A7ED2(L_1, L_3, NULL);
+		NativeData_1_tC603028E6A7146FCB3B8868E99F8805F38C9B087* L_4 = __this->___m_InitData;
+		NullCheck(L_4);
+		InitDeviceCmdData_t9907FA253D99F96C451E1E5B477B202727368F95* L_5 = (InitDeviceCmdData_t9907FA253D99F96C451E1E5B477B202727368F95*)(&L_4->___Value);
+		NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* L_6 = __this->___m_EngineVersion;
+		NullCheck(L_6);
+		intptr_t L_7;
+		L_7 = NativeStr_get_Ptr_mE2306EB96AB26D4E51C929E5C4B5B5E9F8DD189A(L_6, NULL);
+		InitDeviceCmdData_set_engineVersion_m35968F968E54B3D246D5376407DBE6BEF2A881CB(L_5, L_7, NULL);
+		NativeData_1_tC603028E6A7146FCB3B8868E99F8805F38C9B087* L_8 = __this->___m_InitData;
+		NullCheck(L_8);
+		InitDeviceCmdData_t9907FA253D99F96C451E1E5B477B202727368F95* L_9 = (InitDeviceCmdData_t9907FA253D99F96C451E1E5B477B202727368F95*)(&L_8->___Value);
+		NativeStr_tAC2722FC864B987C0028E56ABE67C7A8CE6B72CB* L_10 = __this->___m_AppDir;
+		NullCheck(L_10);
+		intptr_t L_11;
+		L_11 = NativeStr_get_Ptr_mE2306EB96AB26D4E51C929E5C4B5B5E9F8DD189A(L_10, NULL);
+		InitDeviceCmdData_set_appDir_m73F8B3C7B955425825FB6DDCEE3BDA8B1B8F03EF(L_9, L_11, NULL);
+		NativeData_1_tC603028E6A7146FCB3B8868E99F8805F38C9B087* L_12 = __this->___m_InitData;
+		NullCheck(L_12);
+		intptr_t L_13;
+		L_13 = NativeData_1_get_Ptr_m3916EEC4BB2BE16C7E962C69E3EADCCBF0EE4324(L_12, NativeData_1_get_Ptr_m3916EEC4BB2BE16C7E962C69E3EADCCBF0EE4324_RuntimeMethod_var);
+		V_0 = L_13;
+		goto IL_0063;
+	}
+
+IL_0063:
+	{
+		intptr_t L_14 = V_0;
+		return L_14;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0* DLSSContext_get_initData_mC1A7801AE93394A9C939C1C157194730C132B108 (DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* __this, const RuntimeMethod* method) 
+{
+	DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0* V_0 = NULL;
+	{
+		NativeData_1_t65AFA17EB9105E7D7BD52DE10398A347505D63E3* L_0 = __this->___m_InitData;
+		NullCheck(L_0);
+		DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0* L_1 = (DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0*)(&L_0->___Value);
+		V_0 = L_1;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0* L_2 = V_0;
+		return L_2;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t DLSSContext_get_featureSlot_mA693D65D671EDEFE2CD567C5DB25EB45679C94A3 (DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* __this, const RuntimeMethod* method) 
+{
+	DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	uint32_t V_1 = 0;
+	{
+		DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0* L_0;
+		L_0 = DLSSContext_get_initData_mC1A7801AE93394A9C939C1C157194730C132B108(__this, NULL);
+		DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0 L_1 = (*(DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0*)L_0);
+		V_0 = L_1;
+		uint32_t L_2;
+		L_2 = DLSSCommandInitializationData_get_featureSlot_mA35E18D88F1FDBA2255AD1026CD2F287C524FEA8((&V_0), NULL);
+		V_1 = L_2;
+		goto IL_0017;
+	}
+
+IL_0017:
+	{
+		uint32_t L_3 = V_1;
+		return L_3;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DLSSContext__ctor_mC06E2DD3BB8DDAE8596A4B987DD12523D6591ED2 (DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeData_1__ctor_m29F2594EEE6094A8B7989D5B91BC86B5CBA3A920_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeData_1__ctor_m95A30309AC04E765F5BF8DC41C73EA89BDA136F1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeData_1_t65AFA17EB9105E7D7BD52DE10398A347505D63E3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeData_1_tC4B322C277AE5C5DDDB91613DC77DFFD8055FEA8_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		NativeData_1_t65AFA17EB9105E7D7BD52DE10398A347505D63E3* L_0 = (NativeData_1_t65AFA17EB9105E7D7BD52DE10398A347505D63E3*)il2cpp_codegen_object_new(NativeData_1_t65AFA17EB9105E7D7BD52DE10398A347505D63E3_il2cpp_TypeInfo_var);
+		NativeData_1__ctor_m95A30309AC04E765F5BF8DC41C73EA89BDA136F1(L_0, NativeData_1__ctor_m95A30309AC04E765F5BF8DC41C73EA89BDA136F1_RuntimeMethod_var);
+		__this->___m_InitData = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_InitData), (void*)L_0);
+		NativeData_1_tC4B322C277AE5C5DDDB91613DC77DFFD8055FEA8* L_1 = (NativeData_1_tC4B322C277AE5C5DDDB91613DC77DFFD8055FEA8*)il2cpp_codegen_object_new(NativeData_1_tC4B322C277AE5C5DDDB91613DC77DFFD8055FEA8_il2cpp_TypeInfo_var);
+		NativeData_1__ctor_m29F2594EEE6094A8B7989D5B91BC86B5CBA3A920(L_1, NativeData_1__ctor_m29F2594EEE6094A8B7989D5B91BC86B5CBA3A920_RuntimeMethod_var);
+		__this->___m_ExecData = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ExecData), (void*)L_1);
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DLSSContext_Init_mBFCE0E41FD97E2A66496BFD7DCFA8AD887E114B9 (DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* __this, DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0 ___0_initSettings, uint32_t ___1_featureSlot, const RuntimeMethod* method) 
+{
+	{
+		NativeData_1_t65AFA17EB9105E7D7BD52DE10398A347505D63E3* L_0 = __this->___m_InitData;
+		DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0 L_1 = ___0_initSettings;
+		NullCheck(L_0);
+		L_0->___Value = L_1;
+		NativeData_1_t65AFA17EB9105E7D7BD52DE10398A347505D63E3* L_2 = __this->___m_InitData;
+		NullCheck(L_2);
+		DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0* L_3 = (DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0*)(&L_2->___Value);
+		uint32_t L_4 = ___1_featureSlot;
+		DLSSCommandInitializationData_set_featureSlot_m8265564028A7488733B178E8DAF159E22BB3073C(L_3, L_4, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DLSSContext_Reset_mEE1081070FB0EC73C6FBB593B8C50A9E76F1E8BC (DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* __this, const RuntimeMethod* method) 
+{
+	{
+		NativeData_1_t65AFA17EB9105E7D7BD52DE10398A347505D63E3* L_0 = __this->___m_InitData;
+		NullCheck(L_0);
+		DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0* L_1 = (DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0*)(&L_0->___Value);
+		il2cpp_codegen_initobj(L_1, sizeof(DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0));
+		NativeData_1_tC4B322C277AE5C5DDDB91613DC77DFFD8055FEA8* L_2 = __this->___m_ExecData;
+		NullCheck(L_2);
+		DLSSCommandExecutionData_tD7BBF3FFD6F84E88BFAFE740E9EE66C698493231* L_3 = (DLSSCommandExecutionData_tD7BBF3FFD6F84E88BFAFE740E9EE66C698493231*)(&L_2->___Value);
+		il2cpp_codegen_initobj(L_3, sizeof(DLSSCommandExecutionData_tD7BBF3FFD6F84E88BFAFE740E9EE66C698493231));
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DLSSContext_GetInitCmdPtr_mAFE77BCCF2E9F35991B3195D292D0C0C6968FFEF (DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeData_1_get_Ptr_mEC506124B64ED9B7C40F739B1A6B63A005BCED9B_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	intptr_t V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		NativeData_1_t65AFA17EB9105E7D7BD52DE10398A347505D63E3* L_0 = __this->___m_InitData;
+		NullCheck(L_0);
+		intptr_t L_1;
+		L_1 = NativeData_1_get_Ptr_mEC506124B64ED9B7C40F739B1A6B63A005BCED9B(L_0, NativeData_1_get_Ptr_mEC506124B64ED9B7C40F739B1A6B63A005BCED9B_RuntimeMethod_var);
+		V_0 = L_1;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		intptr_t L_2 = V_0;
+		return L_2;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t DLSSContext_GetExecuteCmdPtr_mE421C1F81246ADF577A66C7895FC5510438B5D08 (DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeData_1_get_Ptr_m9DC75F18D04A418F8B0B932066AD16F3F738607B_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	intptr_t V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		NativeData_1_tC4B322C277AE5C5DDDB91613DC77DFFD8055FEA8* L_0 = __this->___m_ExecData;
+		NullCheck(L_0);
+		DLSSCommandExecutionData_tD7BBF3FFD6F84E88BFAFE740E9EE66C698493231* L_1 = (DLSSCommandExecutionData_tD7BBF3FFD6F84E88BFAFE740E9EE66C698493231*)(&L_0->___Value);
+		uint32_t L_2;
+		L_2 = DLSSContext_get_featureSlot_mA693D65D671EDEFE2CD567C5DB25EB45679C94A3(__this, NULL);
+		DLSSCommandExecutionData_set_featureSlot_m74E7D6880FA19E441DE9AD687DA09151DC9EC9A2(L_1, L_2, NULL);
+		NativeData_1_tC4B322C277AE5C5DDDB91613DC77DFFD8055FEA8* L_3 = __this->___m_ExecData;
+		NullCheck(L_3);
+		intptr_t L_4;
+		L_4 = NativeData_1_get_Ptr_m9DC75F18D04A418F8B0B932066AD16F3F738607B(L_3, NativeData_1_get_Ptr_m9DC75F18D04A418F8B0B932066AD16F3F738607B_RuntimeMethod_var);
+		V_0 = L_4;
+		goto IL_0026;
+	}
+
+IL_0026:
+	{
+		intptr_t L_5 = V_0;
+		return L_5;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDeviceDebugView__ctor_m1EC04F6C78F9A3B84967200D88C7D187AC451141 (GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456* __this, uint32_t ___0_viewId, const RuntimeMethod* method) 
+{
+	{
+		__this->___m_ViewId = 0;
+		__this->___m_DeviceVersion = 0;
+		__this->___m_NgxVersion = 0;
+		__this->___m_DlssDebugFeatures = (DLSSDebugFeatureInfosU5BU5D_tEBA4C9F992E76B8CCAB9228F93E47A5491CDC2C1*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_DlssDebugFeatures), (void*)(DLSSDebugFeatureInfosU5BU5D_tEBA4C9F992E76B8CCAB9228F93E47A5491CDC2C1*)NULL);
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		uint32_t L_0 = ___0_viewId;
+		__this->___m_ViewId = L_0;
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice__ctor_m1AB70C26331576F6AC52A7BDDBB29F82B3B5D51F (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, String_t* ___0_projectId, String_t* ___1_engineVersion, String_t* ___2_appDir, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InitDeviceContext_tAA4E19E77C4191C5C90CF10340BA30925D2CEC54_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Stack_1__ctor_m8ECDF2305BBB208D58AA217E1A9991BE2E5F69AE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Stack_1_t449446E5136420475692B1E6D20F61A25110B525_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		__this->___m_InitDeviceContext = (InitDeviceContext_tAA4E19E77C4191C5C90CF10340BA30925D2CEC54*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_InitDeviceContext), (void*)(InitDeviceContext_tAA4E19E77C4191C5C90CF10340BA30925D2CEC54*)NULL);
+		Stack_1_t449446E5136420475692B1E6D20F61A25110B525* L_0 = (Stack_1_t449446E5136420475692B1E6D20F61A25110B525*)il2cpp_codegen_object_new(Stack_1_t449446E5136420475692B1E6D20F61A25110B525_il2cpp_TypeInfo_var);
+		Stack_1__ctor_m8ECDF2305BBB208D58AA217E1A9991BE2E5F69AE(L_0, Stack_1__ctor_m8ECDF2305BBB208D58AA217E1A9991BE2E5F69AE_RuntimeMethod_var);
+		__this->___s_ContextObjectPool = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___s_ContextObjectPool), (void*)L_0);
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		String_t* L_1 = ___0_projectId;
+		String_t* L_2 = ___1_engineVersion;
+		String_t* L_3 = ___2_appDir;
+		InitDeviceContext_tAA4E19E77C4191C5C90CF10340BA30925D2CEC54* L_4 = (InitDeviceContext_tAA4E19E77C4191C5C90CF10340BA30925D2CEC54*)il2cpp_codegen_object_new(InitDeviceContext_tAA4E19E77C4191C5C90CF10340BA30925D2CEC54_il2cpp_TypeInfo_var);
+		InitDeviceContext__ctor_m3079B2017D6BE43131681088B01AD4DB0A98E475(L_4, L_1, L_2, L_3, NULL);
+		__this->___m_InitDeviceContext = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_InitDeviceContext), (void*)L_4);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GraphicsDevice_Initialize_mAD60479B849826EF9063AB0727A3187BCF1DFBF2 (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		InitDeviceContext_tAA4E19E77C4191C5C90CF10340BA30925D2CEC54* L_0 = __this->___m_InitDeviceContext;
+		NullCheck(L_0);
+		intptr_t L_1;
+		L_1 = InitDeviceContext_GetInitCmdPtr_m282C84946FC0CC248F2AB8B1701747A436675C57(L_0, NULL);
+		il2cpp_codegen_runtime_class_init_inline(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = GraphicsDevice_NVUP_InitApi_mDB36041E3BF64360747B0D653CF6B02D225F99A6(L_1, NULL);
+		V_0 = L_2;
+		goto IL_0014;
+	}
+
+IL_0014:
+	{
+		bool L_3 = V_0;
+		return L_3;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice_Shutdown_mFC2DA779468536A76CAD1047C5F50CA439007A67 (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		GraphicsDevice_NVUP_ShutdownApi_mB135A1BD53DE98C8CFE1F4504C0480265A28CD0F(NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice_Finalize_mA0784BACC935C2A5C3D8D206D1D55C959AC19D4C (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, const RuntimeMethod* method) 
+{
+	{
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_000b:
+			{
+				Object_Finalize_mC98C96301CCABFE00F1A7EF8E15DF507CACD42B2(__this, NULL);
+				return;
+			}
+		});
+		try
+		{
+			GraphicsDevice_Shutdown_mFC2DA779468536A76CAD1047C5F50CA439007A67(__this, NULL);
+			goto IL_0013;
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0013:
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice_InsertEventCall_m110ADA1F9BEFEE10474ABAD57D34C7743DC17813 (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, int32_t ___1_pluginEvent, intptr_t ___2_ptr, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_0 = ___0_cmd;
+		il2cpp_codegen_runtime_class_init_inline(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		intptr_t L_1;
+		L_1 = GraphicsDevice_NVUP_GetRenderEventCallback_mDF13712BE6611B1A51FA06E87B358F47D13E8FA5(NULL);
+		int32_t L_2 = ___1_pluginEvent;
+		int32_t L_3;
+		L_3 = GraphicsDevice_NVUP_GetBaseEventId_mE72681217E20C87579F18D59F477EC2B6ADA2DD2(NULL);
+		intptr_t L_4 = ___2_ptr;
+		NullCheck(L_0);
+		CommandBuffer_IssuePluginEventAndData_m6218AC6654E29A7245DBB8F739FE99F6804FBB0C(L_0, L_1, ((int32_t)il2cpp_codegen_add((int32_t)L_2, L_3)), L_4, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* GraphicsDevice_InternalCreate_m5D3E02A910983CB4DCA70AF4B2C0095756080F81 (String_t* ___0_appIdOrProjectId, String_t* ___1_engineVersion, String_t* ___2_appDir, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* V_0 = NULL;
+	bool V_1 = false;
+	GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* V_2 = NULL;
+	bool V_3 = false;
+	{
+		il2cpp_codegen_runtime_class_init_inline(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* L_0 = ((GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_StaticFields*)il2cpp_codegen_static_fields_for(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var))->___sGraphicsDeviceInstance;
+		V_1 = (bool)((!(((RuntimeObject*)(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30*)L_0) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
+		bool L_1 = V_1;
+		if (!L_1)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* L_2 = ((GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_StaticFields*)il2cpp_codegen_static_fields_for(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var))->___sGraphicsDeviceInstance;
+		NullCheck(L_2);
+		GraphicsDevice_Shutdown_mFC2DA779468536A76CAD1047C5F50CA439007A67(L_2, NULL);
+		GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* L_3 = ((GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_StaticFields*)il2cpp_codegen_static_fields_for(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var))->___sGraphicsDeviceInstance;
+		NullCheck(L_3);
+		bool L_4;
+		L_4 = GraphicsDevice_Initialize_mAD60479B849826EF9063AB0727A3187BCF1DFBF2(L_3, NULL);
+		GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* L_5 = ((GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_StaticFields*)il2cpp_codegen_static_fields_for(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var))->___sGraphicsDeviceInstance;
+		V_2 = L_5;
+		goto IL_004e;
+	}
+
+IL_002c:
+	{
+		String_t* L_6 = ___0_appIdOrProjectId;
+		String_t* L_7 = ___1_engineVersion;
+		String_t* L_8 = ___2_appDir;
+		GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* L_9 = (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30*)il2cpp_codegen_object_new(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		GraphicsDevice__ctor_m1AB70C26331576F6AC52A7BDDBB29F82B3B5D51F(L_9, L_6, L_7, L_8, NULL);
+		V_0 = L_9;
+		GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* L_10 = V_0;
+		NullCheck(L_10);
+		bool L_11;
+		L_11 = GraphicsDevice_Initialize_mAD60479B849826EF9063AB0727A3187BCF1DFBF2(L_10, NULL);
+		V_3 = L_11;
+		bool L_12 = V_3;
+		if (!L_12)
+		{
+			goto IL_004a;
+		}
+	}
+	{
+		GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* L_13 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		((GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_StaticFields*)il2cpp_codegen_static_fields_for(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var))->___sGraphicsDeviceInstance = L_13;
+		Il2CppCodeGenWriteBarrier((void**)(&((GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_StaticFields*)il2cpp_codegen_static_fields_for(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var))->___sGraphicsDeviceInstance), (void*)L_13);
+		GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* L_14 = V_0;
+		V_2 = L_14;
+		goto IL_004e;
+	}
+
+IL_004a:
+	{
+		V_2 = (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30*)NULL;
+		goto IL_004e;
+	}
+
+IL_004e:
+	{
+		GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* L_15 = V_2;
+		return L_15;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GraphicsDevice_CreateSetTextureUserData_m18C859E040ADD6CA6E6B54518F89F6E7D99EE73B (int32_t ___0_featureId, int32_t ___1_textureSlot, bool ___2_clearTextureTable, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	int32_t V_3 = 0;
+	int32_t G_B3_0 = 0;
+	{
+		int32_t L_0 = ___0_featureId;
+		V_0 = ((int32_t)(L_0&((int32_t)65535)));
+		int32_t L_1 = ___1_textureSlot;
+		V_1 = ((int32_t)(L_1&((int32_t)32767)));
+		bool L_2 = ___2_clearTextureTable;
+		if (L_2)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		G_B3_0 = 0;
+		goto IL_0018;
+	}
+
+IL_0017:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_0018:
+	{
+		V_2 = G_B3_0;
+		int32_t L_3 = V_0;
+		int32_t L_4 = V_1;
+		int32_t L_5 = V_2;
+		V_3 = ((int32_t)(((int32_t)(((int32_t)(L_3<<((int32_t)16)))|((int32_t)(L_4<<1))))|L_5));
+		goto IL_0026;
+	}
+
+IL_0026:
+	{
+		int32_t L_6 = V_3;
+		return L_6;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice_SetTexture_m983E7CBCF81DFCFFFDD9BE8DBBB3226EAFBE492D (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* ___1_dlssContext, int32_t ___2_textureSlot, Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___3_texture, bool ___4_clearTextureTable, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	uint32_t V_0 = 0;
+	bool V_1 = false;
+	{
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_0 = ___3_texture;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		V_1 = L_1;
+		bool L_2 = V_1;
+		if (!L_2)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		goto IL_002d;
+	}
+
+IL_000f:
+	{
+		DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* L_3 = ___1_dlssContext;
+		NullCheck(L_3);
+		uint32_t L_4;
+		L_4 = DLSSContext_get_featureSlot_mA693D65D671EDEFE2CD567C5DB25EB45679C94A3(L_3, NULL);
+		int32_t L_5 = ___2_textureSlot;
+		bool L_6 = ___4_clearTextureTable;
+		il2cpp_codegen_runtime_class_init_inline(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		int32_t L_7;
+		L_7 = GraphicsDevice_CreateSetTextureUserData_m18C859E040ADD6CA6E6B54518F89F6E7D99EE73B(L_4, L_5, L_6, NULL);
+		V_0 = L_7;
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_8 = ___0_cmd;
+		intptr_t L_9;
+		L_9 = GraphicsDevice_NVUP_GetSetTextureEventCallback_m1769E18E4ED28BDF263745067875290B4BAC8AE3(NULL);
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_10 = ___3_texture;
+		uint32_t L_11 = V_0;
+		NullCheck(L_8);
+		CommandBuffer_IssuePluginCustomTextureUpdateV2_m2F0FCB75B743412D3AD504F7A95DE4D854A8D601(L_8, L_9, L_10, L_11, NULL);
+	}
+
+IL_002d:
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GraphicsDeviceDebugInfo_t2E7FC2BFA50FB64A073A0E69FA5A95346337B114 GraphicsDevice_GetDebugInfo_m49C6C7D6238546B026C4716DC7E01094326AFB4A (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, uint32_t ___0_debugViewId, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	GraphicsDeviceDebugInfo_t2E7FC2BFA50FB64A073A0E69FA5A95346337B114 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	GraphicsDeviceDebugInfo_t2E7FC2BFA50FB64A073A0E69FA5A95346337B114 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(GraphicsDeviceDebugInfo_t2E7FC2BFA50FB64A073A0E69FA5A95346337B114));
+		uint32_t L_0 = ___0_debugViewId;
+		il2cpp_codegen_runtime_class_init_inline(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		GraphicsDevice_NVUP_GetGraphicsDeviceDebugInfo_m7F096032C4498C19357B2A37BBF8D13731172275(L_0, (&V_0), NULL);
+		GraphicsDeviceDebugInfo_t2E7FC2BFA50FB64A073A0E69FA5A95346337B114 L_1 = V_0;
+		V_1 = L_1;
+		goto IL_0016;
+	}
+
+IL_0016:
+	{
+		GraphicsDeviceDebugInfo_t2E7FC2BFA50FB64A073A0E69FA5A95346337B114 L_2 = V_1;
+		return L_2;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t GraphicsDevice_CreateDebugViewId_m0104B8035725D1F0C1ED56C76E1B00B4B985B2BB (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	uint32_t V_0 = 0;
+	{
+		il2cpp_codegen_runtime_class_init_inline(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		uint32_t L_0;
+		L_0 = GraphicsDevice_NVUP_CreateDebugView_mA5F663E7D2043EB1B42AF9AD3BD88601E1D1D09C(NULL);
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		uint32_t L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice_DeleteDebugViewId_m0270D0E8672DCAD37BA4858E64D857B736030A96 (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, uint32_t ___0_debugViewId, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		uint32_t L_0 = ___0_debugViewId;
+		il2cpp_codegen_runtime_class_init_inline(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		GraphicsDevice_NVUP_DeleteDebugView_m4DE8E72CDCB3226D8DC2DA5DB7BC0B61FF5DECB7(L_0, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* GraphicsDevice_CreateGraphicsDevice_m7F31D419A1A18799EBD2F0A08F6682F327733A6F (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* V_0 = NULL;
+	{
+		il2cpp_codegen_runtime_class_init_inline(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		String_t* L_0 = ((GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_StaticFields*)il2cpp_codegen_static_fields_for(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var))->___s_DefaultProjectID;
+		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
+		String_t* L_1;
+		L_1 = Application_get_unityVersion_m27BB3207901305BD239E1C3A74035E15CF3E5D21(NULL);
+		String_t* L_2 = ((GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_StaticFields*)il2cpp_codegen_static_fields_for(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var))->___s_DefaultAppDir;
+		GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* L_3;
+		L_3 = GraphicsDevice_InternalCreate_m5D3E02A910983CB4DCA70AF4B2C0095756080F81(L_0, L_1, L_2, NULL);
+		V_0 = L_3;
+		goto IL_0018;
+	}
+
+IL_0018:
+	{
+		GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* L_4 = V_0;
+		return L_4;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* GraphicsDevice_CreateGraphicsDevice_m1235DB5CB952638E35B3A280EB2419AE3FB69BFD (String_t* ___0_projectID, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* V_0 = NULL;
+	{
+		String_t* L_0 = ___0_projectID;
+		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
+		String_t* L_1;
+		L_1 = Application_get_unityVersion_m27BB3207901305BD239E1C3A74035E15CF3E5D21(NULL);
+		il2cpp_codegen_runtime_class_init_inline(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		String_t* L_2 = ((GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_StaticFields*)il2cpp_codegen_static_fields_for(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var))->___s_DefaultAppDir;
+		GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* L_3;
+		L_3 = GraphicsDevice_InternalCreate_m5D3E02A910983CB4DCA70AF4B2C0095756080F81(L_0, L_1, L_2, NULL);
+		V_0 = L_3;
+		goto IL_0014;
+	}
+
+IL_0014:
+	{
+		GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* L_4 = V_0;
+		return L_4;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* GraphicsDevice_CreateGraphicsDevice_m8C9B8B6BF899059C20B8B6B4D699E8C659378760 (String_t* ___0_projectID, String_t* ___1_appDir, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* V_0 = NULL;
+	{
+		String_t* L_0 = ___0_projectID;
+		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
+		String_t* L_1;
+		L_1 = Application_get_unityVersion_m27BB3207901305BD239E1C3A74035E15CF3E5D21(NULL);
+		String_t* L_2 = ___1_appDir;
+		il2cpp_codegen_runtime_class_init_inline(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* L_3;
+		L_3 = GraphicsDevice_InternalCreate_m5D3E02A910983CB4DCA70AF4B2C0095756080F81(L_0, L_1, L_2, NULL);
+		V_0 = L_3;
+		goto IL_0010;
+	}
+
+IL_0010:
+	{
+		GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* L_4 = V_0;
+		return L_4;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* GraphicsDevice_get_device_m680CBDE528D03256E22C03BBCF485D32E72FE51B (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* V_0 = NULL;
+	{
+		il2cpp_codegen_runtime_class_init_inline(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* L_0 = ((GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_StaticFields*)il2cpp_codegen_static_fields_for(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var))->___sGraphicsDeviceInstance;
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t GraphicsDevice_get_version_mE0E79FF4008F0BAEF994B6019624AB551B379C69 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	uint32_t V_0 = 0;
+	{
+		il2cpp_codegen_runtime_class_init_inline(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		uint32_t L_0;
+		L_0 = GraphicsDevice_NVUP_GetDeviceVersion_mA7ABA3AA87EF2C364D7CD7CBB0D1226469085B52(NULL);
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		uint32_t L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GraphicsDevice_IsFeatureAvailable_m3D0A20B4442B2FD7CDD40040DF27CF6F6173FBE6 (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, int32_t ___0_featureID, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		int32_t L_0 = ___0_featureID;
+		il2cpp_codegen_runtime_class_init_inline(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = GraphicsDevice_NVUP_IsFeatureAvailable_m6BD94CF6B3B28F30D6F39DA4ADAB83B4247F8D37(L_0, NULL);
+		V_0 = L_1;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		bool L_2 = V_0;
+		return L_2;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* GraphicsDevice_CreateFeature_m0F6ED8574FA8AFFBF70059B32644F31DEA5A6ED4 (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0* ___1_initSettings, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Stack_1_Pop_mDC95FE2BD440D7149069776709F5D6F1996286FF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Stack_1_get_Count_mDE5B9ED41A1B223EF4C0D23184E76075C7CD5CB7_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* V_0 = NULL;
+	bool V_1 = false;
+	DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* V_2 = NULL;
+	bool V_3 = false;
+	{
+		bool L_0;
+		L_0 = GraphicsDevice_IsFeatureAvailable_m3D0A20B4442B2FD7CDD40040DF27CF6F6173FBE6(__this, 0, NULL);
+		V_1 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+		bool L_1 = V_1;
+		if (!L_1)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		V_2 = (DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09*)NULL;
+		goto IL_0064;
+	}
+
+IL_0013:
+	{
+		V_0 = (DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09*)NULL;
+		Stack_1_t449446E5136420475692B1E6D20F61A25110B525* L_2 = __this->___s_ContextObjectPool;
+		NullCheck(L_2);
+		int32_t L_3;
+		L_3 = Stack_1_get_Count_mDE5B9ED41A1B223EF4C0D23184E76075C7CD5CB7_inline(L_2, Stack_1_get_Count_mDE5B9ED41A1B223EF4C0D23184E76075C7CD5CB7_RuntimeMethod_var);
+		V_3 = (bool)((((int32_t)L_3) == ((int32_t)0))? 1 : 0);
+		bool L_4 = V_3;
+		if (!L_4)
+		{
+			goto IL_0031;
+		}
+	}
+	{
+		DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* L_5 = (DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09*)il2cpp_codegen_object_new(DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09_il2cpp_TypeInfo_var);
+		DLSSContext__ctor_mC06E2DD3BB8DDAE8596A4B987DD12523D6591ED2(L_5, NULL);
+		V_0 = L_5;
+		goto IL_003f;
+	}
+
+IL_0031:
+	{
+		Stack_1_t449446E5136420475692B1E6D20F61A25110B525* L_6 = __this->___s_ContextObjectPool;
+		NullCheck(L_6);
+		DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* L_7;
+		L_7 = Stack_1_Pop_mDC95FE2BD440D7149069776709F5D6F1996286FF(L_6, Stack_1_Pop_mDC95FE2BD440D7149069776709F5D6F1996286FF_RuntimeMethod_var);
+		V_0 = L_7;
+	}
+
+IL_003f:
+	{
+		DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* L_8 = V_0;
+		DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0* L_9 = ___1_initSettings;
+		DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0 L_10 = (*(DLSSCommandInitializationData_tD51BEF2C2071F58896461FD3F33A175E8F4574F0*)L_9);
+		il2cpp_codegen_runtime_class_init_inline(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		uint32_t L_11;
+		L_11 = GraphicsDevice_NVUP_CreateFeatureSlot_mBC0AF6EA3B32E95A3B5BD3DC641A2A33C0AA371B(NULL);
+		NullCheck(L_8);
+		DLSSContext_Init_mBFCE0E41FD97E2A66496BFD7DCFA8AD887E114B9(L_8, L_10, L_11, NULL);
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_12 = ___0_cmd;
+		DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* L_13 = V_0;
+		NullCheck(L_13);
+		intptr_t L_14;
+		L_14 = DLSSContext_GetInitCmdPtr_mAFE77BCCF2E9F35991B3195D292D0C0C6968FFEF(L_13, NULL);
+		GraphicsDevice_InsertEventCall_m110ADA1F9BEFEE10474ABAD57D34C7743DC17813(__this, L_12, 2, L_14, NULL);
+		DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* L_15 = V_0;
+		V_2 = L_15;
+		goto IL_0064;
+	}
+
+IL_0064:
+	{
+		DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* L_16 = V_2;
+		return L_16;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice_DestroyFeature_m571E250A937F4B71800E103885C749444DC065C5 (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* ___1_dlssContext, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Stack_1_Push_m67FDDBD6FE4904AFFD5D18F174811FCDB8F5E6B9_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_0 = ___0_cmd;
+		DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* L_1 = ___1_dlssContext;
+		NullCheck(L_1);
+		uint32_t L_2;
+		L_2 = DLSSContext_get_featureSlot_mA693D65D671EDEFE2CD567C5DB25EB45679C94A3(L_1, NULL);
+		intptr_t L_3;
+		memset((&L_3), 0, sizeof(L_3));
+		IntPtr__ctor_m2C033540A2F274766CF5C2A120587DD997E3F6DC((&L_3), ((int64_t)(uint64_t)L_2), NULL);
+		GraphicsDevice_InsertEventCall_m110ADA1F9BEFEE10474ABAD57D34C7743DC17813(__this, L_0, 0, L_3, NULL);
+		DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* L_4 = ___1_dlssContext;
+		NullCheck(L_4);
+		DLSSContext_Reset_mEE1081070FB0EC73C6FBB593B8C50A9E76F1E8BC(L_4, NULL);
+		Stack_1_t449446E5136420475692B1E6D20F61A25110B525* L_5 = __this->___s_ContextObjectPool;
+		DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* L_6 = ___1_dlssContext;
+		NullCheck(L_5);
+		Stack_1_Push_m67FDDBD6FE4904AFFD5D18F174811FCDB8F5E6B9(L_5, L_6, Stack_1_Push_m67FDDBD6FE4904AFFD5D18F174811FCDB8F5E6B9_RuntimeMethod_var);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice_ExecuteDLSS_mB18927F7211D934027FA480C87ACD5849360F487 (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_cmd, DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* ___1_dlssContext, DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* ___2_textures, const RuntimeMethod* method) 
+{
+	{
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_0 = ___0_cmd;
+		DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* L_1 = ___1_dlssContext;
+		DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* L_2 = ___2_textures;
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_3;
+		L_3 = DLSSTextureTable_get_colorInput_mCA1C9468C5E51299F4AE7D8F3DE27212D45888B7_inline(L_2, NULL);
+		GraphicsDevice_SetTexture_m983E7CBCF81DFCFFFDD9BE8DBBB3226EAFBE492D(__this, L_0, L_1, 0, L_3, (bool)1, NULL);
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_4 = ___0_cmd;
+		DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* L_5 = ___1_dlssContext;
+		DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* L_6 = ___2_textures;
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_7;
+		L_7 = DLSSTextureTable_get_colorOutput_mEDA6CE6C9B969F7C8536EFDACE47B052FCC265C7_inline(L_6, NULL);
+		GraphicsDevice_SetTexture_m983E7CBCF81DFCFFFDD9BE8DBBB3226EAFBE492D(__this, L_4, L_5, 1, L_7, (bool)0, NULL);
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_8 = ___0_cmd;
+		DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* L_9 = ___1_dlssContext;
+		DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* L_10 = ___2_textures;
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_11;
+		L_11 = DLSSTextureTable_get_depth_mA10825F11D6DEA9B8A411BBB4D806E62839C10E5_inline(L_10, NULL);
+		GraphicsDevice_SetTexture_m983E7CBCF81DFCFFFDD9BE8DBBB3226EAFBE492D(__this, L_8, L_9, 2, L_11, (bool)0, NULL);
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_12 = ___0_cmd;
+		DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* L_13 = ___1_dlssContext;
+		DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* L_14 = ___2_textures;
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_15;
+		L_15 = DLSSTextureTable_get_motionVectors_m6E2674E42A4212BD7D484EEC7B343EF6B2C7A25C_inline(L_14, NULL);
+		GraphicsDevice_SetTexture_m983E7CBCF81DFCFFFDD9BE8DBBB3226EAFBE492D(__this, L_12, L_13, 3, L_15, (bool)0, NULL);
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_16 = ___0_cmd;
+		DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* L_17 = ___1_dlssContext;
+		DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* L_18 = ___2_textures;
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_19;
+		L_19 = DLSSTextureTable_get_transparencyMask_mFE6C8B48F71E267FA357B3DA3C3F1CD0280F752D_inline(L_18, NULL);
+		GraphicsDevice_SetTexture_m983E7CBCF81DFCFFFDD9BE8DBBB3226EAFBE492D(__this, L_16, L_17, 4, L_19, (bool)0, NULL);
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_20 = ___0_cmd;
+		DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* L_21 = ___1_dlssContext;
+		DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* L_22 = ___2_textures;
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_23;
+		L_23 = DLSSTextureTable_get_exposureTexture_m2119B86AED4F7313782B5CD33E08F55F5C228688_inline(L_22, NULL);
+		GraphicsDevice_SetTexture_m983E7CBCF81DFCFFFDD9BE8DBBB3226EAFBE492D(__this, L_20, L_21, 5, L_23, (bool)0, NULL);
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_24 = ___0_cmd;
+		DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* L_25 = ___1_dlssContext;
+		DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* L_26 = ___2_textures;
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_27;
+		L_27 = DLSSTextureTable_get_biasColorMask_m7A65B25DA8DD8A7CC832DA3F6FAC4147292E2274_inline(L_26, NULL);
+		GraphicsDevice_SetTexture_m983E7CBCF81DFCFFFDD9BE8DBBB3226EAFBE492D(__this, L_24, L_25, 6, L_27, (bool)0, NULL);
+		CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* L_28 = ___0_cmd;
+		DLSSContext_tBB56E5934CE683C56BF9B9748C33949D0BA22E09* L_29 = ___1_dlssContext;
+		NullCheck(L_29);
+		intptr_t L_30;
+		L_30 = DLSSContext_GetExecuteCmdPtr_mE421C1F81246ADF577A66C7895FC5510438B5D08(L_29, NULL);
+		GraphicsDevice_InsertEventCall_m110ADA1F9BEFEE10474ABAD57D34C7743DC17813(__this, L_28, 1, L_30, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GraphicsDevice_GetOptimalSettings_mEB9A319CD3E3AAED69B74E46F858FDB64D438E02 (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, uint32_t ___0_targetWidth, uint32_t ___1_targetHeight, int32_t ___2_quality, OptimalDLSSSettingsData_t6520B090F25B090E6EF719F3568B21A29CB16774* ___3_optimalSettings, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		uint32_t L_0 = ___0_targetWidth;
+		uint32_t L_1 = ___1_targetHeight;
+		int32_t L_2 = ___2_quality;
+		OptimalDLSSSettingsData_t6520B090F25B090E6EF719F3568B21A29CB16774* L_3 = ___3_optimalSettings;
+		il2cpp_codegen_runtime_class_init_inline(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = GraphicsDevice_NVUP_GetOptimalSettings_mCBECE6E24A40A920CBCE568337E3CE7076931D3C(L_0, L_1, L_2, L_3, NULL);
+		V_0 = L_4;
+		goto IL_000e;
+	}
+
+IL_000e:
+	{
+		bool L_5 = V_0;
+		return L_5;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456* GraphicsDevice_CreateDebugView_m2FA35C94FC899B0DE14325A530D66809D2DD25D9 (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456* V_0 = NULL;
+	{
+		uint32_t L_0;
+		L_0 = GraphicsDevice_CreateDebugViewId_m0104B8035725D1F0C1ED56C76E1B00B4B985B2BB(__this, NULL);
+		GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456* L_1 = (GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456*)il2cpp_codegen_object_new(GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456_il2cpp_TypeInfo_var);
+		GraphicsDeviceDebugView__ctor_m1EC04F6C78F9A3B84967200D88C7D187AC451141(L_1, L_0, NULL);
+		V_0 = L_1;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456* L_2 = V_0;
+		return L_2;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice_UpdateDebugView_m965CFAA236BBAD1D0FC2D70B922376404C98675A (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456* ___0_debugView, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DLSSDebugFeatureInfosU5BU5D_tEBA4C9F992E76B8CCAB9228F93E47A5491CDC2C1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	GraphicsDeviceDebugInfo_t2E7FC2BFA50FB64A073A0E69FA5A95346337B114 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	bool V_2 = false;
+	int32_t V_3 = 0;
+	bool V_4 = false;
+	int32_t G_B5_0 = 0;
+	{
+		GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456* L_0 = ___0_debugView;
+		V_0 = (bool)((((RuntimeObject*)(GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456*)L_0) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		goto IL_00a6;
+	}
+
+IL_000e:
+	{
+		GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456* L_2 = ___0_debugView;
+		NullCheck(L_2);
+		uint32_t L_3 = L_2->___m_ViewId;
+		GraphicsDeviceDebugInfo_t2E7FC2BFA50FB64A073A0E69FA5A95346337B114 L_4;
+		L_4 = GraphicsDevice_GetDebugInfo_m49C6C7D6238546B026C4716DC7E01094326AFB4A(__this, L_3, NULL);
+		V_1 = L_4;
+		GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456* L_5 = ___0_debugView;
+		GraphicsDeviceDebugInfo_t2E7FC2BFA50FB64A073A0E69FA5A95346337B114 L_6 = V_1;
+		uint32_t L_7 = L_6.___NVDeviceVersion;
+		NullCheck(L_5);
+		L_5->___m_DeviceVersion = L_7;
+		GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456* L_8 = ___0_debugView;
+		GraphicsDeviceDebugInfo_t2E7FC2BFA50FB64A073A0E69FA5A95346337B114 L_9 = V_1;
+		uint32_t L_10 = L_9.___NGXVersion;
+		NullCheck(L_8);
+		L_8->___m_NgxVersion = L_10;
+		GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456* L_11 = ___0_debugView;
+		NullCheck(L_11);
+		DLSSDebugFeatureInfosU5BU5D_tEBA4C9F992E76B8CCAB9228F93E47A5491CDC2C1* L_12 = L_11->___m_DlssDebugFeatures;
+		if (!L_12)
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		GraphicsDeviceDebugInfo_t2E7FC2BFA50FB64A073A0E69FA5A95346337B114 L_13 = V_1;
+		uint32_t L_14 = L_13.___dlssInfosCount;
+		GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456* L_15 = ___0_debugView;
+		NullCheck(L_15);
+		DLSSDebugFeatureInfosU5BU5D_tEBA4C9F992E76B8CCAB9228F93E47A5491CDC2C1* L_16 = L_15->___m_DlssDebugFeatures;
+		NullCheck(L_16);
+		G_B5_0 = ((((int32_t)((((int64_t)((int64_t)(uint64_t)L_14)) == ((int64_t)((int64_t)((int32_t)(((RuntimeArray*)L_16)->max_length)))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		goto IL_0054;
+	}
+
+IL_0053:
+	{
+		G_B5_0 = 1;
+	}
+
+IL_0054:
+	{
+		V_2 = (bool)G_B5_0;
+		bool L_17 = V_2;
+		if (!L_17)
+		{
+			goto IL_0069;
+		}
+	}
+	{
+		GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456* L_18 = ___0_debugView;
+		GraphicsDeviceDebugInfo_t2E7FC2BFA50FB64A073A0E69FA5A95346337B114 L_19 = V_1;
+		uint32_t L_20 = L_19.___dlssInfosCount;
+		DLSSDebugFeatureInfosU5BU5D_tEBA4C9F992E76B8CCAB9228F93E47A5491CDC2C1* L_21 = (DLSSDebugFeatureInfosU5BU5D_tEBA4C9F992E76B8CCAB9228F93E47A5491CDC2C1*)(DLSSDebugFeatureInfosU5BU5D_tEBA4C9F992E76B8CCAB9228F93E47A5491CDC2C1*)SZArrayNew(DLSSDebugFeatureInfosU5BU5D_tEBA4C9F992E76B8CCAB9228F93E47A5491CDC2C1_il2cpp_TypeInfo_var, (uint32_t)L_20);
+		NullCheck(L_18);
+		L_18->___m_DlssDebugFeatures = L_21;
+		Il2CppCodeGenWriteBarrier((void**)(&L_18->___m_DlssDebugFeatures), (void*)L_21);
+	}
+
+IL_0069:
+	{
+		V_3 = 0;
+		goto IL_0094;
+	}
+
+IL_006d:
+	{
+		GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456* L_22 = ___0_debugView;
+		NullCheck(L_22);
+		DLSSDebugFeatureInfosU5BU5D_tEBA4C9F992E76B8CCAB9228F93E47A5491CDC2C1* L_23 = L_22->___m_DlssDebugFeatures;
+		int32_t L_24 = V_3;
+		GraphicsDeviceDebugInfo_t2E7FC2BFA50FB64A073A0E69FA5A95346337B114 L_25 = V_1;
+		DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE* L_26 = L_25.___dlssInfos;
+		int32_t L_27 = V_3;
+		uint32_t L_28 = sizeof(DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE);
+		DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE L_29 = (*(DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE*)((DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE*)il2cpp_codegen_add((intptr_t)L_26, ((intptr_t)il2cpp_codegen_multiply(((intptr_t)L_27), (int32_t)L_28)))));
+		NullCheck(L_23);
+		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(L_24), (DLSSDebugFeatureInfos_tD484D122A94A6E3F462C53EC705BBFCB4E4591EE)L_29);
+		int32_t L_30 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_30, 1));
+	}
+
+IL_0094:
+	{
+		int32_t L_31 = V_3;
+		GraphicsDeviceDebugInfo_t2E7FC2BFA50FB64A073A0E69FA5A95346337B114 L_32 = V_1;
+		uint32_t L_33 = L_32.___dlssInfosCount;
+		V_4 = (bool)((((int64_t)((int64_t)L_31)) < ((int64_t)((int64_t)(uint64_t)L_33)))? 1 : 0);
+		bool L_34 = V_4;
+		if (L_34)
+		{
+			goto IL_006d;
+		}
+	}
+	{
+	}
+
+IL_00a6:
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice_DeleteDebugView_m56D714302080C2E5EC0EEBEE5193BA3DF0825797 (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30* __this, GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456* ___0_debugView, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	{
+		GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456* L_0 = ___0_debugView;
+		V_0 = (bool)((((RuntimeObject*)(GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456*)L_0) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_000b;
+		}
+	}
+	{
+		goto IL_0018;
+	}
+
+IL_000b:
+	{
+		GraphicsDeviceDebugView_tCEDFECA1857DD2DABBCB22AD74F10728123B7456* L_2 = ___0_debugView;
+		NullCheck(L_2);
+		uint32_t L_3 = L_2->___m_ViewId;
+		GraphicsDevice_DeleteDebugViewId_m0270D0E8672DCAD37BA4858E64D857B736030A96(__this, L_3, NULL);
+	}
+
+IL_0018:
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GraphicsDevice_NVUP_InitApi_mDB36041E3BF64360747B0D653CF6B02D225F99A6 (intptr_t ___0_initData, const RuntimeMethod* method) 
+{
+	typedef int32_t (STDCALL *PInvokeFunc) (intptr_t);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(intptr_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("NVUnityPlugin"), "NVUP_InitApi", IL2CPP_CALL_STDCALL, CHARSET_ANSI, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(NVUP_InitApi)(___0_initData);
+	#else
+	int32_t returnValue = il2cppPInvokeFunc(___0_initData);
+	#endif
+
+	return static_cast<bool>(returnValue);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice_NVUP_ShutdownApi_mB135A1BD53DE98C8CFE1F4504C0480265A28CD0F (const RuntimeMethod* method) 
+{
+	typedef void (STDCALL *PInvokeFunc) ();
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = 0;
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("NVUnityPlugin"), "NVUP_ShutdownApi", IL2CPP_CALL_STDCALL, CHARSET_ANSI, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	reinterpret_cast<PInvokeFunc>(NVUP_ShutdownApi)();
+	#else
+	il2cppPInvokeFunc();
+	#endif
+
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GraphicsDevice_NVUP_IsFeatureAvailable_m6BD94CF6B3B28F30D6F39DA4ADAB83B4247F8D37 (int32_t ___0_featureID, const RuntimeMethod* method) 
+{
+	typedef int32_t (STDCALL *PInvokeFunc) (int32_t);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(int32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("NVUnityPlugin"), "NVUP_IsFeatureAvailable", IL2CPP_CALL_STDCALL, CHARSET_ANSI, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(NVUP_IsFeatureAvailable)(___0_featureID);
+	#else
+	int32_t returnValue = il2cppPInvokeFunc(___0_featureID);
+	#endif
+
+	return static_cast<bool>(returnValue);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GraphicsDevice_NVUP_GetOptimalSettings_mCBECE6E24A40A920CBCE568337E3CE7076931D3C (uint32_t ___0_inTargetWidth, uint32_t ___1_inTargetHeight, int32_t ___2_inPerfVQuality, OptimalDLSSSettingsData_t6520B090F25B090E6EF719F3568B21A29CB16774* ___3_data, const RuntimeMethod* method) 
+{
+	typedef int32_t (STDCALL *PInvokeFunc) (uint32_t, uint32_t, int32_t, OptimalDLSSSettingsData_t6520B090F25B090E6EF719F3568B21A29CB16774*);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(uint32_t) + sizeof(uint32_t) + sizeof(int32_t) + sizeof(OptimalDLSSSettingsData_t6520B090F25B090E6EF719F3568B21A29CB16774*);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("NVUnityPlugin"), "NVUP_GetOptimalSettings", IL2CPP_CALL_STDCALL, CHARSET_ANSI, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(NVUP_GetOptimalSettings)(___0_inTargetWidth, ___1_inTargetHeight, ___2_inPerfVQuality, ___3_data);
+	#else
+	int32_t returnValue = il2cppPInvokeFunc(___0_inTargetWidth, ___1_inTargetHeight, ___2_inPerfVQuality, ___3_data);
+	#endif
+
+	return static_cast<bool>(returnValue);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t GraphicsDevice_NVUP_GetRenderEventCallback_mDF13712BE6611B1A51FA06E87B358F47D13E8FA5 (const RuntimeMethod* method) 
+{
+	typedef intptr_t (STDCALL *PInvokeFunc) ();
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = 0;
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("NVUnityPlugin"), "NVUP_GetRenderEventCallback", IL2CPP_CALL_STDCALL, CHARSET_ANSI, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(NVUP_GetRenderEventCallback)();
+	#else
+	intptr_t returnValue = il2cppPInvokeFunc();
+	#endif
+
+	return returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t GraphicsDevice_NVUP_GetSetTextureEventCallback_m1769E18E4ED28BDF263745067875290B4BAC8AE3 (const RuntimeMethod* method) 
+{
+	typedef intptr_t (STDCALL *PInvokeFunc) ();
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = 0;
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("NVUnityPlugin"), "NVUP_GetSetTextureEventCallback", IL2CPP_CALL_STDCALL, CHARSET_ANSI, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	intptr_t returnValue = reinterpret_cast<PInvokeFunc>(NVUP_GetSetTextureEventCallback)();
+	#else
+	intptr_t returnValue = il2cppPInvokeFunc();
+	#endif
+
+	return returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t GraphicsDevice_NVUP_CreateFeatureSlot_mBC0AF6EA3B32E95A3B5BD3DC641A2A33C0AA371B (const RuntimeMethod* method) 
+{
+	typedef uint32_t (STDCALL *PInvokeFunc) ();
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = 0;
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("NVUnityPlugin"), "NVUP_CreateFeatureSlot", IL2CPP_CALL_STDCALL, CHARSET_ANSI, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	uint32_t returnValue = reinterpret_cast<PInvokeFunc>(NVUP_CreateFeatureSlot)();
+	#else
+	uint32_t returnValue = il2cppPInvokeFunc();
+	#endif
+
+	return returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t GraphicsDevice_NVUP_GetDeviceVersion_mA7ABA3AA87EF2C364D7CD7CBB0D1226469085B52 (const RuntimeMethod* method) 
+{
+	typedef uint32_t (STDCALL *PInvokeFunc) ();
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = 0;
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("NVUnityPlugin"), "NVUP_GetDeviceVersion", IL2CPP_CALL_STDCALL, CHARSET_ANSI, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	uint32_t returnValue = reinterpret_cast<PInvokeFunc>(NVUP_GetDeviceVersion)();
+	#else
+	uint32_t returnValue = il2cppPInvokeFunc();
+	#endif
+
+	return returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t GraphicsDevice_NVUP_CreateDebugView_mA5F663E7D2043EB1B42AF9AD3BD88601E1D1D09C (const RuntimeMethod* method) 
+{
+	typedef uint32_t (STDCALL *PInvokeFunc) ();
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = 0;
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("NVUnityPlugin"), "NVUP_CreateDebugView", IL2CPP_CALL_STDCALL, CHARSET_ANSI, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	uint32_t returnValue = reinterpret_cast<PInvokeFunc>(NVUP_CreateDebugView)();
+	#else
+	uint32_t returnValue = il2cppPInvokeFunc();
+	#endif
+
+	return returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice_NVUP_GetGraphicsDeviceDebugInfo_m7F096032C4498C19357B2A37BBF8D13731172275 (uint32_t ___0_debugViewId, GraphicsDeviceDebugInfo_t2E7FC2BFA50FB64A073A0E69FA5A95346337B114* ___1_data, const RuntimeMethod* method) 
+{
+	typedef void (STDCALL *PInvokeFunc) (uint32_t, GraphicsDeviceDebugInfo_t2E7FC2BFA50FB64A073A0E69FA5A95346337B114*);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(uint32_t) + sizeof(GraphicsDeviceDebugInfo_t2E7FC2BFA50FB64A073A0E69FA5A95346337B114*);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("NVUnityPlugin"), "NVUP_GetGraphicsDeviceDebugInfo", IL2CPP_CALL_STDCALL, CHARSET_ANSI, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	reinterpret_cast<PInvokeFunc>(NVUP_GetGraphicsDeviceDebugInfo)(___0_debugViewId, ___1_data);
+	#else
+	il2cppPInvokeFunc(___0_debugViewId, ___1_data);
+	#endif
+
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice_NVUP_DeleteDebugView_m4DE8E72CDCB3226D8DC2DA5DB7BC0B61FF5DECB7 (uint32_t ___0_debugViewId, const RuntimeMethod* method) 
+{
+	typedef void (STDCALL *PInvokeFunc) (uint32_t);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(uint32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("NVUnityPlugin"), "NVUP_DeleteDebugView", IL2CPP_CALL_STDCALL, CHARSET_ANSI, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	reinterpret_cast<PInvokeFunc>(NVUP_DeleteDebugView)(___0_debugViewId);
+	#else
+	il2cppPInvokeFunc(___0_debugViewId);
+	#endif
+
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GraphicsDevice_NVUP_GetBaseEventId_mE72681217E20C87579F18D59F477EC2B6ADA2DD2 (const RuntimeMethod* method) 
+{
+	typedef int32_t (STDCALL *PInvokeFunc) ();
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = 0;
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("NVUnityPlugin"), "NVUP_GetBaseEventId", IL2CPP_CALL_STDCALL, CHARSET_ANSI, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_NVUnityPlugin_INTERNAL
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(NVUP_GetBaseEventId)();
+	#else
+	int32_t returnValue = il2cppPInvokeFunc();
+	#endif
+
+	return returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GraphicsDevice__cctor_m5B48F468DDAAD06C6635BE6C7B96F217BF8EBB23 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC75DDBE10FBC42810C77E11DD602386C634DD895);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD17768C3B31CAAABBF3AA5F14A359A7C3C2CF794);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		((GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_StaticFields*)il2cpp_codegen_static_fields_for(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var))->___s_DefaultProjectID = _stringLiteralC75DDBE10FBC42810C77E11DD602386C634DD895;
+		Il2CppCodeGenWriteBarrier((void**)(&((GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_StaticFields*)il2cpp_codegen_static_fields_for(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var))->___s_DefaultProjectID), (void*)_stringLiteralC75DDBE10FBC42810C77E11DD602386C634DD895);
+		((GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_StaticFields*)il2cpp_codegen_static_fields_for(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var))->___s_DefaultAppDir = _stringLiteralD17768C3B31CAAABBF3AA5F14A359A7C3C2CF794;
+		Il2CppCodeGenWriteBarrier((void**)(&((GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_StaticFields*)il2cpp_codegen_static_fields_for(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var))->___s_DefaultAppDir), (void*)_stringLiteralD17768C3B31CAAABBF3AA5F14A359A7C3C2CF794);
+		((GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_StaticFields*)il2cpp_codegen_static_fields_for(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var))->___sGraphicsDeviceInstance = (GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&((GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_StaticFields*)il2cpp_codegen_static_fields_for(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30_il2cpp_TypeInfo_var))->___sGraphicsDeviceInstance), (void*)(GraphicsDevice_t5F1C110FE80AE045AD7C01A5898A85B0297D9B30*)NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_colorInput_mCA1C9468C5E51299F4AE7D8F3DE27212D45888B7_inline (DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* __this, const RuntimeMethod* method) 
+{
+	{
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_0 = __this->___U3CcolorInputU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_colorOutput_mEDA6CE6C9B969F7C8536EFDACE47B052FCC265C7_inline (DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* __this, const RuntimeMethod* method) 
+{
+	{
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_0 = __this->___U3CcolorOutputU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_depth_mA10825F11D6DEA9B8A411BBB4D806E62839C10E5_inline (DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* __this, const RuntimeMethod* method) 
+{
+	{
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_0 = __this->___U3CdepthU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_motionVectors_m6E2674E42A4212BD7D484EEC7B343EF6B2C7A25C_inline (DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* __this, const RuntimeMethod* method) 
+{
+	{
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_0 = __this->___U3CmotionVectorsU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_transparencyMask_mFE6C8B48F71E267FA357B3DA3C3F1CD0280F752D_inline (DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* __this, const RuntimeMethod* method) 
+{
+	{
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_0 = __this->___U3CtransparencyMaskU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_exposureTexture_m2119B86AED4F7313782B5CD33E08F55F5C228688_inline (DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* __this, const RuntimeMethod* method) 
+{
+	{
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_0 = __this->___U3CexposureTextureU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* DLSSTextureTable_get_biasColorMask_m7A65B25DA8DD8A7CC832DA3F6FAC4147292E2274_inline (DLSSTextureTable_t390CB9A3F8FB740C376102FA8E74C7184726F7CF* __this, const RuntimeMethod* method) 
+{
+	{
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_0 = __this->___U3CbiasColorMaskU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Stack_1_get_Count_mD08AE71D49787D30DDD9D484BCD323D646744D2E_gshared_inline (Stack_1_tAD790A47551563636908E21E4F08C54C0C323EB5* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->____size;
+		return L_0;
+	}
+}

@@ -15,9 +15,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotUpdate", "HotUpdate.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridCLR.Runtime", "HybridCLR.Runtime.csproj", "{3f163fd3-627f-7bb1-bd22-771829de6365}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{15958861-2edc-01cf-cbc4-dbcdfe945f1f}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{e082f998-a492-7652-d05f-3de0a7d41bd2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{cef4790a-dc88-abdb-9f8c-5c27506a069f}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{15958861-2edc-01cf-cbc4-dbcdfe945f1f}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,10 +40,12 @@ Global
 		{3e50ad06-c6e5-d77c-da98-9fd2c6248f7b}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3f163fd3-627f-7bb1-bd22-771829de6365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3f163fd3-627f-7bb1-bd22-771829de6365}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{15958861-2edc-01cf-cbc4-dbcdfe945f1f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{15958861-2edc-01cf-cbc4-dbcdfe945f1f}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{e082f998-a492-7652-d05f-3de0a7d41bd2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{e082f998-a492-7652-d05f-3de0a7d41bd2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{cef4790a-dc88-abdb-9f8c-5c27506a069f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{cef4790a-dc88-abdb-9f8c-5c27506a069f}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15958861-2edc-01cf-cbc4-dbcdfe945f1f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15958861-2edc-01cf-cbc4-dbcdfe945f1f}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
