@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using GameFramework;
+using UnityEngine;
 using GameFramework.Event;
 using GameFramework.Procedure;
 using UnityGameFramework.Runtime;
@@ -14,6 +15,7 @@ public class ProcedurePreload : ProcedureBase
     private bool preloadAllCompleted;
     private float progressSmoothSpeed = 10f;
     private int m_DataTablesCount;
+
     protected override void OnEnter(ProcedureOwner procedureOwner)
     {
         base.OnEnter(procedureOwner);
@@ -57,10 +59,11 @@ public class ProcedurePreload : ProcedureBase
             preloadAllCompleted = true;
             InitGameFrameworkSettings();
             Debug.Log("预加载完成, 进入游戏场景.");
-            //procedureOwner.SetData<VarString>(ChangeSceneProcedure.P_SceneName, "Game");
-            //ChangeState<ChangeSceneProcedure>(procedureOwner);
+            procedureOwner.SetData<VarString>(ProcedureChangeScene.P_SceneName, SceneDefine.S_Home);
+            ChangeState<ProcedureChangeScene>(procedureOwner);
         }
     }
+
     private void InitAppSettings()
     {
         //if (string.IsNullOrWhiteSpace(GF.Setting.GetABTestGroup()))
@@ -68,6 +71,7 @@ public class ProcedurePreload : ProcedureBase
         //    GF.Setting.SetABTestGroup("B");//设置A/B测试组; 应由服务器分配该新用户所属测试组
         //}
     }
+
     /// <summary>
     /// 预加载完成之后需要处理的事情
     /// </summary>
@@ -130,6 +134,7 @@ public class ProcedurePreload : ProcedureBase
         // GF.Setting.SetMediaVolume(Const.SoundGroup.Music, GF.Setting.GetMediaVolume(Const.SoundGroup.Music, defaultSoundGroupData[Const.SoundGroup.Music.ToString()].Volume));
         // GF.Setting.SetMediaVolume(Const.SoundGroup.Sound, GF.Setting.GetMediaVolume(Const.SoundGroup.Sound, defaultSoundGroupData[Const.SoundGroup.Sound.ToString()].Volume));
     }
+
     /// <summary>
     /// 预加载数据表、游戏配置,以及初始化游戏数据
     /// </summary>
@@ -140,10 +145,12 @@ public class ProcedurePreload : ProcedureBase
         totalProgress = 0;
         loadedProgress = 0;
         m_DataTablesCount = -1;
-        // var appConfig = await AppConfigs.GetInstanceSync();
+        //var appConfig = await AppConfigs.GetInstanceSync();
         // totalProgress = appConfig.DataTables.Length + appConfig.Configs.Length + 2;//2是加载多语言和创建框架扩展
-        // CreateGFExtension();
+        totalProgress = 1;
+        CreateGFExtension();
     }
+
     private async void LoadConfigsAndDataTables()
     {
         // var appConfig = await AppConfigs.GetInstanceSync();
@@ -157,9 +164,11 @@ public class ProcedurePreload : ProcedureBase
         //     GF.DataTable.LoadDataTable(item, appConfig.LoadFromBytes, this);
         // }
     }
+
     private void CreateGFExtension()
     {
-        //GF.Resource.LoadAsset(UtilityBuiltin.AssetsPath.GetPrefab("Core/GFExtension"), typeof(GameObject), new GameFramework.Resource.LoadAssetCallbacks(OnLoadGFExtensionSuccess, OnLoadGFExtensionFailed));
+        GF.Resource.LoadAsset(AssetsPath.GetPrefab("Core/GFExtension"), typeof(GameObject),
+            new GameFramework.Resource.LoadAssetCallbacks(OnLoadGFExtensionSuccess, OnLoadGFExtensionFailed));
     }
 
     private async void InitAndLoadLanguage()
@@ -190,26 +199,28 @@ public class ProcedurePreload : ProcedureBase
 
     private void OnLoadGFExtensionSuccess(string assetName, object asset, float duration, object userData)
     {
-        // var gfExtPfb = asset as GameObject;
-        // if (null != GameObject.Instantiate(gfExtPfb, Vector3.zero, Quaternion.identity, GF.Base.transform))
-        // {
-        //     GF.LogInfo("GF框架扩展成功!");
-        //     loadedProgress++;
-        //     LoadConfigsAndDataTables();
-        // }
+        var gfExtPfb = asset as GameObject;
+        if (null != GameObject.Instantiate(gfExtPfb, Vector3.zero, Quaternion.identity, GF.Base.transform))
+        {
+            Debug.Log("GF框架扩展成功!");
+            loadedProgress++;
+            LoadConfigsAndDataTables();
+        }
     }
+
     private void OnLoadGFExtensionFailed(string assetName, LoadResourceStatus status, string errorMessage, object userData)
     {
-        //GF.LogError(Utility.Text.Format("GF框架扩展加载失败:{0}, Error:{1}", assetName, errorMessage));
+        Debug.LogError(Utility.Text.Format("GF框架扩展加载失败:{0}, Error:{1}", assetName, errorMessage));
     }
+
     private void OnLoadDicSuccess(object sender, GameEventArgs e)
     {
         LoadDictionarySuccessEventArgs args = e as LoadDictionarySuccessEventArgs;
         if (args.UserData != this) return;
         loadedProgress++;
         Log.Info("Load Language Success:{0}", args.DictionaryAssetName);
-
     }
+
     /// <summary>
     /// 加载配置成功回调
     /// </summary>

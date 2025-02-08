@@ -5,7 +5,8 @@
         "Unity.TextMeshPro",
         "GameFramework",
         "UnityGameFramework.Runtime",
-        "GameMain.Runtime"
+        "GameMain.Runtime",
+        "UniTask"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

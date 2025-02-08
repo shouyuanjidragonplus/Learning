@@ -12,13 +12,12 @@ public class HotfixEntry
     public static async void StartHotfixLogic(bool enableHotfix)
     {
         Debug.LogFormat("Hotfix Enable:{0}", enableHotfix);
-
+        AwaitExtension.SubscribeEvent();
+        
         GF.Fsm.DestroyFsm<IProcedureManager>();
         var fsmManager = GameFrameworkEntry.GetModule<IFsmManager>();
         var procManager = GameFrameworkEntry.GetModule<IProcedureManager>();
-        //var appConfig = await AppConfigs.GetInstanceSync();
-        //临时使用本地配置
-        var appConfig = AppConfigs.GetInstanceEditor();
+        var appConfig = await AppConfigs.GetInstanceSync();
 
         ProcedureBase[] procedures = new ProcedureBase[appConfig.Procedures.Length];
         for (int i = 0; i < appConfig.Procedures.Length; i++)

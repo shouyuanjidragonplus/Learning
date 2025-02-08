@@ -52,7 +52,7 @@ public class AppConfigs : ScriptableObject
         var configAsset = AssetsPath.GetScriptableAsset("Core/AppConfigs");
         if (mInstance == null)
         {
-            //mInstance = await GFBuiltin.Resource.LoadAssetAwait<AppConfigs>(configAsset);
+            mInstance = await GF.Resource.LoadAssetAwait<AppConfigs>(configAsset);
         }
 
         return mInstance;
