@@ -15,6 +15,7 @@ using TMPro.EditorUtilities;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityGameFramework.Runtime;
 
 namespace UGF.EditorTools
 {
@@ -39,7 +40,7 @@ namespace UGF.EditorTools
         const int VALUE_COL = 3; //value所在列
 
         static readonly string[] LocalizationFuncNames =
-            { "GF.Localization.GetText", "GF.Localization.GetString", "GameEntry.Localization.GetText", "GameEntry.Localization.GetString" };
+            { "GF.Localization.GetString", "GameEntry.Localization.GetString" };
 
         internal const int MinLength = 600;
         internal const int MaxLength = 4000;

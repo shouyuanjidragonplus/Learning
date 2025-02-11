@@ -21,6 +21,19 @@ public class AppConfigs : ScriptableObject
     [Header("已启用流程列表")] [SerializeField] string[] mProcedures;
 
     public string[] Procedures => mProcedures;
+    
+    [Header("数据表")]
+    [SerializeField] string[] mDataTables;
+    public string[] DataTables => mDataTables;
+
+
+    [Header("配置表")]
+    [SerializeField] string[] mConfigs;
+    public string[] Configs => mConfigs;
+
+    [Header("多语言表")]
+    [SerializeField] string[] mLanguages;
+    public string[] Languages => mLanguages;
 
     private void Awake()
     {

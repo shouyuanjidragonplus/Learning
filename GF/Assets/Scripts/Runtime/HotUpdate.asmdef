@@ -6,7 +6,8 @@
         "GameFramework",
         "UnityGameFramework.Runtime",
         "GameMain.Runtime",
-        "UniTask"
+        "UniTask",
+        "Unity.Mathematics"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

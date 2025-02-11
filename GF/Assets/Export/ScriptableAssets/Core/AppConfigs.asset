@@ -12,8 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5119c8397ee5b7d4091ea76fdc8450c8, type: 3}
   m_Name: AppConfigs
   m_EditorClassIdentifier: 
-  m_LoadFromBytes: 0
+  m_LoadFromBytes: 1
   mProcedures:
   - ProcedureChangeScene
   - ProcedureMenu
   - ProcedurePreload
+  mDataTables:
+  - ColorTable
+  mConfigs:
+  - GameConfig
+  mLanguages:
+  - ChineseSimplified
