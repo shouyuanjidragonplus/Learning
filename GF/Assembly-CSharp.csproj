@@ -48,10 +48,19 @@
     <Compile Include="Assets\HybridCLRGenerate\AOTGenericReferences.cs" />
     <None Include="Assets\Export\Font\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\Export\Font\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Export\DataTable\Core\UITable.txt" />
     <None Include="Assets\Export\Font\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Export\DataTable\Core\SoundGroupTable.txt" />
+    <None Include="Assets\Export\DataTable\CombatUnitTable.txt" />
     <None Include="Assets\Export\Font\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\Export\DataTable\Core\UIGroupTable.txt" />
+    <None Include="Assets\Export\DataTable\Core\LanguagesTable.txt" />
     <None Include="Assets\Export\Font\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\Export\Font\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\Export\DataTable\CameraViewTable.txt" />
+    <None Include="Assets\Export\DataTable\LevelTable.txt" />
+    <None Include="Assets\Export\DataTable\Core\EntityGroupTable.txt" />
+    <None Include="Assets\Export\Language\English.json" />
     <None Include="Assets\Export\Font\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\Export\Font\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\Export\Font\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -64,15 +73,18 @@
     <None Include="Assets\GameFramework\Configs\ResourceCollection.xml" />
     <None Include="Assets\Export\Font\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Export\HotfixDlls\HotfixFileList.txt" />
+    <None Include="Assets\Export\Language\ChineseSimplified.json" />
     <None Include="Assets\Export\Font\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Export\Font\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Export\Font\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\Export\DataTable\ColorTable.txt" />
     <None Include="Assets\Export\Font\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="E:\git\hybridclr_unity\package.json" />
+    <None Include="E:\Project\hybridclr_unity\package.json" />
     <None Include="Assets\Export\Font\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\Export\Configs\BuildInfo.txt" />
     <None Include="Assets\Export\Font\TextMesh Pro\Sprites\EmojiOne.json" />
     <None Include="Assets\Export\Font\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\Export\Config\GameConfig.txt" />
     <Reference Include="UnityEngine">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -322,20 +334,32 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
     <Reference Include="dnlib">
-      <HintPath>E:\git\hybridclr_unity\Plugins\dnlib.dll</HintPath>
+      <HintPath>E:\Project\hybridclr_unity\Plugins\dnlib.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
-      <HintPath>E:\git\Learning\GF\Assets\Plugins\ThirdParty\Google.Protobuf.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="LZ4">
-      <HintPath>E:\git\hybridclr_unity\Plugins\LZ4.dll</HintPath>
+      <HintPath>E:\Project\hybridclr_unity\Plugins\LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\EPPlus.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>E:\git\Learning\GF\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\EPPlus.System.Drawing.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>E:\git\Learning\GF\Assets\Plugins\UnityGameFramework\Libraries\ICSharpCode.SharpZipLib.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\UnityGameFramework\Libraries\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -727,20 +751,41 @@
     <Reference Include="System.Xml.XPath.XDocument">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
+    <Reference Include="UniTask.TextMeshPro">
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\UniTask.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.DOTween">
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\UniTask.DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.Addressables">
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\UniTask.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.Linq">
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\UniTask.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

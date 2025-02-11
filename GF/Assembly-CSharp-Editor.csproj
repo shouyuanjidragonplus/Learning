@@ -45,9 +45,71 @@
     <Analyzer Include="D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Editor\HybridCLR\HybridCLRExtensionTool.cs" />
-    <Compile Include="Assets\Scripts\Editor\AppConfigsInspector.cs" />
-    <Compile Include="Assets\Scripts\Editor\Common\ConstEditor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.UIntProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.GenericDataProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.Vector2IntProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.DecimalProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.ColorProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.DoubleArrayProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.Double2DArrayProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.BoolArrayProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.Vector2Processor.cs" />
+    <Compile Include="Assets\GameMain\Editor\EditorTools\GameDataScrollView.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.Vector4Processor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.ByteProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.DataProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.CharProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\EditorTools\HybridCLR\HybridCLRExtensionTool.cs" />
+    <Compile Include="Assets\GameMain\Editor\EditorTools\Common\EditorScriptableSignleton.cs" />
+    <Compile Include="Assets\GameMain\Editor\EditorTools\LocalizationScanner\LocalizationTextScanner.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.Float2DArrayProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.DataProcessorUtility.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.Color32Processor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.Vector4ArrayProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.RectProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.Int2DArrayProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.Vector3ArrayProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\EditorTools\EditorToolMenuAttribute.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.Int4ArrayProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\AppConfigsInspector.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.Vector3IntProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\Common\ConstEditor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableCodeGenerator.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.ShortProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.UShortProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.StringProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.DoubleProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.Int4Processor.cs" />
+    <Compile Include="Assets\GameMain\Editor\EditorTools\GameDataGenerator.cs" />
+    <Compile Include="Assets\GameMain\Editor\EditorTools\EditorToolbarExtension.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.StringArrayProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\EditorTools\LocalizationScanner\LocalizationTextScannerEditor.cs" />
+    <Compile Include="Assets\GameMain\Editor\EditorTools\Common\EditorToolSettings.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.Vector3Processor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.ULongProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.FloatProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.IdProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.QuaternionProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\EditorTools\EditorToolBase.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.BoolProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\EditorTools\AppBuildEidtor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.FloatArrayProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.Vector3IntArrayProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.Vector2IntArrayProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.IntProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableGenerator.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.CommentProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.IntArrayProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.LongProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\EditorTools\UnityEditorToolbar.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.EnumProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.LongArrayProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.Bool2DArrayProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.DateTimeProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.SByteProcessor.cs" />
+    <Compile Include="Assets\GameMain\Editor\DataTableGenerator\DataTableProcessor.Vector2ArrayProcessor.cs" />
+    <None Include="Assets\GameMain\Editor\DataTableGenerator\DataTableCodeTemplate\DataTableCodeTemplate.txt" />
     <Reference Include="UnityEngine">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -312,23 +374,35 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
     <Reference Include="dnlib">
-      <HintPath>E:\git\hybridclr_unity\Plugins\dnlib.dll</HintPath>
+      <HintPath>E:\Project\hybridclr_unity\Plugins\dnlib.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
-      <HintPath>E:\git\Learning\GF\Assets\Plugins\ThirdParty\Google.Protobuf.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="LZ4">
-      <HintPath>E:\git\hybridclr_unity\Plugins\LZ4.dll</HintPath>
+      <HintPath>E:\Project\hybridclr_unity\Plugins\LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\EPPlus.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>E:\git\Learning\GF\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\EPPlus.System.Drawing.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>E:\git\Learning\GF\Assets\Plugins\UnityGameFramework\Libraries\ICSharpCode.SharpZipLib.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\UnityGameFramework\Libraries\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>E:\git\Learning\GF\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -720,20 +794,41 @@
     <Reference Include="System.Xml.XPath.XDocument">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
+    <Reference Include="UniTask.TextMeshPro">
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\UniTask.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.DOTween">
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\UniTask.DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.Addressables">
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\UniTask.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.Linq">
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\UniTask.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

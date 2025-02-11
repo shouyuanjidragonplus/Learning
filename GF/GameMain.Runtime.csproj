@@ -51,15 +51,15 @@
     <Compile Include="Assets\GameMain\Runtime\Procedures\ProcedureLaunch.cs" />
     <Compile Include="Assets\GameMain\Runtime\Common\SettingConst.cs" />
     <Compile Include="Assets\GameMain\Runtime\EventArgs\LoadHotfixDllEventArgs.cs" />
-    <Compile Include="Assets\GameMain\Runtime\Component\DriverComponent\DriverComponent.cs" />
-    <Compile Include="Assets\GameMain\Runtime\Common\AssetsPath.cs" />
     <Compile Include="Assets\GameMain\Runtime\Definition\Constant\Constant.Setting.cs" />
     <Compile Include="Assets\GameMain\Runtime\Component\StartComponent\StartComponent.cs" />
     <Compile Include="Assets\GameMain\Runtime\Base\GameEntry.Custom.cs" />
+    <Compile Include="Assets\GameMain\Runtime\Procedures\ProcedureSplash.cs" />
+    <Compile Include="Assets\GameMain\Runtime\Component\DriverComponent\DriverComponent.cs" />
+    <Compile Include="Assets\GameMain\Runtime\Common\AssetsPath.cs" />
     <Compile Include="Assets\GameMain\Runtime\Event\GFEventArgs.cs" />
     <Compile Include="Assets\GameMain\Runtime\Procedures\ProcedureLoadHotfixDll.cs" />
     <Compile Include="Assets\GameMain\Runtime\Base\GameEntry.cs" />
-    <Compile Include="Assets\GameMain\Runtime\Procedures\ProcedureSplash.cs" />
     <Compile Include="Assets\GameMain\Runtime\Procedures\ProcedureUpdateResources.cs" />
     <None Include="Assets\GameMain\Runtime\GameMain.Runtime.asmdef" />
     <Reference Include="UnityEngine">
@@ -323,20 +323,32 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
     <Reference Include="dnlib">
-      <HintPath>E:\git\hybridclr_unity\Plugins\dnlib.dll</HintPath>
+      <HintPath>E:\Project\hybridclr_unity\Plugins\dnlib.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
-      <HintPath>E:\git\Learning\GF\Assets\Plugins\ThirdParty\Google.Protobuf.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="LZ4">
-      <HintPath>E:\git\hybridclr_unity\Plugins\LZ4.dll</HintPath>
+      <HintPath>E:\Project\hybridclr_unity\Plugins\LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\EPPlus.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>E:\git\Learning\GF\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\EPPlus.System.Drawing.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>E:\git\Learning\GF\Assets\Plugins\UnityGameFramework\Libraries\ICSharpCode.SharpZipLib.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\UnityGameFramework\Libraries\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -729,13 +741,13 @@
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

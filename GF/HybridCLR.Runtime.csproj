@@ -45,12 +45,12 @@
     <Analyzer Include="D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="E:\git\hybridclr_unity\Runtime\HomologousImageMode.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Runtime\ReversePInvokeWrapperGenerationAttribute.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Runtime\LoadImageErrorCode.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Runtime\RuntimeOptionId.cs" />
-    <Compile Include="E:\git\hybridclr_unity\Runtime\RuntimeApi.cs" />
-    <None Include="E:\git\hybridclr_unity\Runtime\HybridCLR.Runtime.asmdef" />
+    <Compile Include="E:\Project\hybridclr_unity\Runtime\ReversePInvokeWrapperGenerationAttribute.cs" />
+    <Compile Include="E:\Project\hybridclr_unity\Runtime\LoadImageErrorCode.cs" />
+    <Compile Include="E:\Project\hybridclr_unity\Runtime\RuntimeApi.cs" />
+    <Compile Include="E:\Project\hybridclr_unity\Runtime\HomologousImageMode.cs" />
+    <Compile Include="E:\Project\hybridclr_unity\Runtime\RuntimeOptionId.cs" />
+    <None Include="E:\Project\hybridclr_unity\Runtime\HybridCLR.Runtime.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -312,20 +312,32 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
     <Reference Include="dnlib">
-      <HintPath>E:\git\hybridclr_unity\Plugins\dnlib.dll</HintPath>
+      <HintPath>E:\Project\hybridclr_unity\Plugins\dnlib.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
-      <HintPath>E:\git\Learning\GF\Assets\Plugins\ThirdParty\Google.Protobuf.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="LZ4">
-      <HintPath>E:\git\hybridclr_unity\Plugins\LZ4.dll</HintPath>
+      <HintPath>E:\Project\hybridclr_unity\Plugins\LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\EPPlus.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>E:\git\Learning\GF\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\EPPlus.System.Drawing.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>E:\git\Learning\GF\Assets\Plugins\UnityGameFramework\Libraries\ICSharpCode.SharpZipLib.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\UnityGameFramework\Libraries\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -718,10 +730,10 @@
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -45,15 +45,35 @@
     <Analyzer Include="D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Runtime\DataTable\CombatUnitTable.cs" />
+    <Compile Include="Assets\Scripts\Runtime\DataTable\SettingExtension.cs" />
+    <Compile Include="Assets\Scripts\Runtime\DataTable\Core\UIGroupTable.cs" />
+    <Compile Include="Assets\Scripts\Runtime\Extension\AwaitExtension\AwaitExtension.cs" />
+    <Compile Include="Assets\Scripts\Runtime\DataTable\LevelTable.cs" />
+    <Compile Include="Assets\Scripts\Runtime\Scene\SceneDefine.cs" />
+    <Compile Include="Assets\Scripts\Runtime\Component\RedDotComponent\RedDotCore\RedDotNode.cs" />
+    <Compile Include="Assets\Scripts\Runtime\Extension\AwaitExtension\WebRequestResult.cs" />
+    <Compile Include="Assets\Scripts\Runtime\Procedures\ProcedureChangeScene.cs" />
+    <Compile Include="Assets\Scripts\Runtime\DataTable\Core\LanguagesTable.cs" />
+    <Compile Include="Assets\Scripts\Runtime\UI\Core\UIViews.cs" />
+    <Compile Include="Assets\Scripts\Runtime\Extension\AwaitExtension\DownloadResult.cs" />
+    <Compile Include="Assets\Scripts\Runtime\DataTable\DataTableExtension.cs" />
+    <Compile Include="Assets\Scripts\Runtime\Base\GF.cs" />
+    <Compile Include="Assets\Scripts\Runtime\Extension\AwaitExtension\AwaitParams.cs" />
+    <Compile Include="Assets\Scripts\Runtime\DataTable\Core\UITable.cs" />
     <Compile Include="Assets\Scripts\Runtime\ScriptableObject\AppSettings.cs" />
     <Compile Include="Assets\Scripts\Runtime\Component\RedDotComponent\RedDotComponent.cs" />
+    <Compile Include="Assets\Scripts\Runtime\DataTable\Core\EntityGroupTable.cs" />
+    <Compile Include="Assets\Scripts\Runtime\Procedures\ProcedureMenu.cs" />
+    <Compile Include="Assets\Scripts\Runtime\DataTable\Core\SoundGroupTable.cs" />
     <Compile Include="Assets\Scripts\Runtime\Component\RedDotComponent\RedDotCore\RedDotDefine.cs" />
     <Compile Include="Assets\Scripts\Runtime\Component\RedDotComponent\RedDotCore\RedDotSystem.cs" />
     <Compile Include="Assets\Scripts\Runtime\Procedures\ProcedurePreload.cs" />
     <Compile Include="Assets\Scripts\Runtime\HotfixEntry.cs" />
-    <Compile Include="Assets\Scripts\Runtime\Component\RedDotComponent\RedDotCore\RedDotNode.cs" />
-    <Compile Include="Assets\Scripts\Runtime\Base\GF.cs" />
+    <Compile Include="Assets\Scripts\Runtime\DataTable\CameraViewTable.cs" />
+    <Compile Include="Assets\Scripts\Runtime\DataTable\ColorTable.cs" />
     <Compile Include="Assets\Scripts\Runtime\ScriptableObject\AppConfigs.cs" />
+    <Compile Include="Assets\Scripts\Runtime\DataTable\BinaryReaderExtension.cs" />
     <None Include="Assets\Scripts\Runtime\HotUpdate.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -316,20 +336,32 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
     <Reference Include="dnlib">
-      <HintPath>E:\git\hybridclr_unity\Plugins\dnlib.dll</HintPath>
+      <HintPath>E:\Project\hybridclr_unity\Plugins\dnlib.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
-      <HintPath>E:\git\Learning\GF\Assets\Plugins\ThirdParty\Google.Protobuf.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="LZ4">
-      <HintPath>E:\git\hybridclr_unity\Plugins\LZ4.dll</HintPath>
+      <HintPath>E:\Project\hybridclr_unity\Plugins\LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\EPPlus.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>E:\git\Learning\GF\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\EPPlus.System.Drawing.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>E:\git\Learning\GF\Assets\Plugins\UnityGameFramework\Libraries\ICSharpCode.SharpZipLib.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\UnityGameFramework\Libraries\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -722,13 +754,19 @@
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>E:\git\Learning\GF\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
