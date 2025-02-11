@@ -56,7 +56,7 @@ public class ConstEditor
     /// <summary>
     /// 语言国际化Excel目录
     /// </summary>
-    public static string LanguageExcelPath => AssetsPath.GetCombinePath(Directory.GetParent(Application.dataPath).FullName, "Export/Languages");
+    public static string LanguageExcelPath => AssetsPath.GetCombinePath(Directory.GetParent(Application.dataPath).FullName, "ExcelData/Languages");
 
     public static string ToolsPath = AssetsPath.GetCombinePath(Directory.GetParent(Application.dataPath).FullName, "Tools");
     public const string DataTablePath = "Assets/Export/DataTable";

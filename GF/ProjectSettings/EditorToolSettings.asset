@@ -28,7 +28,7 @@ MonoBehaviour:
   ChatGPTKey: 
   ChatGPTRandomness: 0
   ChatGPTTimeout: 60
-  LanguagesSupport: 08000000
+  LanguagesSupport: 080000000e000000
   BaiduTransAppId: 
   BaiduTransSecretKey: 
   BaiduTransMaxLength: 2000
