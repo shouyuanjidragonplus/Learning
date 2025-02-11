@@ -8,9 +8,9 @@ using UnityEngine;
 public class ConstEditor
 {
     public const bool AutoScriptUTF8 = true; //新建脚本时自动修改脚本编码方式为utf-8以支持中文
-    public const string UIViewScriptFile = "Assets/AAAGame/Scripts/UI/Core/UIViews.cs";
-    public const string UISerializeFieldDir = "Assets/AAAGame/Scripts/UI/UIVariables"; //生成UI变量代码目录
-    public const string UIItemSerializeFiledDir = "Assets/AAAGame/Scripts/UI/UIItemVariables";
+    public const string UIViewScriptFile = "Assets/Export/Scripts/UI/Core/UIViews.cs";
+    public const string UISerializeFieldDir = "Assets/Export/Scripts/UI/UIVariables"; //生成UI变量代码目录
+    public const string UIItemSerializeFiledDir = "Assets/Export/Scripts/UI/UIItemVariables";
     public const string UITableExcel = "Core/UITable.xlsx";
     public static string UITableExcelFullPath => AssetsPath.GetCombinePath(DataTableExcelPath, UITableExcel);
 
@@ -23,12 +23,12 @@ public class ConstEditor
     public const string UIGroupTableExcel = "Core/UIGroupTable.xlsx";
     public static string UIGroupTableExcelFullPath => AssetsPath.GetCombinePath(DataTableExcelPath, UIGroupTableExcel);
 
-    public const string ConstGroupScriptFileFullName = "Assets/AAAGame/Scripts/Common/Core/Const.Groups.cs";
+    public const string ConstGroupScriptFileFullName = "Assets/Export/Scripts/Common/Core/Const.Groups.cs";
 
-    public static readonly string PrefabsPath = "Assets/AAAGame/Prefabs";
-    public static readonly string ScenePath = "Assets/AAAGame/Scene";
+    public static readonly string PrefabsPath = "Assets/Export/Prefabs";
+    public static readonly string ScenePath = "Assets/Export/Scene";
 
-    public const string DataTableCodeTemplate = "Assets/AAAGame/ScriptsBuiltin/Editor/DataTableGenerator/DataTableCodeTemplate/DataTableCodeTemplate.txt"; //生成配置表代码的模板文件
+    public const string DataTableCodeTemplate = "Assets/Export/ScriptsBuiltin/Editor/DataTableGenerator/DataTableCodeTemplate/DataTableCodeTemplate.txt"; //生成配置表代码的模板文件
     public const string BuiltinAssembly = "Assets/GameMain/Runtime/GameMain.Runtime.asmdef";
     public const string HotfixAssembly = "Assets/Scripts/Runtime/HotUpdate.asmdef";
 
@@ -56,7 +56,7 @@ public class ConstEditor
     /// <summary>
     /// 语言国际化Excel目录
     /// </summary>
-    public static string LanguageExcelPath => AssetsPath.GetCombinePath(Directory.GetParent(Application.dataPath).FullName, "AAAGameData/Languages");
+    public static string LanguageExcelPath => AssetsPath.GetCombinePath(Directory.GetParent(Application.dataPath).FullName, "Export/Languages");
 
     public static string ToolsPath = AssetsPath.GetCombinePath(Directory.GetParent(Application.dataPath).FullName, "Tools");
     public const string DataTablePath = "Assets/Export/DataTable";
