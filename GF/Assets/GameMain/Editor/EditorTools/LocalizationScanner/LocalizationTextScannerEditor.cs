@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace UGF.EditorTools
 {
-    [EditorToolMenu("多语言/扫描工具", null, 3)]
+    [EditorToolMenu("多语言扫描", null, 3)]
     public class LocalizationTextScannerEditor : EditorToolBase
     {
         Vector2 scrollViewPos;
