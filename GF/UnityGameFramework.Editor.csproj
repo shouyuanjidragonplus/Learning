@@ -41,6 +41,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="E:\Project\Learning\GF\Assets\Plugins\ForEditor\EPPlus7.6\EPPlus.dll" />
+    <Analyzer Include="E:\Project\Learning\GF\Assets\Plugins\ForEditor\EPPlus7.6\EPPlus.Interfaces.dll" />
+    <Analyzer Include="E:\Project\Learning\GF\Assets\Plugins\ForEditor\EPPlus7.6\Microsoft.IO.RecyclableMemoryStream.dll" />
+    <Analyzer Include="E:\Project\Learning\GF\Assets\Plugins\ForEditor\EPPlus7.6\EPPlus.System.Drawing.dll" />
+    <Analyzer Include="E:\Project\Learning\GF\Assets\Plugins\ForEditor\Google.Protobuf.dll" />
     <Analyzer Include="D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
@@ -382,31 +387,34 @@
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="EPPlus">
-      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\EPPlus.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ForEditor\EPPlus7.6\EPPlus.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.IO.RecyclableMemoryStream">
-      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ForEditor\EPPlus7.6\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
     </Reference>
     <Reference Include="dnlib">
       <HintPath>E:\Project\hybridclr_unity\Plugins\dnlib.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
-      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\Google.Protobuf.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ForEditor\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="LZ4">
       <HintPath>E:\Project\hybridclr_unity\Plugins\LZ4.dll</HintPath>
     </Reference>
     <Reference Include="EPPlus.Interfaces">
-      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\EPPlus.Interfaces.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ForEditor\EPPlus7.6\EPPlus.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>E:\Project\Learning\GF\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="EPPlus.System.Drawing">
-      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\EPPlus7.6\EPPlus.System.Drawing.dll</HintPath>
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ForEditor\EPPlus7.6\EPPlus.System.Drawing.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>E:\Project\Learning\GF\Assets\Plugins\UnityGameFramework\Libraries\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\ZString\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>E:\Project\Learning\GF\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

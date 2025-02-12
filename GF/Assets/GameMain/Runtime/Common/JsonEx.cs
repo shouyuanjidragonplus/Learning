@@ -1,3 +1,5 @@
+using System;
+
 public static class JsonEx
 {
     public static string ToJson(object obj)
@@ -13,5 +15,10 @@ public static class JsonEx
     public static object ToObject(string json)
     {
         return Newtonsoft.Json.JsonConvert.DeserializeObject(json);
+    }
+
+    public static object ToObject(string json, Type objectType)
+    {
+        return Newtonsoft.Json.JsonConvert.DeserializeObject(json, objectType);
     }
 }

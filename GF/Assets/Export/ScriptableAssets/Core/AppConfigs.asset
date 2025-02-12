@@ -18,8 +18,17 @@ MonoBehaviour:
   - ProcedureMenu
   - ProcedurePreload
   mDataTables:
+  - CameraViewTable
   - ColorTable
+  - CombatUnitTable
+  - LevelTable
+  - Core/EntityGroupTable
+  - Core/LanguagesTable
+  - Core/SoundGroupTable
+  - Core/UIGroupTable
+  - Core/UITable
   mConfigs:
   - GameConfig
   mLanguages:
   - ChineseSimplified
+  - English
