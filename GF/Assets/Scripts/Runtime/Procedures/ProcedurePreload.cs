@@ -52,7 +52,7 @@ public class ProcedurePreload : ProcedureBase
 
         smoothProgress = Mathf.Lerp(smoothProgress, loadedProgress / (float)totalProgress, elapseSeconds * progressSmoothSpeed);
 
-        GF.StartView.SetLoadingProgress(smoothProgress);
+        GF.StartView.SetLoadingProgress(smoothProgress, "加载游戏数据...");
         //预加载完成 切换场景
         if (loadedProgress >= totalProgress && smoothProgress >= 0.99f)
         {

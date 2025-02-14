@@ -161,7 +161,7 @@ namespace GameMain
             }
 
             loadedProgress++;
-            GameEntry.StartView.SetLoadingProgress(loadedProgress / (float)totalProgress);
+            GameEntry.StartView.SetLoadingProgress(loadedProgress / (float)totalProgress, "更新dll");
 
             //所有依赖dll加载完成后再加载Hotfix.dll
             if (hotfixDlls.Contains(args.DllName))
