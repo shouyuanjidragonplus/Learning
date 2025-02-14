@@ -41,11 +41,6 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="E:\Project\Learning\GF\Assets\Plugins\ForEditor\EPPlus7.6\EPPlus.dll" />
-    <Analyzer Include="E:\Project\Learning\GF\Assets\Plugins\ForEditor\EPPlus7.6\EPPlus.Interfaces.dll" />
-    <Analyzer Include="E:\Project\Learning\GF\Assets\Plugins\ForEditor\EPPlus7.6\Microsoft.IO.RecyclableMemoryStream.dll" />
-    <Analyzer Include="E:\Project\Learning\GF\Assets\Plugins\ForEditor\EPPlus7.6\EPPlus.System.Drawing.dll" />
-    <Analyzer Include="E:\Project\Learning\GF\Assets\Plugins\ForEditor\Google.Protobuf.dll" />
     <Analyzer Include="D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
@@ -348,8 +343,8 @@
     <Compile Include="Assets\Plugins\UnityGameFramework\GameFramework\Network\NetworkErrorEventArgs.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\GameFramework\Download\DownloadManager.DownloadAgent.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\GameFramework\Resource\ResourceManager.ResourceChecker.CheckInfo.CheckStatus.cs" />
-    <Compile Include="Assets\Plugins\UnityGameFramework\GameFramework\Resource\LoadAssetCallbacks.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\GameFramework\Utility\Utility.Verifier.cs" />
+    <Compile Include="Assets\Plugins\UnityGameFramework\GameFramework\Resource\LoadAssetCallbacks.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\GameFramework\Resource\ResourceManager.ResourceLoader.ResourceObject.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\GameFramework\Resource\LoadSceneFailureCallback.cs" />
     <Compile Include="Assets\Plugins\UnityGameFramework\GameFramework\Utility\Utility.Assembly.cs" />
@@ -657,6 +652,9 @@
     <Reference Include="LZ4">
       <HintPath>E:\Project\hybridclr_unity\Plugins\LZ4.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\ZString\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="EPPlus.Interfaces">
       <HintPath>E:\Project\Learning\GF\Assets\Plugins\ForEditor\EPPlus7.6\EPPlus.Interfaces.dll</HintPath>
     </Reference>
@@ -668,9 +666,6 @@
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>E:\Project\Learning\GF\Assets\Plugins\UnityGameFramework\Libraries\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe">
-      <HintPath>E:\Project\Learning\GF\Assets\Plugins\ThirdParty\ZString\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>D:\Software\Unity2022347\2022.3.34f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
