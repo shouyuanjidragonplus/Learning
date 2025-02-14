@@ -11,4 +11,12 @@ using UnityGameFramework.Runtime;
 public class DriverComponent : GameFrameworkComponent
 {
     public bool LoadAB = false;
+
+    private void Awake()
+    {
+        if (Debug.isDebugBuild)
+        {
+            SRDebug.Init();
+        }
+    }
 }
