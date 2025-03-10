@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using GameMain.Asset;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 
@@ -11,6 +12,7 @@ using UnityGameFramework.Runtime;
 public class DriverComponent : GameFrameworkComponent
 {
     public bool LoadAB = false;
+    public static Scheduler Scheduler = null;
 
     private void Awake()
     {
@@ -18,5 +20,28 @@ public class DriverComponent : GameFrameworkComponent
         {
             SRDebug.Init();
         }
+    }
+
+    private void Start()
+    {
+        Scheduler = new Scheduler();
+    }
+
+    private void Update()
+    {
+        if (Scheduler)
+        {
+            Scheduler.Update();
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if (Scheduler)
+        {
+            Scheduler.Dispose();
+        }
+
+        Scheduler = null;
     }
 }
