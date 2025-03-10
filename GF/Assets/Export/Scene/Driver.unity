@@ -700,7 +700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InstanceRoot: {fileID: 0}
-  m_WebRequestAgentHelperTypeName: UnityGameFramework.Runtime.UnityWebRequestAgentHelper
+  m_WebRequestAgentHelperTypeName: GameMain.Runtime.BestHttpHelper
   m_CustomWebRequestAgentHelper: {fileID: 0}
   m_WebRequestAgentHelperCount: 1
   m_Timeout: 30
