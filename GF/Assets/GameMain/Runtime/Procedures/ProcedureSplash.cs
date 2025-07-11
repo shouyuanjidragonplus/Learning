@@ -11,15 +11,8 @@ namespace GameMain
 
             // TODO: 这里可以播放一个 Splash 动画
             // ...
-
-            // if (GF.Base.EditorResourceMode)
-            // {
-            //     ChangeState<ProcedureUpdateResources>(procedureOwner);
-            // }
-            // else
-            // {
-            ChangeState<ProcedureLoadHotfixDll>(procedureOwner);
-            //}
+            //ChangeState(procedureOwner, GameEntry.Base.EditorResourceMode ? typeof(ProcedureLoadHotfixDll) : typeof(ProcedureUpdateResources));
+            ChangeState(procedureOwner, typeof(ProcedureCheckUpdateInfo));
         }
     }
 }

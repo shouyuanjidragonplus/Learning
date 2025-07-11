@@ -1,11 +1,10 @@
+using GameFramework;
 using UnityEngine;
-using UnityEngine.Networking;
-
 namespace GameMain.Asset
 {
     public sealed class GetUpdateInfoRequest : Request
     {
-        private UnityWebRequest _request;
+        private int _requestId;
         public UpdateInfo info { get; private set; }
 
         protected override void OnStart()
@@ -16,20 +15,18 @@ namespace GameMain.Asset
                 return;
             }
 
-            _request = UnityWebRequest.Get(Assets.UpdateInfoURL);
-            _request.certificateHandler = new DownloadCertificateHandler();
-            _request.SendWebRequest();
+            _requestId = GameEntry.WebRequest.AddWebRequest(Assets.UpdateInfoURL);
         }
 
         protected override void OnUpdated()
         {
-            progress = _request.downloadProgress;
-            if (!_request.isDone)
+            TaskInfo _taskInfo = GameEntry.WebRequest.GetWebRequestInfo(_requestId);
+            if (_taskInfo.Status != TaskStatus.Done)
                 return;
 
-            if (string.IsNullOrEmpty(_request.error))
+            if (_taskInfo.IsValid)
             {
-                info = Utility.LoadFromJson<UpdateInfo>(_request.downloadHandler.text);
+                info = Utility.LoadFromJson<UpdateInfo>(_taskInfo.UserData.ToString());
                 // Web GL 直接读取 Player Data Path
                 if (Application.isEditor || !Assets.IsWebGLPlatform)
                     Assets.DownloadURL = info.downloadURL; // 更新下载地址
@@ -44,15 +41,8 @@ namespace GameMain.Asset
                 return;
             }
 
-            SetResult(Result.Failed, _request.error);
+            SetResult(Result.Failed);
         }
-
-        protected override void OnCompleted()
-        {
-            _request?.Dispose();
-            _request = null;
-        }
-
         // public VersionsRequest GetVersionsAsync()
         // {
         //     var request = new VersionsRequest

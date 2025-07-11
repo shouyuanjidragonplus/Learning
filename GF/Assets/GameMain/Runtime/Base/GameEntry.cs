@@ -5,7 +5,10 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
+using System;
+using System.Reflection;
 using UnityEngine;
+using UnityGameFramework.Runtime;
 
 namespace GameMain
 {
@@ -18,6 +21,13 @@ namespace GameMain
         {
             InitBuiltinComponents();
             InitCustomComponents();
+            if (Resource != null)
+            {
+                var resTp = Resource.GetType();
+                var m_ResourceMode = resTp.GetField("m_ResourceMode", BindingFlags.Instance | BindingFlags.NonPublic);
+                m_ResourceMode.SetValue(Resource, AppSettings.Instance.ResourceMode);
+                Log.Info($"------------设置资源模式： ResourceMode:{AppSettings.Instance.ResourceMode}------------");
+            }
         }
     }
 }

@@ -8,11 +8,10 @@ using Utility = GameFramework.Utility;
 
 namespace GameMain
 {
-    public class ProcedureUpdateResources : ProcedureBase
+    public class ProcedureCheckUpdateInfo : ProcedureBase
     {
         private bool initComplete = false;
-        public Versions versions { get; private set; }
-        public string url { get; set; }
+        private UpdateInfo m_UpdateInfo;
 
         protected override void OnEnter(ProcedureOwner procedureOwner)
         {
@@ -20,31 +19,48 @@ namespace GameMain
             initComplete = false;
             GameEntry.Event.Subscribe(WebRequestSuccessEventArgs.EventId, OnWebRequestSuccess);
             GameEntry.Event.Subscribe(WebRequestFailureEventArgs.EventId, OnWebRequestFail);
-            CheckVersion();
+            CheckUpdateInfo();
         }
 
 
         protected override void OnUpdate(ProcedureOwner procedureOwner, float elapseSeconds, float realElapseSeconds)
         {
+            base.OnUpdate(procedureOwner, elapseSeconds, realElapseSeconds);
+            if (initComplete)
+            {
+                if (m_UpdateInfo)
+                {
+                    ChangeState<ProcedureUpdateResources>(procedureOwner);
+                }
+            }
         }
 
         protected override void OnLeave(ProcedureOwner procedureOwner, bool isShutdown)
         {
             GameEntry.Event.Unsubscribe(WebRequestSuccessEventArgs.EventId, OnWebRequestSuccess);
             GameEntry.Event.Unsubscribe(WebRequestFailureEventArgs.EventId, OnWebRequestFail);
+            base.OnLeave(procedureOwner, isShutdown);
         }
 
         /// <summary>
-        /// 向服务器发送请求获取版本信息
+        /// 向服务器发送请求获取版本信息 进行版本更新检测
         /// </summary>
-        private void CheckVersion()
+        void CheckUpdateInfo()
         {
-            Log.Debug(Application.temporaryCachePath);
-            
-            url = Assets.GetDownloadURL(Versions.Filename);
-            Log.Debug("版本地址:{0}", url);
-            GameEntry.WebRequest.AddWebRequest(url, this);
+            Log.Debug(GameEntry.Resource);
+            Log.Debug(GameEntry.Resource.ResourceMode);
+            // if (GameEntry.Resource.ResourceMode == GameFramework.Resource.ResourceMode.Updatable ||
+            //     GameEntry.Resource.ResourceMode == GameFramework.Resource.ResourceMode.UpdatableWhilePlaying)
+            // {
+            Log.Debug("当前为热更新模式, Web请求最新版本号...");
+            Log.Debug("请求版本信息地址:{0}", Assets.UpdateInfoURL);
+            GameEntry.WebRequest.AddWebRequest(Assets.UpdateInfoURL, this);
             GameEntry.StartView.ShowLoadingProgress(0);
+            // }
+            // else
+            // {
+            //     GameEntry.Resource.InitResources(OnResInitComplete);
+            // }
         }
 
         void OnResInitComplete()
@@ -62,13 +78,14 @@ namespace GameMain
             }
 
             var webText = Utility.Converter.GetString(arg.GetWebResponseBytes());
-            Debug.Log($"最新资源版本信息:{webText}");
+            Log.Debug($"最新资源版本信息:{webText}");
             var vinfo = Utility.Json.ToObject<UpdateInfo>(webText);
             CheckUpdateInfo(vinfo);
         }
 
         private void OnWebRequestFail(object sender, GameEventArgs e)
         {
+            GameEntry.StartView.SetLoadingProgress(0, "更新失败，请检查网络连接!");
             Log.Debug("Web请求失败, 请检查网络连接!");
         }
 
@@ -85,9 +102,15 @@ namespace GameMain
             // 版本文件未发生更新
             if (vinfo.timestamp <= Assets.Versions.timestamp)
             {
-                Log.Debug("当前版本已是最新!");
-                return;
+                GameEntry.StartView.SetLoadingProgress(1, "当前版本已是最新!");
             }
+            else
+            {
+                m_UpdateInfo = vinfo;
+                GameEntry.StartView.SetLoadingProgress(0, "发现新版本, 准备下载...");
+            }
+
+            OnResInitComplete();
         }
     }
 }

@@ -73,5 +73,5 @@ SpriteAtlas:
   - UICommon_Buttn_Blue_Bg
   - Common_BG39
   m_RenderDataMap: {}
-  m_Tag: UICommonAtlas
+  m_Tag: UIIconsAtlas
   m_IsVariant: 0

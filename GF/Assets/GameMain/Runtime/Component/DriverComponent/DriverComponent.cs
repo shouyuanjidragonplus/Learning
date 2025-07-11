@@ -18,7 +18,7 @@ public class DriverComponent : GameFrameworkComponent
     {
         if (Debug.isDebugBuild)
         {
-            SRDebug.Init();
+            //SRDebug.Init();
         }
     }
 

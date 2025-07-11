@@ -9,11 +9,13 @@ using TMPro;
 /// </summary>
 public class StartComponent : GameFrameworkComponent
 {
-    [Header("Loading Progress:")] [SerializeField]
-    GameObject loadingProgressNode = null;
-
+    [Header("加载进度")] [SerializeField] GameObject loadingProgressNode = null;
     [SerializeField] private Text loadSliderText;
     [SerializeField] private Slider loadSlider;
+
+    [Header("弹窗提示")] [SerializeField] GameObject tipsDialog = null;
+    [SerializeField] private Button tipsPositiveBtn;
+    [SerializeField] private Button tipsNegativeBtn;
 
     private void Start()
     {
@@ -35,5 +37,27 @@ public class StartComponent : GameFrameworkComponent
     public void HideLoadingProgress()
     {
         loadingProgressNode.SetActive(false);
+    }
+    public void ShowDialog(string title, string content, string yes_btn_title = "YES", string no_btn_title = "NO", UnityEngine.Events.UnityAction yes_cb = null, UnityEngine.Events.UnityAction no_cb = null)
+    {
+        tipsDialog.SetActive(true);
+        if (yes_cb == null && no_cb == null)
+        {
+            yes_cb = HideDialog;
+        }
+        tipsNegativeBtn.gameObject.SetActive(no_cb != null);
+        tipsNegativeBtn.GetComponentInChildren<TextMeshProUGUI>().text = no_btn_title;
+
+        tipsPositiveBtn.gameObject.SetActive(yes_cb != null);
+        tipsPositiveBtn.GetComponentInChildren<TextMeshProUGUI>().text = yes_btn_title;
+        tipsNegativeBtn.onClick.RemoveAllListeners();
+        tipsPositiveBtn.onClick.RemoveAllListeners();
+        if (no_cb != null) tipsNegativeBtn.onClick.AddListener(() => { no_cb.Invoke(); HideDialog(); });
+        if (yes_cb != null) tipsPositiveBtn.onClick.AddListener(() => { yes_cb.Invoke(); HideDialog(); });
+    }
+
+    public void HideDialog()
+    {
+        tipsDialog.SetActive(false);
     }
 }

@@ -13,7 +13,8 @@ namespace GameMain.Asset
         public static readonly System.Version APIVersion = new System.Version(2023, 1, 1);
 
         private static readonly Dictionary<string, string> addressWithPaths = new Dictionary<string, string>();
-        public static string UpdateInfoURL { get; set; }
+        //public static string UpdateInfoURL { get; set; }
+        public static string UpdateInfoURL =>Application.streamingAssetsPath + "/updateinfo.json";
         public static string DownloadURL { get; set; }
         public static Versions Versions { get; set; } = ScriptableObject.CreateInstance<Versions>();
         public static PlayerAssets PlayerAssets { get; set; } = ScriptableObject.CreateInstance<PlayerAssets>();

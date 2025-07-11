@@ -1,4 +1,9 @@
-﻿/// <summary>
+﻿using System;
+using GameMain.Asset;
+using UnityEngine;
+using Application = UnityEngine.Device.Application;
+
+/// <summary>
 /// 内置Const(非热更)
 /// </summary>
 public static class SettingConst
